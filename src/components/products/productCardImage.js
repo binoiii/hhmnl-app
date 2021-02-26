@@ -1,8 +1,15 @@
-import React from "react"
+import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import Modal from "../modal"
+
 const ProductCardImage = () => {
+  const [show, setShow] = useState(false)
+
+  const handleShow = () => setShow(true)
+  const handleHide = () => setShow(false)
+
   const data = useStaticQuery(graphql`
     query {
       productImage: file(relativePath: { eq: "products/bamboo-tumbler1.jpg" }) {
@@ -22,9 +29,17 @@ const ProductCardImage = () => {
   } = data.productImage
 
   return (
-    <div>
-      <Img alt={name} fluid={fluid} className="md:w-72" />
-    </div>
+    <>
+      <div
+        className="cursor-pointer"
+        onClick={handleShow}
+        onKeyDown={handleShow}
+        role="button"
+      >
+        <Img alt={name} fluid={fluid} className="md:w-72" />
+      </div>
+      <Modal show={show} onHide={handleHide} />
+    </>
   )
 }
 

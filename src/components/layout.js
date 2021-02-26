@@ -10,8 +10,8 @@ const Layout = ({ children }) => {
       <div>
         <Navigation />
         <main>{children}</main>
-        <footer>
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <footer className="w-full font-primary text-xs text-gray-300 text-center italic">
+          <a href="https://www.gatsbyjs.com">@hhmnl</a>
         </footer>
       </div>
     </>

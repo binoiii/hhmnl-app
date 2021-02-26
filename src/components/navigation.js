@@ -53,7 +53,7 @@ const Nav = () => {
             >
               <ShoppingCart className="mr-2" size="1.4rem" />
               <span className="font-primary text-sm tracking-wide hidden md:block">
-                Checkout
+                Cart
               </span>
             </Link>
           </div>

@@ -19,8 +19,8 @@ const Hero = () => {
             <h3>affordable</h3>
           </div>
           <div className="md:mt-8">
-            <Link to="products" smooth>
-              <button className="md:px-20 md:py-2 text-orange-450 text-md uppercase tracking-widest border-2 border-orange-450 rounded-md">
+            <Link to="products" smooth duration={400}>
+              <button className="md:px-20 md:py-2 text-orange-450 text-md uppercase tracking-widest border-2 border-orange-450 rounded-md outline-none focus:outline-none">
                 shop now
               </button>
             </Link>

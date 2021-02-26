@@ -1,6 +1,127 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 
+@font-face {
+  font-family: "Bernadette";
+  src: local("Bernadette"), url(../../fonts/bernadette.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "riztteen";
+  src: local("riztteen"), url(../../fonts/riztteen.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "BEBAS NEUE";
+  src: local("bebas_neue"), url(../../fonts/bebas_neue.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Damion";
+  src: local("damion"), url(../../fonts/damion.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Amarillo";
+  src: local("amarillo"), url(../../fonts/amarillo.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Citrica";
+  src: local("citrica"), url(../../fonts/citrica.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "MOON";
+  src: local("moon_light"), url(../../fonts/moon_light.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Back to Black";
+  src: local("back_to_black"),
+    url(../../fonts/back_to_black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Uranos";
+  src: local("uranos"), url(../../fonts/uranos.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Blassville";
+  src: local("blassville.ttf"),
+    url(../../fonts/blassville.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "The Heart";
+  src: local("the_heart_of_everything.ttf"),
+    url(../../fonts/the_heart_of_everything.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Julietta";
+  src: local("julietta.ttf"), url(../../fonts/julietta.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Hughs";
+  src: local("hughs.otf"), url(../../fonts/hughs.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Chasing Hearts";
+  src: local("chasing_hearts.ttf"),
+    url(../../fonts/chasing_hearts.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Edwardian";
+  src: local("edwardian.ttf"), url(../../fonts/edwardian.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Qonita";
+  src: local("qonita.ttf"), url(../../fonts/qonita.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Spring is Coming";
+  src: local("spring_is_coming.ttf"),
+    url(../../fonts/spring_is_coming.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Starfish";
+  src: local("starfish.ttf"), url(../../fonts/starfish.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Old English";
+  src: local("old_english.ttf"),
+    url(../../fonts/old_english.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Mason";
+  src: local("mason.ttf"), url(../../fonts/mason.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Geizer";
+  src: local("geizer.otf"), url(../../fonts/geizer.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "James";
+  src: local("james.ttf"), url(../../fonts/james.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Nourdilla";
+  src: local("nourdilla.ttf"), url(../../fonts/nourdilla.ttf) format("truetype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

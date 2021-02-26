@@ -5,22 +5,14 @@ import { IconContext } from "react-icons"
 import { RiHomeSmileLine } from "react-icons/ri"
 import { HiOutlineShoppingCart } from "react-icons/hi"
 
-// import { FaPaw } from "react-icons/fa"
 import {
   AiOutlineUser,
   AiOutlineFacebook,
   AiOutlineInstagram,
 } from "react-icons/ai"
 import { BiArrowBack } from "react-icons/bi"
-// import { BsCardList } from "react-icons/bs"
-// import { GrStatusInfo } from "react-icons/gr"
-// import { ImQrcode } from "react-icons/im"
-// import { SiDatadog } from "react-icons/si"
-// import { GiReceiveMoney, GiWaterSplash } from "react-icons/gi"
-// import { Ri24HoursFill } from "react-icons/ri"
-// import { MdLooksOne } from "react-icons/md"
 import { FiMail } from "react-icons/fi"
-import { IoIosArrowDropup } from "react-icons/io"
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io"
 
 export const Home = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
@@ -126,7 +118,7 @@ BackIcon.propTypes = {
 
 export const BackToTop = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
-    <IoIosArrowDropup />
+    <IoIosArrowUp />
   </IconContext.Provider>
 )
 
@@ -135,6 +127,21 @@ BackToTop.defaultProps = {
 }
 
 BackToTop.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const DropDown = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <IoIosArrowDown />
+  </IconContext.Provider>
+)
+
+DropDown.defaultProps = {
+  className: "text-base text-black",
+}
+
+DropDown.propTypes = {
   className: PropTypes.string,
   size: PropTypes.string,
 }

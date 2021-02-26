@@ -1,9 +1,9 @@
 import React from "react"
+import { connect } from "react-redux"
 
-import ItemCounter from "./itemCounter"
 import ProductCard from "./productCard"
 
-const Products = () => {
+const Products = ({ products: { products } }) => {
   return (
     <div
       id="products"
@@ -13,16 +13,23 @@ const Products = () => {
         Products
       </h2>
       <div className="md:m-8 flex">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        {products &&
+          products.map(productDetails => (
+            <ProductCard
+              key={productDetails.productID}
+              productDetails={productDetails}
+            />
+          ))}
       </div>
-      <ItemCounter />
     </div>
   )
 }
 
-export default Products
+const mapStateToProps = ({ products }) => ({
+  products,
+})
+
+export default connect(mapStateToProps)(Products)
 
 //ProductName
 //Description
@@ -34,3 +41,5 @@ export default Products
 
 //Create the individual first
 //Load Products MAP
+
+//Check portal
