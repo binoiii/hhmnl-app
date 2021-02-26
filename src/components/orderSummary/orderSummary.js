@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { connect } from "react-redux"
 
 import OrderModifyButton from "./orderModifyButton"
+import OrderSummaryFonts from "./orderSummaryFonts"
 
 const OrderSummary = ({ productName, price, orders }) => {
   const { productName: product, quantity, engraveDetails } = orders.orders.find(
@@ -26,43 +27,7 @@ const OrderSummary = ({ productName, price, orders }) => {
           <p className="font-primary text-orange-450">{`${product}`}</p>
         </div>
       </div>
-      <div className="mb-8 h-72 overflow-y-auto">
-        <table className="mb-8 table-auto w-80 overflow-y-auto">
-          <thead>
-            <tr>
-              <th className="font-primary text-sm text-orange-450 font-medium">
-                Name
-              </th>
-              <th className="font-primary text-sm text-orange-450 font-medium">
-                Font
-              </th>
-              <th className="font-primary text-sm text-orange-450 font-medium">
-                Result
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {engraveDetails &&
-              engraveDetails.map(({ engraveID, name: engraveName, font }) => {
-                const modifiedFont = font.replace("font-", "")
-
-                return (
-                  <tr key={engraveID}>
-                    <td className="font-primary text-sm text-center">
-                      {engraveName}
-                    </td>
-                    <td className={`${font} text-sm text-center`}>
-                      {modifiedFont}
-                    </td>
-                    <td className={`${font} text-sm text-center`}>
-                      {engraveName}
-                    </td>
-                  </tr>
-                )
-              })}
-          </tbody>
-        </table>
-      </div>
+      <OrderSummaryFonts engraveDetails={engraveDetails} />
       <div>
         <button className="w-20 bg-white-450 font-primary text-xs text-orange-450 uppercase text-center tracking-wider outline-none focus:outline-none cursor-pointer">
           checkout

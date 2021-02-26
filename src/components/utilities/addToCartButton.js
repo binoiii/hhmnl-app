@@ -5,13 +5,23 @@ import PropTypes from "prop-types"
 import { ShoppingCart } from "../icons"
 import { submitOrder } from "../../redux/order/orderActions"
 
-const AddToCartButton = ({ productName, submitOrder }) => {
+const AddToCartButton = ({
+  productName,
+  submitOrder,
+  handlePrompt,
+  missingData: { missingName, missingFont },
+}) => {
   const submitStatus = {
     productName,
     isSubmitted: true,
   }
 
-  const handleSubmit = () => submitOrder(submitStatus)
+  console.log(missingName, missingFont)
+
+  const handleSubmit = () => {
+    handlePrompt()
+    if (!missingName && !missingFont) return submitOrder(submitStatus)
+  }
 
   return (
     <button

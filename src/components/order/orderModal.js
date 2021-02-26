@@ -6,7 +6,7 @@ import OrderItem from "./orderItem"
 import OrderTotal from "./orderTotal"
 import OrderCounter from "./orderCounter"
 import OrderFormFont from "./orderFormFont"
-import OrderSummary from "./orderSummary"
+import OrderSummary from "../orderSummary/orderSummary"
 
 const OrderModal = ({ productName, price, orders }) => {
   const { quantity, engraveDetails, isSubmitted } = orders.orders.find(
@@ -21,7 +21,11 @@ const OrderModal = ({ productName, price, orders }) => {
       <div className={`${(isSubmitted && "hidden") || "static"} w-full h-full`}>
         <div className="w-lg h-96 grid grid-cols-5">
           <div className="h-full col-span-2">
-            <OrderItem productName={productName} price={price} />
+            <OrderItem
+              productName={productName}
+              price={price}
+              engraveDetails={engraveDetails}
+            />
           </div>
           <div className="flex flex-col items-center col-span-3">
             <OrderTotal price={price} quantity={quantity} />
