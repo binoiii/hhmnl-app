@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 const OrderSummaryFonts = ({ engraveDetails }) => {
   return (
     <div className="mb-8 h-72 overflow-y-auto">
-      <table className="mb-8 table-auto w-80 overflow-y-auto">
+      <table className="mb-8 table-auto w-80">
         <thead>
           <tr>
             <th className="font-primary text-sm text-orange-450 font-medium">
