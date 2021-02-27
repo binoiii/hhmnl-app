@@ -30,16 +30,3 @@ const mapStateToProps = ({ products }) => ({
 })
 
 export default connect(mapStateToProps)(Products)
-
-//ProductName
-//Description
-//Price
-//ImageUrl
-
-//Cart Reducer
-//Product Reducer
-
-//Create the individual first
-//Load Products MAP
-
-//Check portal

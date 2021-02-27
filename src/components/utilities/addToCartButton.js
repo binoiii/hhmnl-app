@@ -16,8 +16,6 @@ const AddToCartButton = ({
     isSubmitted: true,
   }
 
-  console.log(missingName, missingFont)
-
   const handleSubmit = () => {
     handlePrompt()
     if (!missingName && !missingFont) return submitOrder(submitStatus)

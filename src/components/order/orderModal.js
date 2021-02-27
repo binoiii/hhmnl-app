@@ -8,7 +8,7 @@ import OrderCounter from "./orderCounter"
 import OrderFormFont from "./orderFormFont"
 import OrderSummary from "../orderSummary/orderSummary"
 
-const OrderModal = ({ productName, price, orders }) => {
+const OrderModal = ({ productName, price, orders, handleHide }) => {
   const { quantity, engraveDetails, isSubmitted } = orders.orders.find(
     product => product.productName === productName
   )
@@ -16,7 +16,11 @@ const OrderModal = ({ productName, price, orders }) => {
   return (
     <div className="flex overflow-hidden">
       <div className={`${(isSubmitted && "static") || "hidden"} w-full h-full`}>
-        <OrderSummary productName={productName} price={price} />
+        <OrderSummary
+          productName={productName}
+          price={price}
+          handleHide={handleHide}
+        />
       </div>
       <div className={`${(isSubmitted && "hidden") || "static"} w-full h-full`}>
         <div className="w-lg h-96 grid grid-cols-5">
@@ -47,6 +51,7 @@ OrderModal.propType = {
   productName: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   orders: PropTypes.object.isRequired,
+  handleHide: PropTypes.func.isRequired,
 }
 
 export default connect(mapStateToProps)(OrderModal)

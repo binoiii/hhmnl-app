@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Navigation from "./navigation"
+import SocialLinks from "./socialLinks"
 import "./styles/global.css"
 
 const Layout = ({ children }) => {
@@ -9,6 +10,7 @@ const Layout = ({ children }) => {
     <>
       <div>
         <Navigation />
+        <SocialLinks />
         <main>{children}</main>
         <footer className="w-full font-primary text-xs text-gray-300 text-center italic">
           <a href="https://www.gatsbyjs.com">@hhmnl</a>

@@ -54,7 +54,11 @@ const ProductBody = ({ productName, price, descriptions, createOrder }) => {
         </div>
       </div>
       <Modal show={show} onHide={handleHide}>
-        <OrderModal productName={productName} price={price} />
+        <OrderModal
+          productName={productName}
+          handleHide={handleHide}
+          price={price}
+        />
       </Modal>
     </>
   )

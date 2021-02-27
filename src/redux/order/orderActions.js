@@ -7,6 +7,7 @@ import {
   UPDATE_DETAILS,
   SUBMIT_ORDER,
   UNSUBMIT_ORDER,
+  CLEAR_ORDER,
 } from "./orderTypes"
 
 export const createOrder = orderDetails => ({
@@ -28,14 +29,14 @@ export const addEngraveDetails = engraveDetail => ({
   payload: engraveDetail,
 })
 
-export const removeEngraveDetails = engraveDetail => ({
+export const removeEngraveDetails = engraveDetails => ({
   type: REMOVE_ENGRAVE_DETAILS,
-  payload: engraveDetail,
+  payload: engraveDetails,
 })
 
-export const updateDetails = updatedDetail => ({
+export const updateDetails = updateDetails => ({
   type: UPDATE_DETAILS,
-  payload: updatedDetail,
+  payload: updateDetails,
 })
 
 export const submitOrder = submitStatus => ({
@@ -46,4 +47,9 @@ export const submitOrder = submitStatus => ({
 export const unsubmitOrder = submitStatus => ({
   type: UNSUBMIT_ORDER,
   payload: submitStatus,
+})
+
+export const clearOrder = clearDetails => ({
+  type: CLEAR_ORDER,
+  payload: clearDetails,
 })

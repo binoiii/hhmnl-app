@@ -7,6 +7,7 @@ import {
   UPDATE_DETAILS,
   SUBMIT_ORDER,
   UNSUBMIT_ORDER,
+  CLEAR_ORDER,
 } from "./orderTypes"
 
 const initialState = {
@@ -121,6 +122,14 @@ const orderReducer = (state = initialState, action) => {
         orders: state.orders.map(order =>
           order.productName === productName ? { ...order, isSubmitted } : order
         ),
+      }
+    }
+    case CLEAR_ORDER: {
+      const { productName } = action.payload
+
+      return {
+        ...state,
+        orders: state.orders.filter(order => order.productName !== productName),
       }
     }
     default: {

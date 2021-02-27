@@ -6,10 +6,12 @@ import logger from "redux-logger"
 
 import orderReducer from "./order/orderReducer"
 import productsReducer from "./products/productsReducer"
+import cartReducer from "./cart/cartReducer"
 
 const rootReducer = combineReducers({
   orders: orderReducer,
   products: productsReducer,
+  cart: cartReducer,
 })
 
 const store = createStore(

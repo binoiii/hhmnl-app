@@ -30,12 +30,8 @@ const OrderItem = ({ productName, price, engraveDetails }) => {
     detail => detail.name === "" || detail.font === ""
   )
 
-  console.log(missingDataContainer)
-
   const missingName = missingDataContainer.some(detail => detail.name === "")
   const missingFont = missingDataContainer.some(detail => detail.font === "")
-
-  console.log(missingFont, "item")
 
   const missingData = {
     missingName,
