@@ -2,7 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Navigation from "./navigation"
+import Cart from "./cart/cart"
 import SocialLinks from "./socialLinks"
+
 import "./styles/global.css"
 
 const Layout = ({ children }) => {
@@ -10,6 +12,7 @@ const Layout = ({ children }) => {
     <>
       <div>
         <Navigation />
+        <Cart />
         <SocialLinks />
         <main>{children}</main>
         <footer className="w-full font-primary text-xs text-gray-300 text-center italic">

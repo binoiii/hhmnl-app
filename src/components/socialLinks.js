@@ -1,6 +1,6 @@
 import React from "react"
 
-import Cart from "./utilities/cart"
+import CartIcon from "./utilities/cartIcon"
 
 import { Fb, Ig } from "./icons"
 
@@ -42,7 +42,7 @@ const SocialLinks = () => {
           </div>
         ))}
         <div>
-          <Cart
+          <CartIcon
             className="text-orange-450 transform hover:scale-125 transition duration-300 ease-out"
             size="1.6rem"
           />

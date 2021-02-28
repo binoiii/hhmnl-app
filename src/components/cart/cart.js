@@ -1,78 +1,42 @@
 import React from "react"
-import { Link } from "gatsby"
 import { connect } from "react-redux"
 import PropTypes from "prop-types"
 
-const Cart = ({ cart: cart }) => {
-  console.log(cart)
+import { hideCart } from "../../redux/controls/controlsActions"
 
-  const { totalQuantity, totalPrice, orders } = cart
+import CartSummary from "./cartSummary"
+
+const Cart = ({ controls, hideCart }) => {
+  const { isCartOpen } = controls
+
+  const handleHideCart = () => {
+    hideCart()
+  }
 
   return (
-    <div>
-      <h2 className="mt-16 mb-6 font-secondary text-orange-450 text-4xl italic text-center">
-        Cart Summary
-      </h2>
-      {orders.length > 0 ? (
-        <div className="flex flex-col items-center">
-          <div className="flex">
-            <h3 className="mx-8 font-primary font-medium uppercase">
-              subtotal
-            </h3>
-            <p className="mx-8 font-primary text-orange-450">{`₱${totalPrice}`}</p>
-          </div>
-          <div className="mb-16 flex">
-            <h3 className="mx-8 font-primary font-medium uppercase">
-              total quantity
-            </h3>
-            <p className="mx-8 font-primary text-orange-450">{totalQuantity}</p>
-          </div>
-          <div>
-            <h2 className="mb-4 font-secondary text-orange-450 text-3xl italic text-center">
-              Items Summary
-            </h2>
-            <div>
-              <table className="mb-8 table-auto w-80">
-                <tr>
-                  <th className="font-primary text-sm text-orange-450 font-medium">
-                    Product Name
-                  </th>
-                  <th className="font-primary text-sm text-orange-450 font-medium">
-                    Quantity
-                  </th>
-                </tr>
-
-                <tbody>
-                  {orders &&
-                    orders.map(order => (
-                      <tr key={order.product}>
-                        <td className="font-primary text-sm text-center">
-                          {order.product}
-                        </td>
-                        <td className="font-primary text-sm text-center">
-                          {order.quantity}
-                        </td>
-                      </tr>
-                    ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      ) : (
-        <div>
-          <p>Add items to your cart. Happy Shopping</p>
-          <Link to="/">Go back to products</Link>
-        </div>
-      )}
+    <div
+      className={`${
+        (isCartOpen && "translate-x-0") || "transform translate-x-full"
+      } transition duration-500 ease-out grid grid-cols-3 h-full w-full fixed top-0 bottom-0 left-0 right-0 z-50`}
+    >
+      <div
+        className="h-full w-full bg-black bg-opacity-70 col-span-2"
+        onClick={handleHideCart}
+      ></div>
+      <div className="bg-white col-span-1">
+        <CartSummary />
+      </div>
     </div>
   )
 }
 
-const mapStateToProps = ({ cart }) => ({ cart })
+const mapStateToProps = ({ controls }) => ({ controls })
+const mapDispatchToProps = dispatch => ({
+  hideCart: () => dispatch(hideCart()),
+})
 
 Cart.propTypes = {
-  cart: PropTypes.object.isRequired,
+  controls: PropTypes.object.isRequired,
 }
 
-export default connect(mapStateToProps)(Cart)
+export default connect(mapStateToProps, mapDispatchToProps)(Cart)

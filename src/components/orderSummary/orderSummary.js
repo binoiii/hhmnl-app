@@ -6,16 +6,17 @@ import OrderModifyButton from "./orderModifyButton"
 import OrderSummaryFonts from "./orderSummaryFonts"
 
 import { addToCart } from "../../redux/cart/cartActions"
-import { unsubmitOrder, clearOrder } from "../../redux/order/orderActions"
+import { clearOrder } from "../../redux/order/orderActions"
+import { openCart } from "../../redux/controls/controlsActions"
 
 const OrderSummary = ({
   productName,
   price,
   orders,
   addToCart,
-  unsubmitOrder,
   clearOrder,
   handleHide,
+  openCart,
 }) => {
   const { productName: product, quantity, engraveDetails } = orders.orders.find(
     order => order.productName === productName
@@ -37,6 +38,7 @@ const OrderSummary = ({
 
   const hanldeAddToCart = () => {
     handleHide()
+    openCart()
     addToCart(orderItemDetails)
     clearOrder(submitDetails)
   }
@@ -78,8 +80,8 @@ const mapStateToProps = ({ orders }) => ({ orders })
 
 const mapDispatchToProps = dispatch => ({
   addToCart: orders => dispatch(addToCart(orders)),
-  unsubmitOrder: orders => dispatch(unsubmitOrder(orders)),
   clearOrder: details => dispatch(clearOrder(details)),
+  openCart: () => dispatch(openCart()),
 })
 
 OrderSummary.propTypes = {
@@ -87,8 +89,8 @@ OrderSummary.propTypes = {
   price: PropTypes.number.isRequired,
   productName: PropTypes.string.isRequired,
   addToCart: PropTypes.func.isRequired,
-  unsubmitOrder: PropTypes.func.isRequired,
   handleHide: PropTypes.func.isRequired,
+  openCart: PropTypes.func.isRequired,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(OrderSummary)
