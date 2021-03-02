@@ -10,9 +10,10 @@ import {
   AiOutlineFacebook,
   AiOutlineInstagram,
 } from "react-icons/ai"
-import { BiArrowBack } from "react-icons/bi"
+import { BiArrowBack, BiShoppingBag } from "react-icons/bi"
 import { FiMail } from "react-icons/fi"
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io"
+import { BsPlusSquare } from "react-icons/bs"
 
 export const Home = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
@@ -142,6 +143,36 @@ DropDown.defaultProps = {
 }
 
 DropDown.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const Bag = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <BiShoppingBag />
+  </IconContext.Provider>
+)
+
+Bag.defaultProps = {
+  className: "text-base text-black",
+}
+
+Bag.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const Add = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <BsPlusSquare />
+  </IconContext.Provider>
+)
+
+Add.defaultProps = {
+  className: "text-base text-black",
+}
+
+Add.propTypes = {
   className: PropTypes.string,
   size: PropTypes.string,
 }

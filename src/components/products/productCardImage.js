@@ -31,10 +31,11 @@ const ProductCardImage = () => {
   return (
     <>
       <div
-        className="cursor-pointer"
+        className="outline-none focus:outline-none cursor-pointer"
         onClick={handleShow}
         onKeyDown={handleShow}
         role="button"
+        tabIndex={0}
       >
         <Img alt={name} fluid={fluid} className="md:w-72" />
       </div>

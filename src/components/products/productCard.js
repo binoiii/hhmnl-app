@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import ProductBody from "./productBody"
+import ProductCardBody from "./productCardBody"
 import ProductCardImage from "./productCardImage"
 
 const ProductCard = ({ productDetails }) => {
@@ -10,7 +10,7 @@ const ProductCard = ({ productDetails }) => {
   return (
     <div className="mx-8 w-72 shadow-xl">
       <ProductCardImage />
-      <ProductBody
+      <ProductCardBody
         productName={productName}
         price={price}
         descriptions={descriptions}

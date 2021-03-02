@@ -42,7 +42,6 @@ const orderReducer = (state = initialState, action) => {
             : order
         ),
       }
-      //
     }
     case SUBTRACT_QUANTITY: {
       const { productName, quantity } = action.payload
@@ -86,7 +85,12 @@ const orderReducer = (state = initialState, action) => {
       }
     }
     case UPDATE_DETAILS: {
-      const { productName, id, font, engraveName } = action.payload
+      const {
+        productName,
+        engraveID,
+        fontSelected,
+        engraveName,
+      } = action.payload
       return {
         ...state,
         orders: state.orders.map(order =>
@@ -94,8 +98,8 @@ const orderReducer = (state = initialState, action) => {
             ? {
                 ...order,
                 engraveDetails: order.engraveDetails.map(detail =>
-                  detail.engraveID === id
-                    ? { ...detail, font, name: engraveName }
+                  detail.engraveID === engraveID
+                    ? { ...detail, name: engraveName, font: fontSelected }
                     : detail
                 ),
               }

@@ -10,9 +10,9 @@ import {
   CLEAR_ORDER,
 } from "./orderTypes"
 
-export const createOrder = orderDetails => ({
+export const createOrder = details => ({
   type: CREATE_ORDER,
-  payload: orderDetails,
+  payload: details,
 })
 
 export const addQuantity = quantity => ({
@@ -24,19 +24,19 @@ export const subtractQuantity = quantity => ({
   payload: quantity,
 })
 
-export const addEngraveDetails = engraveDetail => ({
+export const addEngraveDetails = details => ({
   type: ADD_ENGRAVE_DETAILS,
-  payload: engraveDetail,
+  payload: details,
 })
 
-export const removeEngraveDetails = engraveDetails => ({
+export const removeEngraveDetails = details => ({
   type: REMOVE_ENGRAVE_DETAILS,
-  payload: engraveDetails,
+  payload: details,
 })
 
-export const updateDetails = updateDetails => ({
+export const updateDetails = details => ({
   type: UPDATE_DETAILS,
-  payload: updateDetails,
+  payload: details,
 })
 
 export const submitOrder = submitStatus => ({
@@ -44,12 +44,12 @@ export const submitOrder = submitStatus => ({
   payload: submitStatus,
 })
 
-export const unsubmitOrder = submitStatus => ({
+export const unsubmitOrder = status => ({
   type: UNSUBMIT_ORDER,
-  payload: submitStatus,
+  payload: status,
 })
 
-export const clearOrder = clearDetails => ({
+export const clearOrder = details => ({
   type: CLEAR_ORDER,
-  payload: clearDetails,
+  payload: details,
 })

@@ -22,4 +22,14 @@ OrderFormFont.propTypes = {
   engraveDetails: PropTypes.array.isRequired,
 }
 
+OrderFormFont.defaultProps = {
+  engraveDetails: [
+    {
+      engraveID: 1,
+      name: "",
+      font: "",
+    },
+  ],
+}
+
 export default OrderFormFont

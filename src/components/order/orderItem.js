@@ -79,4 +79,14 @@ OrderItem.propTypes = {
   engraveDetails: PropTypes.array.isRequired,
 }
 
+OrderItem.defaultProps = {
+  engraveDetails: [
+    {
+      engraveID: 1,
+      name: "",
+      font: "",
+    },
+  ],
+}
+
 export default OrderItem

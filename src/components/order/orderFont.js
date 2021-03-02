@@ -2,14 +2,15 @@ import React, { useState } from "react"
 import { connect } from "react-redux"
 
 import PropTypes from "prop-types"
-import FontsDropdown from "../fonts/fontsDropdown"
+import FontsContainer from "../fonts/fontsContainer"
 
 const OrderFont = ({ orders, engraveID, productName }) => {
-  const [name, setName] = useState("")
+  const order = orders.orders.find(order => order.productName === productName)
+  const { font, name } = order.engraveDetails
+    ? order.engraveDetails.find(detail => detail.engraveID === engraveID)
+    : ""
 
-  const { font } = orders.orders
-    .find(order => order.productName === productName)
-    .engraveDetails.find(detail => detail.engraveID === engraveID)
+  const [engraveName, setName] = useState(name)
 
   const handleChange = e => setName(e.target.value)
 
@@ -36,10 +37,11 @@ const OrderFont = ({ orders, engraveID, productName }) => {
           <label className="font-primary text-xxs" htmlFor="font">
             Font
           </label>
-          <FontsDropdown
+          <FontsContainer
             productName={productName}
             engraveID={engraveID}
-            name={name}
+            engraveName={engraveName}
+            font={font}
           />
         </div>
       </div>

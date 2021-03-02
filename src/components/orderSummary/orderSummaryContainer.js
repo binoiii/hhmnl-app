@@ -9,7 +9,7 @@ import { addToCart } from "../../redux/cart/cartActions"
 import { clearOrder } from "../../redux/order/orderActions"
 import { openCart } from "../../redux/controls/controlsActions"
 
-const OrderSummary = ({
+const OrderSummaryContainer = ({
   productName,
   price,
   orders,
@@ -84,13 +84,15 @@ const mapDispatchToProps = dispatch => ({
   openCart: () => dispatch(openCart()),
 })
 
-OrderSummary.propTypes = {
+OrderSummaryContainer.propTypes = {
   productName: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
-  productName: PropTypes.string.isRequired,
   addToCart: PropTypes.func.isRequired,
   handleHide: PropTypes.func.isRequired,
   openCart: PropTypes.func.isRequired,
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(OrderSummary)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(OrderSummaryContainer)

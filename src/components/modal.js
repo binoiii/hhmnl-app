@@ -20,10 +20,16 @@ const Modal = ({ children, show, onHide }) => {
       <div
         className="flex justify-center items-center h-full w-full fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 z-50"
         onClick={onHide}
+        onKeyDown={onHide}
+        role="button"
+        tabIndex={0}
       >
         <div
-          className="relative w-lg bg-white"
+          className="outline-none focus:outline-none relative w-lg bg-white"
           onClick={e => e.stopPropagation()}
+          onKeyDown={e => e.stopPropagation()}
+          role="button"
+          tabIndex={-1}
         >
           <button
             className="absolute -top-5 -right-5 font-primary text-sm text-gray-300"

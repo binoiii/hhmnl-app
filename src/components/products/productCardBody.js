@@ -3,15 +3,26 @@ import PropTypes from "prop-types"
 import { connect } from "react-redux"
 
 import Modal from "../modal"
-import OrderModal from "../order/orderModal"
+import OrderModalContainer from "../order/orderModalContainer"
 
 import { createOrder } from "../../redux/order/orderActions"
 
-const ProductBody = ({ productName, price, descriptions, createOrder }) => {
+const ProductCardBody = ({
+  productName,
+  price,
+  descriptions,
+  createOrder,
+  orders,
+}) => {
   const [show, setShow] = useState(false)
+
+  const order = orders.orders.find(order => order.productName === productName)
+
+  const isOrdered = typeof order !== "undefined" ? order.isOrdered : false
 
   const productDetails = {
     isSubmitted: false,
+    isOrdered: true,
     productName,
     quantity: 1,
     engraveDetails: [
@@ -23,9 +34,11 @@ const ProductBody = ({ productName, price, descriptions, createOrder }) => {
     ],
   }
 
-  const handleHide = () => setShow(false)
+  const handleHide = () => {
+    setShow(false)
+  }
   const handleShow = () => {
-    createOrder(productDetails)
+    !isOrdered && createOrder(productDetails)
     setShow(true)
   }
 
@@ -44,17 +57,16 @@ const ProductBody = ({ productName, price, descriptions, createOrder }) => {
         <p className="my-4 font-primary text-orange-450 font-medium text-center">
           {`₱${price}`}
         </p>
-        <div
-          className="py-4 w-full bg-orange-450 font-primary text-xs text-white uppercase text-center tracking-wider cursor-pointer"
+        <button
+          className="py-4 w-full bg-orange-450 font-primary text-xs text-white uppercase text-center tracking-wider outline-none focus:outline-none cursor-pointer"
           onClick={handleShow}
           onKeyDown={handleShow}
-          role="button"
         >
           grab now
-        </div>
+        </button>
       </div>
       <Modal show={show} onHide={handleHide}>
-        <OrderModal
+        <OrderModalContainer
           productName={productName}
           handleHide={handleHide}
           price={price}
@@ -64,15 +76,20 @@ const ProductBody = ({ productName, price, descriptions, createOrder }) => {
   )
 }
 
+const mapStateToProps = ({ orders }) => ({
+  orders,
+})
+
 const mapDispatchToProps = dispatch => ({
   createOrder: orderDetails => dispatch(createOrder(orderDetails)),
 })
 
-ProductBody.propTypes = {
+ProductCardBody.propTypes = {
   productName: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   descriptions: PropTypes.array.isRequired,
   createOrder: PropTypes.func.isRequired,
+  orders: PropTypes.object.isRequired,
 }
 
-export default connect(null, mapDispatchToProps)(ProductBody)
+export default connect(mapStateToProps, mapDispatchToProps)(ProductCardBody)

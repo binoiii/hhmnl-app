@@ -3,7 +3,7 @@ import { connect } from "react-redux"
 
 import ProductCard from "./productCard"
 
-const Products = ({ products: { products } }) => {
+const ProductsContainer = ({ products: { products } }) => {
   return (
     <div
       id="products"
@@ -29,4 +29,4 @@ const mapStateToProps = ({ products }) => ({
   products,
 })
 
-export default connect(mapStateToProps)(Products)
+export default connect(mapStateToProps)(ProductsContainer)

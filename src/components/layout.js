@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Navigation from "./navigation"
-import Cart from "./cart/cart"
+import Cart from "./cart/CartContainer"
 import SocialLinks from "./socialLinks"
 
 import "./styles/global.css"

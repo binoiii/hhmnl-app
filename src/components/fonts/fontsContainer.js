@@ -8,7 +8,13 @@ import { DropDown } from "../icons"
 import Fonts from "./fonts"
 import Font from "./font"
 
-const FontsDropdown = ({ productName, engraveID, name, updateDetails }) => {
+const FontsContainer = ({
+  productName,
+  engraveID,
+  engraveName,
+  font,
+  updateDetails,
+}) => {
   const fonts = [
     "font-Bernadette",
     "font-riztteen",
@@ -33,15 +39,15 @@ const FontsDropdown = ({ productName, engraveID, name, updateDetails }) => {
   ]
 
   const [isOpen, setIsOpen] = useState(false)
-  const [fontSelected, setFontSelected] = useState("")
+  const [fontSelected, setFontSelected] = useState(font)
 
   const modifiedFont = fontSelected.replace("font-", "")
 
   const updateDetail = {
     productName,
-    id: engraveID,
-    engraveName: name,
-    font: fontSelected,
+    engraveID,
+    engraveName,
+    fontSelected,
   }
 
   useEffect(() => {
@@ -84,10 +90,10 @@ const mapDispatchToProps = dispatch => ({
   updateDetails: updateDetail => dispatch(updateDetails(updateDetail)),
 })
 
-FontsDropdown.propTypes = {
+FontsContainer.propTypes = {
   productName: PropTypes.string.isRequired,
   engraveID: PropTypes.number.isRequired,
-  name: PropTypes.string,
+  engraveName: PropTypes.string,
 }
 
-export default connect(null, mapDispatchToProps)(FontsDropdown)
+export default connect(null, mapDispatchToProps)(FontsContainer)

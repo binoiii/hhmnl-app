@@ -3,6 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     letterSpacing: {
+      wide: ".025em",
       wider: ".05em",
       widest: ".3em",
     },
