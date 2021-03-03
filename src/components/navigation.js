@@ -39,7 +39,7 @@ const Nav = () => {
             <Link
               className="ml-10 sm:ml-14 md:ml-12 flex items-center text-gray-500 transition duration-300 ease-out hover:text-orange-450"
               activeClassName="text-orange-450"
-              to="/checkout"
+              to="/contact"
             >
               <Email className="mr-2" size="1.4rem" />
               <span className="font-primary text-sm tracking-wide hidden md:block">
@@ -49,7 +49,7 @@ const Nav = () => {
             <Link
               className="ml-10 sm:ml-14 md:ml-12 md:ml-18 flex items-center text-gray-500 transition duration-300 ease-out hover:text-orange-450"
               activeClassName="font-primary text-orange-450"
-              to="/contact"
+              to="/"
             >
               <ShoppingCart className="mr-2" size="1.4rem" />
               <span className="font-primary text-sm tracking-wide hidden md:block">

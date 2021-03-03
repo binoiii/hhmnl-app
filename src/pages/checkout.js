@@ -2,15 +2,15 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import TotalCounter from "../components/totalCounter/totalCounter"
+import CheckoutContainer from "../components/checkout/checkoutContainer"
 
-const Checkout = () => {
+const CheckoutPage = () => {
   return (
     <Layout>
       <SEO title="Checkout" />
-      <TotalCounter />
+      <CheckoutContainer />
     </Layout>
   )
 }
 
-export default Checkout
+export default CheckoutPage
