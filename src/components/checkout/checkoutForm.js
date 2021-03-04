@@ -104,7 +104,7 @@ const CheckoutForm = () => {
             Submit Order
           </button>
         </div>
-        <div className="font-primary text-xs text-gray-600 text-center">
+        <div className="font-primary text-xs text-gray-600 text-center italic">
           <ul>
             <li>
               <span className="text-orange-450">*</span>We will contact you for

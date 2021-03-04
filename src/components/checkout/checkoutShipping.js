@@ -38,8 +38,9 @@ const CheckoutShipping = () => {
         <p className="font-primary">1 week</p>
       </div>
       <div className="text-sm text-center tracking-wide">
-        <h5 className="mb-2 font-primary text-orange-450 font-medium">
-          Express shipping is via Grab or other couriers.
+        <h5 className="mb-2 font-primary text-xs text-gray-600 italic">
+          <span className="text-orange-450">*</span>Express shipping is via Grab
+          or other couriers.
         </h5>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import { connect } from "react-redux"
 
@@ -36,6 +37,12 @@ const OrderSummaryContainer = ({
     engraveDetails,
   }
 
+  const handleDirectCheckout = () => {
+    handleHide()
+    addToCart(orderItemDetails)
+    clearOrder(submitDetails)
+  }
+
   const hanldeAddToCart = () => {
     handleHide()
     openCart()
@@ -60,9 +67,14 @@ const OrderSummaryContainer = ({
       </div>
       <OrderSummaryFonts engraveDetails={engraveDetails} />
       <div>
-        <button className="w-20 bg-white-450 font-primary text-xs text-orange-450 uppercase text-center tracking-wider outline-none focus:outline-none cursor-pointer">
-          checkout
-        </button>
+        <Link to="/checkout">
+          <button
+            className="w-20 bg-white-450 font-primary text-xs text-orange-450 uppercase text-center tracking-wider outline-none focus:outline-none cursor-pointer"
+            onClick={handleDirectCheckout}
+          >
+            checkout
+          </button>
+        </Link>
         <span className="mx-2 font-primary text-xs">or</span>
         <OrderModifyButton productName={productName} />
         <button

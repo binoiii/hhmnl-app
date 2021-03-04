@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import CartEngraveDetails from "./cartEngraveDetails"
+
 const CartItemSummary = ({ orders }) => {
   return (
     <div className="w-full">
@@ -10,27 +12,52 @@ const CartItemSummary = ({ orders }) => {
       <table className="w-full">
         <thead>
           <tr>
-            <th className="font-primary text-sm text-orange-450 font-medium text-left">
+            <th className="font-primary text-sm text-orange-450 font-normal text-left">
               Product Name
             </th>
-            <th className="font-primary text-sm text-orange-450 font-medium">
+            <th className="font-primary text-sm text-orange-450 font-normal">
               Quantity
             </th>
-            <th className="font-primary text-sm text-orange-450 font-medium text-right">
+            <th className="font-primary text-sm text-orange-450 font-normal text-right">
               Price
             </th>
           </tr>
         </thead>
-        <tbody>
-          {orders &&
-            orders.map(order => (
-              <tr key={order.product}>
-                <td className="font-primary">{order.product}</td>
-                <td className="font-primary text-center">{order.quantity}</td>
-                <td className="font-primary text-center text-right">{`₱${order.totalPrice}`}</td>
+        {orders &&
+          orders.map((order, index) => (
+            <tbody key={order.product}>
+              <tr>
+                <td className="font-primary text-sm">{order.product}</td>
+                <td className="font-primary text-sm text-center">
+                  {order.quantity}
+                </td>
+                <td className="font-primary text-sm text-center text-right">{`₱${order.totalPrice}`}</td>
               </tr>
-            ))}
-        </tbody>
+              <tr>
+                <td>
+                  <table className="mb-4 w-full">
+                    <thead>
+                      <tr>
+                        <th className="font-primary text-sm text-orange-450 font-normal text-left">
+                          Name
+                        </th>
+                        <th className="font-primary text-sm text-orange-450 font-normal">
+                          Result
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {order &&
+                        order.engraveDetails &&
+                        order.engraveDetails.map((details, i) => (
+                          <CartEngraveDetails key={i} details={details} />
+                        ))}
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          ))}
       </table>
     </div>
   )

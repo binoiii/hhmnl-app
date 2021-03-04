@@ -5,7 +5,7 @@ const CartTotal = ({ cart }) => {
   const { totalQuantity, totalPrice } = cart
 
   return (
-    <div className="mb-16 w-full">
+    <div className="mb-8 w-full">
       <div className="flex justify-between">
         <h3 className="font-primary">Subtotal</h3>
         <p className="font-primary text-orange-450">{`₱${totalPrice}`}</p>

@@ -36,7 +36,7 @@ const CheckoutPaymentMethods = () => {
       <div className="grid grid-cols-3 grid-rows-2 grid-flow-col gap-2">
         {methods &&
           methods.map(({ method, img }) => (
-            <div className="mx-auto w-16">
+            <div key={method} className="mx-auto w-16">
               <img alt={method} src={img} />
             </div>
           ))}

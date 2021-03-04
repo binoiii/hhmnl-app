@@ -11,26 +11,29 @@ const cartReducer = (state = cart, action) => {
     case ADD_TO_CART: {
       const orderToCart = action.payload
 
+      const cartItemExist = state.orders.find(
+        order => order.product === orderToCart.product
+      )
+
       return {
         ...state,
         totalPrice: state.totalPrice + orderToCart.totalPrice,
         totalQuantity: state.totalQuantity + orderToCart.quantity,
-        orders:
-          state.orders.length > 0
-            ? state.orders.map(order =>
-                order.product === orderToCart.product
-                  ? {
-                      ...order,
-                      totalPrice: order.totalPrice + orderToCart.totalPrice,
-                      quantity: order.quantity + orderToCart.quantity,
-                      engraveDetails: [
-                        ...order.engraveDetails,
-                        orderToCart.engraveDetails,
-                      ],
-                    }
-                  : order
-              )
-            : [...state.orders, orderToCart],
+        orders: cartItemExist
+          ? state.orders.map(order =>
+              order.product === orderToCart.product
+                ? {
+                    ...order,
+                    totalPrice: order.totalPrice + orderToCart.totalPrice,
+                    quantity: order.quantity + orderToCart.quantity,
+                    engraveDetails: [
+                      ...order.engraveDetails,
+                      ...orderToCart.engraveDetails,
+                    ],
+                  }
+                : order
+            )
+          : [...state.orders, orderToCart],
       }
     }
     default:

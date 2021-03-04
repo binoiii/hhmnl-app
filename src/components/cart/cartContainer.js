@@ -34,7 +34,7 @@ const CartContainer = ({ controls, hideCart, cart }) => {
       <div className="bg-white col-span-2 relative">
         <CartSummary cart={cart} handleHideCart={handleHideCart} />
         <div className="w-full absolute bottom-0">
-          <ContinueButton handleHideCart={handleHideCart} />
+          <ContinueButton handleHideCart={handleHideCart} inCheckout={true} />
           {isOrder && <CheckoutButton handleHideCart={handleHideCart} />}
         </div>
       </div>
