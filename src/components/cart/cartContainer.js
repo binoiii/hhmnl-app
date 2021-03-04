@@ -8,7 +8,7 @@ import CartSummary from "./cartSummary"
 import ContinueButton from "../utilities/continueButton"
 import CheckoutButton from "../utilities/checkoutButton"
 
-const CartContainer = ({ controls, hideCart, cart }) => {
+const CartContainer = ({ controls, hideCart, cart, inCheckout }) => {
   const { isCartOpen } = controls
   const { orders } = cart
   const isOrder = orders.length > 0
@@ -34,7 +34,10 @@ const CartContainer = ({ controls, hideCart, cart }) => {
       <div className="bg-white col-span-2 relative">
         <CartSummary cart={cart} handleHideCart={handleHideCart} />
         <div className="w-full absolute bottom-0">
-          <ContinueButton handleHideCart={handleHideCart} inCheckout={true} />
+          <ContinueButton
+            handleHideCart={handleHideCart}
+            inCheckout={inCheckout}
+          />
           {isOrder && <CheckoutButton handleHideCart={handleHideCart} />}
         </div>
       </div>
@@ -50,6 +53,7 @@ const mapDispatchToProps = dispatch => ({
 CartContainer.propTypes = {
   cart: PropTypes.object.isRequired,
   controls: PropTypes.object.isRequired,
+  inCheckout: PropTypes.bool,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(CartContainer)

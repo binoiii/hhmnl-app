@@ -12,7 +12,7 @@ import {
 } from "react-icons/ai"
 import { BiArrowBack, BiShoppingBag } from "react-icons/bi"
 import { FiMail } from "react-icons/fi"
-import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io"
+import { IoIosArrowUp, IoIosArrowDown, IoIosArrowForward } from "react-icons/io"
 import { BsPlusSquare } from "react-icons/bs"
 
 export const Home = ({ className, size }) => (
@@ -132,21 +132,6 @@ BackToTop.propTypes = {
   size: PropTypes.string,
 }
 
-export const DropDown = ({ className, size }) => (
-  <IconContext.Provider value={{ className, size }}>
-    <IoIosArrowDown />
-  </IconContext.Provider>
-)
-
-DropDown.defaultProps = {
-  className: "text-base text-black",
-}
-
-DropDown.propTypes = {
-  className: PropTypes.string,
-  size: PropTypes.string,
-}
-
 export const Bag = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
     <BiShoppingBag />
@@ -173,6 +158,36 @@ Add.defaultProps = {
 }
 
 Add.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const DropDown = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <IoIosArrowDown />
+  </IconContext.Provider>
+)
+
+DropDown.defaultProps = {
+  className: "text-base text-black",
+}
+
+DropDown.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const Hidden = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <IoIosArrowForward />
+  </IconContext.Provider>
+)
+
+Hidden.defaultProps = {
+  className: "text-base text-black",
+}
+
+Hidden.propTypes = {
   className: PropTypes.string,
   size: PropTypes.string,
 }

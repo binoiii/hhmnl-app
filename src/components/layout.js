@@ -2,17 +2,17 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Navigation from "./navigation"
-import Cart from "./cart/CartContainer"
+import CartContainer from "./cart/CartContainer"
 import SocialLinks from "./socialLinks"
 
 import "./styles/global.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, inCheckout }) => {
   return (
     <>
       <div>
         <Navigation />
-        <Cart />
+        <CartContainer inCheckout={inCheckout} />
         <SocialLinks />
         <main>{children}</main>
         <footer className="w-full font-primary text-xs text-gray-300 text-center italic">
@@ -25,6 +25,7 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  inCheckout: PropTypes.bool,
 }
 
 export default Layout
