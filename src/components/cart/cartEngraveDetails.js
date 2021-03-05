@@ -40,7 +40,7 @@ const CartEngraveDetails = ({
               <div className="relative" key={index}>
                 <p className={`${details.font}`}>{details.name}</p>
                 <button
-                  className="mt-1 absolute top-0 right-0"
+                  className="mt-1 absolute top-0 right-0 outline-none focus:outline-none"
                   onClick={() =>
                     removeItem({
                       id: details.engraveID,

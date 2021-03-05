@@ -19,7 +19,7 @@ const CartItem = ({ order }) => {
             onClick={handleShowDetails}
           >
             <Hidden
-              className={`text-sm text-orange-450 transition duration-200 ease-out  transform ${
+              className={`text-sm text-orange-450 transition duration-200 ease-out transform ${
                 (isDetailsShown && "rotate-90") || "rotate-0"
               }`}
             />
