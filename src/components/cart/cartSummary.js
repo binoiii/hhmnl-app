@@ -6,9 +6,8 @@ import CartTotal from "./cartTotal"
 import CartItemSummary from "./cartItemSummary"
 import { Add } from "../icons"
 
-const CartSummary = ({ cart, handleHideCart }) => {
+const CartSummary = ({ cart, isOrder, handleHideCart }) => {
   const { orders } = cart
-  const isOrder = orders.length > 0
 
   return (
     <div className="m-8">
@@ -40,6 +39,7 @@ const CartSummary = ({ cart, handleHideCart }) => {
 
 CartSummary.propTypes = {
   cart: PropTypes.object.isRequired,
+  isOrder: PropTypes.bool.isRequired,
 }
 
 export default CartSummary

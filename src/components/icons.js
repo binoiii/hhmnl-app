@@ -14,6 +14,7 @@ import { BiArrowBack, BiShoppingBag } from "react-icons/bi"
 import { FiMail } from "react-icons/fi"
 import { IoIosArrowUp, IoIosArrowDown, IoIosArrowForward } from "react-icons/io"
 import { BsPlusSquare } from "react-icons/bs"
+import { FiMinusSquare } from "react-icons/fi"
 
 export const Home = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
@@ -188,6 +189,21 @@ Hidden.defaultProps = {
 }
 
 Hidden.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const Minus = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <FiMinusSquare />
+  </IconContext.Provider>
+)
+
+Minus.defaultProps = {
+  className: "text-base text-black",
+}
+
+Minus.propTypes = {
   className: PropTypes.string,
   size: PropTypes.string,
 }

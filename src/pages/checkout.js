@@ -6,7 +6,7 @@ import CheckoutContainer from "../components/checkout/checkoutContainer"
 
 const CheckoutPage = () => {
   return (
-    <Layout inCheckout={true}>
+    <Layout>
       <SEO title="Checkout" />
       <CheckoutContainer />
     </Layout>

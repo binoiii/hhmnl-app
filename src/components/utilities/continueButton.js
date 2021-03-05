@@ -5,24 +5,10 @@ import PropTypes from "prop-types"
 
 import { BackIcon } from "../icons"
 
-const ContinueButton = ({ handleHideCart, inCheckout }) => {
+const ContinueButton = ({ handleHideCart, inHome }) => {
   return (
     <>
-      {(inCheckout && (
-        <div>
-          <Link to="/">
-            <button
-              className="py-4 w-full bg-orange-450 font-primary text-xs text-white uppercase tracking-wider outline-none focus:outline-none cursor-pointer"
-              onClick={handleHideCart}
-            >
-              <div className="flex items-center justify-center">
-                <BackIcon className="text-white mr-2" />
-                <span>continue shopping</span>
-              </div>
-            </button>
-          </Link>
-        </div>
-      )) || (
+      {(inHome && (
         <div>
           <LinkScroll to="products" smooth duration={500}>
             <button
@@ -36,6 +22,20 @@ const ContinueButton = ({ handleHideCart, inCheckout }) => {
             </button>
           </LinkScroll>
         </div>
+      )) || (
+        <div>
+          <Link to="/">
+            <button
+              className="py-4 w-full bg-orange-450 font-primary text-xs text-white uppercase tracking-wider outline-none focus:outline-none cursor-pointer"
+              onClick={handleHideCart}
+            >
+              <div className="flex items-center justify-center">
+                <BackIcon className="text-white mr-2" />
+                <span>continue shopping</span>
+              </div>
+            </button>
+          </Link>
+        </div>
       )}
     </>
   )
@@ -43,7 +43,7 @@ const ContinueButton = ({ handleHideCart, inCheckout }) => {
 
 ContinueButton.propTypes = {
   handleHideCart: PropTypes.func.isRequired,
-  inCheckout: PropTypes.bool,
+  inHome: PropTypes.bool,
 }
 
 export default ContinueButton

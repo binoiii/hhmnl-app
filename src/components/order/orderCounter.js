@@ -1,6 +1,7 @@
 import React from "react"
 import { connect } from "react-redux"
 import PropTypes from "prop-types"
+import { v4 as uuidv4 } from "uuid"
 
 import {
   addQuantity,
@@ -20,7 +21,7 @@ const OrderCounter = ({
   const handleSubtract = () => {
     if (quantity > 1) {
       subtractQuantity({ productName, quantity: 1 })
-      removeEngraveDetails({ productName, id: quantity })
+      removeEngraveDetails({ productName })
     }
   }
 
@@ -29,7 +30,7 @@ const OrderCounter = ({
     addEngraveDetails({
       productName,
       engraveDetail: {
-        engraveID: quantity + 1,
+        engraveID: uuidv4(),
         name: "",
         font: "",
       },

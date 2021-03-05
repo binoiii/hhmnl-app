@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { connect } from "react-redux"
+import { v4 as uuidv4 } from "uuid"
 
 import Modal from "../modal"
 import OrderModalContainer from "../order/orderModalContainer"
@@ -27,7 +28,7 @@ const ProductCardBody = ({
     quantity: 1,
     engraveDetails: [
       {
-        engraveID: 1,
+        engraveID: uuidv4(),
         name: "",
         font: "",
       },

@@ -69,16 +69,14 @@ const orderReducer = (state = initialState, action) => {
       }
     }
     case REMOVE_ENGRAVE_DETAILS: {
-      const { productName, id } = action.payload
+      const { productName } = action.payload
       return {
         ...state,
         orders: state.orders.map(order =>
           order.productName === productName
             ? {
                 ...order,
-                engraveDetails: order.engraveDetails.filter(
-                  detail => detail.engraveID !== id
-                ),
+                engraveDetails: order.engraveDetails.slice(0, -1),
               }
             : order
         ),

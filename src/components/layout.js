@@ -7,12 +7,12 @@ import SocialLinks from "./socialLinks"
 
 import "./styles/global.css"
 
-const Layout = ({ children, inCheckout }) => {
+const Layout = ({ children, inHome }) => {
   return (
     <>
       <div>
         <Navigation />
-        <CartContainer inCheckout={inCheckout} />
+        <CartContainer inHome={inHome} />
         <SocialLinks />
         <main>{children}</main>
         <footer className="w-full font-primary text-xs text-gray-300 text-center italic">
@@ -25,7 +25,7 @@ const Layout = ({ children, inCheckout }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  inCheckout: PropTypes.bool,
+  inHome: PropTypes.bool,
 }
 
 export default Layout

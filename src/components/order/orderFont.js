@@ -6,9 +6,13 @@ import FontsContainer from "../fonts/fontsContainer"
 
 const OrderFont = ({ orders, engraveID, productName }) => {
   const order = orders.orders.find(order => order.productName === productName)
+
   const { font, name } = order.engraveDetails
     ? order.engraveDetails.find(detail => detail.engraveID === engraveID)
     : ""
+
+  const orderNumber =
+    order.engraveDetails.findIndex(order => order.engraveID === engraveID) + 1
 
   const [engraveName, setName] = useState(name)
 
@@ -17,7 +21,7 @@ const OrderFont = ({ orders, engraveID, productName }) => {
   return (
     <div className="mb-4 mx-2 flex flex-col items-center">
       <h5 className="mb-2 self-start font-primary text-xs text-orange-450">
-        {`${productName} # ${engraveID}`}
+        {`${productName} # ${orderNumber}`}
       </h5>
       <div className="flex">
         <div className="mr-4 flex flex-col">
@@ -67,7 +71,7 @@ const mapStateToProps = ({ orders }) => ({ orders })
 
 OrderFont.propTypes = {
   orders: PropTypes.object.isRequired,
-  engraveID: PropTypes.number.isRequired,
+  engraveID: PropTypes.string.isRequired,
   productName: PropTypes.string.isRequired,
 }
 

@@ -92,7 +92,7 @@ const mapDispatchToProps = dispatch => ({
 
 FontsContainer.propTypes = {
   productName: PropTypes.string.isRequired,
-  engraveID: PropTypes.number.isRequired,
+  engraveID: PropTypes.string.isRequired,
   engraveName: PropTypes.string,
 }
 

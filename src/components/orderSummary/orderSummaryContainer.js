@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import { connect } from "react-redux"
+import { v4 as uuidv4 } from "uuid"
 
 import OrderModifyButton from "./orderModifyButton"
 import OrderSummaryFonts from "./orderSummaryFonts"
@@ -31,10 +32,13 @@ const OrderSummaryContainer = ({
   const totalPrice = quantity * price
 
   const orderItemDetails = {
-    product,
-    totalPrice,
-    quantity,
-    engraveDetails,
+    orderID: uuidv4(),
+    details: {
+      product,
+      totalPrice,
+      quantity,
+      engraveDetails,
+    },
   }
 
   const handleDirectCheckout = () => {
