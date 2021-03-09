@@ -5,11 +5,17 @@ import ProductCardBody from "./productCardBody"
 import ProductCardImage from "./productCardImage"
 
 const ProductCard = ({ productDetails }) => {
-  const { productName, price, descriptions } = productDetails
+  const {
+    productName,
+    thumbImage,
+    price,
+    descriptions,
+    images,
+  } = productDetails
 
   return (
     <div className="mx-8 w-72 shadow-xl">
-      <ProductCardImage />
+      <ProductCardImage thumbImage={thumbImage} images={images} />
       <ProductCardBody
         productName={productName}
         price={price}

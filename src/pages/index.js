@@ -6,14 +6,15 @@ import SEO from "../components/seo"
 import ProductsContainer from "../components/products/productsContainer"
 import Hero from "../components/hero/hero"
 
-const Index = () => (
-  <Layout inHome={true}>
-    <SEO title="Home" />
-    <Hero />
-    <ProductsContainer />
-  </Layout>
-)
-
+const Index = () => {
+  return (
+    <Layout inHome={true}>
+      <SEO title="Home" />
+      <Hero />
+      <ProductsContainer />
+    </Layout>
+  )
+}
 Index.propTypes = {
   inHome: PropTypes.bool,
 }

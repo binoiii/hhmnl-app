@@ -25,19 +25,19 @@ const Modal = ({ children, show, onHide }) => {
         tabIndex={0}
       >
         <div
-          className="outline-none focus:outline-none relative w-lg bg-white"
+          className="outline-none focus:outline-none relative bg-white"
           onClick={e => e.stopPropagation()}
           onKeyDown={e => e.stopPropagation()}
           role="button"
           tabIndex={-1}
         >
           <button
-            className="absolute -top-5 -right-5 font-primary text-sm text-gray-300"
+            className="absolute -top-5 -right-5 font-primary text-sm text-gray-300 outline-none focus:outline-none"
             onClick={onHide}
           >
             X
           </button>
-          <div className="h-96 w-lg">{children}</div>
+          <div>{children}</div>
         </div>
       </div>
     )
@@ -45,7 +45,9 @@ const Modal = ({ children, show, onHide }) => {
 }
 
 Modal.propTypes = {
+  children: PropTypes.node,
   show: PropTypes.bool.isRequired,
+  onHide: PropTypes.func.isRequired,
 }
 
 export default Modal

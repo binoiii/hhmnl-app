@@ -125,3 +125,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+next-btn {
+  @apply text-white;
+}

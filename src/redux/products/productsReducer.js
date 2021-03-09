@@ -5,6 +5,24 @@ const intitialState = {
     {
       productID: 1,
       productName: "Bamboo Tumbler",
+      thumbImage: {
+        alt: "Bamboo Tumbler",
+        image:
+          "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
+      },
+
+      images: [
+        {
+          alt: "Bamboo Tumbler1",
+          image:
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+        },
+        {
+          alt: "Bamboo Tumbler1",
+          image:
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+        },
+      ],
       price: 499,
       quantity: 100,
       descriptions: ["10-12 Hours for Hot or Cold", "450ml"],
@@ -12,6 +30,23 @@ const intitialState = {
     {
       productID: 2,
       productName: "Bamboo Mug",
+      thumbImage: {
+        alt: "Bamboo Mug",
+        image:
+          "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
+      },
+      images: [
+        {
+          alt: "Bamboo Mug1",
+          image:
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+        },
+        {
+          alt: "Bamboo Mug2",
+          image:
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+        },
+      ],
       price: 469,
       quantity: 100,
       descriptions: ["Stainless Steel Interior", "400ml"],

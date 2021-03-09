@@ -15,6 +15,7 @@ import { FiMail } from "react-icons/fi"
 import { IoIosArrowUp, IoIosArrowDown, IoIosArrowForward } from "react-icons/io"
 import { BsPlusSquare } from "react-icons/bs"
 import { FiMinusSquare } from "react-icons/fi"
+import { GrNext } from "react-icons/gr"
 
 export const Home = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
@@ -204,6 +205,21 @@ Minus.defaultProps = {
 }
 
 Minus.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const Next = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <GrNext />
+  </IconContext.Provider>
+)
+
+Next.defaultProps = {
+  className: "text-base text-white",
+}
+
+Next.propTypes = {
   className: PropTypes.string,
   size: PropTypes.string,
 }
