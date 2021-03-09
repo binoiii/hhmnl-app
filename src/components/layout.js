@@ -6,8 +6,6 @@ import CartContainer from "./cart/cartContainer"
 import SocialLinks from "./socialLinks"
 
 import "./styles/global.css"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
 
 const Layout = ({ children, inHome }) => {
   return (

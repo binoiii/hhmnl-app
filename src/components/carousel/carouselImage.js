@@ -4,7 +4,11 @@ import PropTypes from "prop-types"
 const CarouselImage = ({ img }) => {
   const { alt, image } = img
 
-  return <img alt={alt} src={image} />
+  return (
+    <div className="w-md">
+      <img alt={alt} src={image} />
+    </div>
+  )
 }
 
 CarouselImage.propTypes = {

@@ -11,11 +11,14 @@ import {
   AiOutlineInstagram,
 } from "react-icons/ai"
 import { BiArrowBack, BiShoppingBag } from "react-icons/bi"
-import { FiMail } from "react-icons/fi"
-import { IoIosArrowUp, IoIosArrowDown, IoIosArrowForward } from "react-icons/io"
+import { FiMail, FiMinusSquare } from "react-icons/fi"
+import {
+  IoIosArrowBack,
+  IoIosArrowUp,
+  IoIosArrowDown,
+  IoIosArrowForward,
+} from "react-icons/io"
 import { BsPlusSquare } from "react-icons/bs"
-import { FiMinusSquare } from "react-icons/fi"
-import { GrNext } from "react-icons/gr"
 
 export const Home = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
@@ -211,7 +214,22 @@ Minus.propTypes = {
 
 export const Next = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
-    <GrNext />
+    <IoIosArrowForward />
+  </IconContext.Provider>
+)
+
+Next.defaultProps = {
+  className: "text-base text-white",
+}
+
+Next.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const Prev = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <IoIosArrowBack />
   </IconContext.Provider>
 )
 

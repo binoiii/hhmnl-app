@@ -55,6 +55,11 @@ module.exports = {
       fontSize: {
         xxs: ".5rem",
       },
+      translate: {
+        full1: "0%;",
+        full2: "-100%;",
+        full3: "-200%;",
+      },
     },
   },
   variants: {

@@ -1,34 +1,48 @@
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
-import Slider from "react-slick"
 
 import CarouselImage from "./carouselImage"
-import { Next } from "../icons"
+import CarouselNextButton from "./carouselNextButton"
+import PrevNextButton from "./carouselPrevButton"
+import CarouselDots from "./carouselDots"
 
 const Carousel = ({ images }) => {
-  const settings = {
-    swipeToSlide: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    appendDots: dots => (
-      <div
-        style={{
-          bottom: "0px",
-        }}
-      >
-        <ul style={{ margin: "0px" }}> {dots} </ul>
-      </div>
-    ),
-  }
+  const [activeImage, setActiveImage] = useState(1)
+
+  const totalImages = images.length
+
+  const handleNext = () =>
+    activeImage < totalImages
+      ? setActiveImage(activeImage + 1)
+      : setActiveImage(1)
+
+  const handlePrev = () =>
+    activeImage > 1
+      ? setActiveImage(activeImage - 1)
+      : setActiveImage(totalImages)
+
+  const handleSetImage = e => setActiveImage(e)
 
   return (
-    <div className="md:w-md bg-orange-450">
-      <Slider {...settings}>
+    <div className="relative">
+      <CarouselNextButton handleNext={handleNext} />
+      <PrevNextButton handlePrev={handlePrev} />
+      <CarouselDots
+        activeImage={activeImage}
+        handleSetImage={handleSetImage}
+        images={images}
+      />
+      <div className="w-md flex overflow-hidden">
         {images &&
-          images.map((img, ind) => <CarouselImage key={ind} img={img} />)}
-      </Slider>
+          images.map((img, ind) => (
+            <div
+              className={`transform translate-x-full${activeImage} transition duration-300 ease-out`}
+              key={ind}
+            >
+              <CarouselImage img={img} />
+            </div>
+          ))}
+      </div>
     </div>
   )
 }

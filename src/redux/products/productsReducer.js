@@ -18,9 +18,14 @@ const intitialState = {
             "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
         },
         {
-          alt: "Bamboo Tumbler1",
+          alt: "Bamboo Tumbler2",
           image:
-            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler2.jpg",
+        },
+        {
+          alt: "Bamboo Tumbler3",
+          image:
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler3.jpg",
         },
       ],
       price: 499,
