@@ -1,29 +1,16 @@
 import React, { useState } from "react"
-import { useStaticQuery, graphql } from "gatsby"
+
 import Img from "gatsby-image"
 import PropTypes from "prop-types"
 
 import AddToCartButton from "../utilities/addToCartButton"
 
-const OrderItem = ({ productName, price, engraveDetails }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      productImage: file(relativePath: { eq: "products/bamboo-tumbler1.jpg" }) {
-        name
-        childImageSharp {
-          fluid(maxWidth: 300, quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
-  const {
-    name,
-    childImageSharp: { fluid },
-  } = data.productImage
-
+const OrderItem = ({
+  productName,
+  price,
+  engraveDetails,
+  thumbImage: { alt, image },
+}) => {
   const [promptMessage, setPromptMessage] = useState("")
 
   const missingDataContainer = engraveDetails.filter(
@@ -50,7 +37,7 @@ const OrderItem = ({ productName, price, engraveDetails }) => {
 
   return (
     <div className="h-full border-r relative">
-      <Img alt={name} fluid={fluid} className="w-full" />
+      <img alt={alt} src={image} className="w-full" />
       <div className="flex flex-col">
         <h5 className="py-4 font-primary text-sm font-medium uppercase text-shadow-xs text-center tracking-wider">
           {productName}
@@ -77,6 +64,7 @@ OrderItem.propTypes = {
   productName: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   engraveDetails: PropTypes.array.isRequired,
+  thumbImage: PropTypes.object.isRequired,
 }
 
 OrderItem.defaultProps = {

@@ -20,6 +20,7 @@ const ProductCard = ({ productDetails }) => {
         productName={productName}
         price={price}
         descriptions={descriptions}
+        thumbImage={thumbImage}
       />
     </div>
   )

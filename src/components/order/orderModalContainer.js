@@ -8,7 +8,13 @@ import OrderCounter from "./orderCounter"
 import OrderFormFont from "./orderFormFont"
 import OrderSummaryContainer from "../orderSummary/orderSummaryContainer"
 
-const OrderModalContainer = ({ productName, price, orders, handleHide }) => {
+const OrderModalContainer = ({
+  productName,
+  price,
+  orders,
+  handleHide,
+  thumbImage,
+}) => {
   const { quantity, engraveDetails, isSubmitted } = orders.orders.find(
     product => product.productName === productName
   )
@@ -34,6 +40,7 @@ const OrderModalContainer = ({ productName, price, orders, handleHide }) => {
                 productName={productName}
                 price={price}
                 engraveDetails={engraveDetails}
+                thumbImage={thumbImage}
               />
             </div>
             <div className="flex flex-col items-center col-span-3">

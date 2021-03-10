@@ -14,6 +14,7 @@ const ProductCardBody = ({
   descriptions,
   createOrder,
   orders,
+  thumbImage,
 }) => {
   const [show, setShow] = useState(false)
 
@@ -71,6 +72,7 @@ const ProductCardBody = ({
           productName={productName}
           handleHide={handleHide}
           price={price}
+          thumbImage={thumbImage}
         />
       </Modal>
     </>
