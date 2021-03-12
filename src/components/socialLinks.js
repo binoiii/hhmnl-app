@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import CartIcon from "./utilities/cartIcon"
 
@@ -29,21 +30,25 @@ const SocialLinks = () => {
   ]
 
   return (
-    <div className="md:ml-4 md:fixed md:top-1/2 md:transform md:-translate-y-1/2 z-40">
-      {/* <div className="mt-1 md:ml-0 block md:hidden">
-        <Img alt={fixed.originalName} fixed={fixed} />
-      </div> */}
-      <div className="flex flex-col justify-center">
+    <div className="md:ml-4 px-4 sm:px-8 md:px-0 h-16 md:h-auto flex items-center justify-between bg-white md:bg-transparent border-b border-gray-400 md:border-0 fixed top-0 left-0 right-0  md:fixed md:top-1/2 md:transform md:-translate-y-1/2 z-40">
+      <div className="mt-1 md:ml-0 block md:hidden">
+        <Link to="/">
+          <h1 className="font-secondary text-3xl text-orange-450 italic">
+            happyhandsmnl
+          </h1>
+        </Link>
+      </div>
+      <div className="flex md:flex-col justify-center items-center">
         {socials.map(({ social, icon, link }) => (
-          <div key={social} className="mb-8">
+          <div key={social} className="ml-10 sm:ml-14 md:ml-0 md:mb-8">
             <a href={link} rel="noopener noreferrer" target="_blank">
               {icon}
             </a>
           </div>
         ))}
-        <div>
+        <div className="hidden md:block">
           <CartIcon
-            className="text-orange-450 transform hover:scale-125 transition duration-300 ease-out"
+            className="mt-1.5 md:mt-0 text-orange-450 transform hover:scale-125 transition duration-300 ease-out"
             size="1.6rem"
           />
         </div>

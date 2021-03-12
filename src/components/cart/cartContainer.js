@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useRef } from "react"
 import { connect } from "react-redux"
 import PropTypes from "prop-types"
 
 import { hideCart } from "../../redux/controls/controlsActions"
+import { useConditionalLockScroll } from "../utilities/utilityFunctions"
 
 import CartSummary from "./cartSummary"
 import ContinueButton from "../utilities/continueButton"
@@ -12,6 +13,9 @@ const CartContainer = ({ controls, hideCart, cart, inHome }) => {
   const { isCartOpen } = controls
   const { orders } = cart
   const isOrder = orders.some(order => order.engraveDetails.length > 0)
+
+  const cartRef = useRef(null)
+  useConditionalLockScroll(cartRef, isCartOpen)
 
   const handleHideCart = () => {
     hideCart()
@@ -24,24 +28,26 @@ const CartContainer = ({ controls, hideCart, cart, inHome }) => {
       } transition duration-500 ease-out grid grid-cols-5 w-full h-full fixed top-0 bottom-0 left-0 right-0 z-50`}
     >
       <div
-        className="h-full w-full bg-black bg-opacity-70 col-span-3"
+        className="h-full w-full bg-black bg-opacity-70 outline-none focus:outline-none col-span-3"
         onClick={handleHideCart}
-        onKeyDown={handleHideCart}
+        onKeyDown={null}
         role="button"
         aria-label="close cart"
         tabIndex={0}
       ></div>
-      <div className="bg-white col-span-2 relative">
-        <CartSummary
-          cart={cart}
-          handleHideCart={handleHideCart}
-          isOrder={isOrder}
-        />
-        <div className="w-full absolute bottom-0">
-          <ContinueButton handleHideCart={handleHideCart} inHome={inHome} />
-          {isOrder && <CheckoutButton handleHideCart={handleHideCart} />}
+      {isCartOpen && (
+        <div ref={cartRef} className="bg-white col-span-2 relative">
+          <CartSummary
+            cart={cart}
+            handleHideCart={handleHideCart}
+            isOrder={isOrder}
+          />
+          <div className="w-full absolute bottom-0">
+            <ContinueButton handleHideCart={handleHideCart} inHome={inHome} />
+            {isOrder && <CheckoutButton handleHideCart={handleHideCart} />}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   )
 }

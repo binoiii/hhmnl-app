@@ -25,7 +25,7 @@ const HeroBg = ({ children }) => {
 
   return (
     <div>
-      <BackgroundImage className="h-sm md:h-lg" alt={name} fluid={fluid}>
+      <BackgroundImage className="h-md md:h-lg" alt={name} fluid={fluid}>
         {children}
       </BackgroundImage>
     </div>

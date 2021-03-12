@@ -36,12 +36,11 @@ const ProductCardBody = ({
     ],
   }
 
-  const handleHide = () => {
-    setShow(false)
-  }
+  const handleHide = () => setShow(false)
   const handleShow = () => {
     !isOrdered && createOrder(productDetails)
     setShow(true)
+    console.log("showing")
   }
 
   return (
@@ -62,19 +61,20 @@ const ProductCardBody = ({
         <button
           className="py-4 w-full bg-orange-450 font-primary text-xs text-white uppercase text-center tracking-wider outline-none focus:outline-none cursor-pointer"
           onClick={handleShow}
-          onKeyDown={handleShow}
         >
           grab now
         </button>
       </div>
-      <Modal show={show} onHide={handleHide}>
-        <OrderModalContainer
-          productName={productName}
-          handleHide={handleHide}
-          price={price}
-          thumbImage={thumbImage}
-        />
-      </Modal>
+      {show && (
+        <Modal onHide={handleHide}>
+          <OrderModalContainer
+            productName={productName}
+            handleHide={handleHide}
+            price={price}
+            thumbImage={thumbImage}
+          />
+        </Modal>
+      )}
     </>
   )
 }

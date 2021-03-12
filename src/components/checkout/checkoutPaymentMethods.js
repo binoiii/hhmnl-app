@@ -29,7 +29,7 @@ const CheckoutPaymentMethods = () => {
   ]
 
   return (
-    <div>
+    <div className="mb-16 md:mb-0">
       <h4 className="mb-4 font-primary text-lg text-orange-450 font-medium tracking-wide text-center">
         Payment Methods
       </h4>

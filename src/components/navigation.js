@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Home, UserIcon, ShoppingCart, Email } from "./icons"
+import { Home, UserIcon, Email } from "./icons"
+import CartIcon from "./utilities/cartIcon"
 
 const Nav = () => {
   return (
@@ -46,16 +47,12 @@ const Nav = () => {
                 Contact
               </span>
             </Link>
-            <Link
-              className="ml-10 sm:ml-14 md:ml-12 md:ml-18 flex items-center text-gray-500 transition duration-300 ease-out hover:text-orange-450"
-              activeClassName="font-primary text-orange-450"
-              to="/"
-            >
-              <ShoppingCart className="mr-2" size="1.4rem" />
-              <span className="font-primary text-sm tracking-wide hidden md:block">
-                Cart
-              </span>
-            </Link>
+            <div className="mt-1.5 ml-10 sm:ml-14 md:ml-12 self-center md:hidden">
+              <CartIcon
+                className="text-gray-500 transition duration-300 ease-out hover:text-orange-450"
+                size="1.4rem"
+              />
+            </div>
           </div>
         </nav>
       </header>

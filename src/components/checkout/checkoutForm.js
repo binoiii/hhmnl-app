@@ -8,7 +8,7 @@ const CheckoutForm = () => {
           <h4 className="mb-4 font-primary text-lg text-orange-450 font-medium tracking-wide">
             Contact Information
           </h4>
-          <div className="ml-4 mb-4">
+          <div className="ml-0 md:ml-4 mb-4">
             <div className="flex">
               <div className="mr-4 mb-4 min-w-0 flex flex-col flex-1">
                 <label
@@ -53,7 +53,7 @@ const CheckoutForm = () => {
           <h4 className="mb-4 font-primary text-lg text-orange-450 font-medium tracking-wide">
             Shipping Information
           </h4>
-          <div className="mb-4 ml-4">
+          <div className="ml-0 md:ml-4 mb-4">
             <div className="mb-4 flex flex-col">
               <label className="mr-2 font-primary text-sm" htmlFor="address">
                 Full Address
@@ -82,7 +82,7 @@ const CheckoutForm = () => {
           <h4 className="mb-4 font-primary text-lg text-orange-450 font-medium tracking-wide">
             Order Notes
           </h4>
-          <div className="ml-4">
+          <div className="ml-0 md:ml-4 mb-4">
             <div className="mb-8 flex flex-col">
               <label className="mr-2 font-primary text-sm" htmlFor="address">
                 Additional Notes
@@ -96,7 +96,7 @@ const CheckoutForm = () => {
             </div>
           </div>
         </div>
-        <div className="mb-4 flex justify-center">
+        <div className="mb-8 md:mb-4 flex justify-center">
           <button
             className="mx-auto py-4 w-48 bg-orange-450 font-primary text-xs text-white uppercase text-center tracking-wider outline-none focus:outline-none cursor-pointer"
             type="submit"
@@ -104,7 +104,7 @@ const CheckoutForm = () => {
             Submit Order
           </button>
         </div>
-        <div className="font-primary text-xs text-gray-600 text-center italic">
+        <div className="pb-8 md:pb-0 font-primary text-xs text-gray-600 text-center italic">
           <ul>
             <li>
               <span className="text-orange-450">*</span>We will contact you for

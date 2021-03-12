@@ -15,6 +15,7 @@ const CartEngraveDetails = ({
   const { price } = products.products.find(
     product => product.productName === order.product
   )
+
   return (
     <div>
       <div

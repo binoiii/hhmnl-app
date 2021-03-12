@@ -2,7 +2,7 @@ import React from "react"
 
 const CheckoutShipping = () => {
   return (
-    <div className="mb-16">
+    <div className="mt-16 md:mt-0 mb-16">
       <h4 className="mb-4 font-primary text-lg text-orange-450 font-medium tracking-wide text-center">
         Shipping Reminders
       </h4>

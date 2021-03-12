@@ -8,22 +8,23 @@ const ProductCardImage = ({ thumbImage: { alt, image }, images }) => {
   const [show, setShow] = useState(false)
 
   const handleShow = () => setShow(true)
-  const handleHide = () => setShow(false)
+  const handleHide = () => {
+    setShow(false)
+  }
 
   return (
     <>
-      <div
+      <button
         className="outline-none focus:outline-none cursor-pointer"
         onClick={handleShow}
-        onKeyDown={handleShow}
-        role="button"
-        tabIndex={0}
       >
         <img alt={alt} src={image} className="md:w-72" />
-      </div>
-      <Modal show={show} onHide={handleHide}>
-        <Carousel images={images} />
-      </Modal>
+      </button>
+      {show && (
+        <Modal onHide={handleHide}>
+          <Carousel images={images} />
+        </Modal>
+      )}
     </>
   )
 }

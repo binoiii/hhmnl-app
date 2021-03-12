@@ -8,8 +8,8 @@ const Font = ({ font, handleFontSelected }) => {
     <div
       className={`my-1 p-1 ${font} text-xs outline-none focus:outline-none cursor-pointer`}
       onClick={() => handleFontSelected(font)}
-      onKeyDown={() => handleFontSelected(font)}
       role="button"
+      onKeyDown={null}
       tabIndex={0}
     >
       {modifiedFont}

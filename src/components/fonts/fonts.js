@@ -6,8 +6,8 @@ const Fonts = ({ children, handleOpen }) => {
     <div
       className="p-2 flex flex-col justify-center items-center h-20 w-36 bg-white border outline-none focus:outline-none absolute top-9 overflow-y-scroll overscroll-contain"
       onClick={handleOpen}
-      onKeyDown={handleOpen}
       role="button"
+      onKeyDown={null}
       tabIndex={0}
     >
       <div className="h-full">{children}</div>
