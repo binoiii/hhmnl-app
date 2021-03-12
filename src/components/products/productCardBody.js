@@ -40,16 +40,15 @@ const ProductCardBody = ({
   const handleShow = () => {
     !isOrdered && createOrder(productDetails)
     setShow(true)
-    console.log("showing")
   }
 
   return (
-    <>
-      <div className="border-r border-l">
-        <h5 className="py-4 font-primary text-sm font-medium uppercase text-shadow-xs text-center tracking-wider">
+    <div className="flex-1">
+      <div className="h-full flex flex-col border-r border-l">
+        <h5 className="mx-2 py-4 font-primary text-sm font-medium uppercase text-shadow-xs text-center tracking-wider">
           {productName}
         </h5>
-        <ul className="font-primary text-xs text-center">
+        <ul className="flex flex-1 flex-col justify-center mx-2 font-primary text-xs text-center ">
           {descriptions &&
             descriptions.map(description => (
               <li key={description}>{description}</li>
@@ -75,7 +74,7 @@ const ProductCardBody = ({
           />
         </Modal>
       )}
-    </>
+    </div>
   )
 }
 

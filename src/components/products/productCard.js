@@ -14,7 +14,7 @@ const ProductCard = ({ productDetails }) => {
   } = productDetails
 
   return (
-    <div className="mx-8 w-72 shadow-xl">
+    <div className="mx-2 sm:mx-4 md:mx-8 mb-4 sm:mb-8 md:mb-16 w-40 sm:w-60 md:w-72 flex flex-col shadow-xl">
       <ProductCardImage thumbImage={thumbImage} images={images} />
       <ProductCardBody
         productName={productName}

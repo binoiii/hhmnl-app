@@ -7,12 +7,12 @@ const ProductsContainer = ({ products: { products } }) => {
   return (
     <div
       id="products"
-      className="md:mt-20 flex flex-col justify-center items-center"
+      className="mt-20 flex flex-col justify-center items-center"
     >
-      <h2 className="font-secondary text-orange-450 text-4xl italic">
+      <h2 className="mb-4 font-secondary text-orange-450 text-4xl italic">
         Products
       </h2>
-      <div className="md:m-8 flex">
+      <div className="m-2 flex flex-wrap justify-center">
         {products &&
           products.map(productDetails => (
             <ProductCard

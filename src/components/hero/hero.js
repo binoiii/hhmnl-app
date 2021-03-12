@@ -11,7 +11,7 @@ const Hero = () => {
           <h2 className="mx-4 md:mx-0 font-primary text-white text-4xl sm:text-5xl md:text-6xl text-shadow-lg uppercase text-center tracking-wider">
             make the switch
           </h2>
-          <div className="mt-4 md:mt-6 flex flex-row font-secondary text-white text-xl sm:text-3xl md:text-4xl italic text-shadow-xl tracking-wider">
+          <div className="mt-4 md:mt-6 flex flex-row font-secondary text-white text-xl sm:text-3xl md:text-4xl font-bold md:font-normal italic text-shadow-xl tracking-wider">
             <h3 className="mb-4">eco-friendly </h3>
             <span className="">&nbsp; . &nbsp;</span>
             <h3 className="mb-4">personalized</h3>

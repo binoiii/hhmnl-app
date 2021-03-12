@@ -11,7 +11,7 @@ const Index = () => {
     <Layout inHome={true}>
       <SEO title="Home" />
       <Hero />
-      {/* <ProductsContainer /> */}
+      <ProductsContainer />
     </Layout>
   )
 }
