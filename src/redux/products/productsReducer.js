@@ -8,24 +8,24 @@ const intitialState = {
       thumbImage: {
         alt: "Bamboo Tumbler",
         image:
-          "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
+          "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
       },
 
       images: [
         {
           alt: "Bamboo Tumbler1",
           image:
-            "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
         },
         {
           alt: "Bamboo Tumbler2",
           image:
-            "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler2.jpg",
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler2.jpg",
         },
         {
           alt: "Bamboo Tumbler3",
           image:
-            "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler3.jpg",
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler3.jpg",
         },
       ],
       price: 499,
@@ -38,18 +38,18 @@ const intitialState = {
       thumbImage: {
         alt: "Bamboo Mug",
         image:
-          "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
+          "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
       },
       images: [
         {
           alt: "Bamboo Mug1",
           image:
-            "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
         },
         {
           alt: "Bamboo Mug2",
           image:
-            "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
         },
       ],
       price: 469,
@@ -62,18 +62,18 @@ const intitialState = {
       thumbImage: {
         alt: "Bamboo Mug",
         image:
-          "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
+          "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
       },
       images: [
         {
           alt: "Bamboo Mug1",
           image:
-            "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
         },
         {
           alt: "Bamboo Mug2",
           image:
-            "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
         },
       ],
       price: 469,
@@ -86,18 +86,18 @@ const intitialState = {
       thumbImage: {
         alt: "Bamboo Mug",
         image:
-          "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
+          "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
       },
       images: [
         {
           alt: "Bamboo Mug1",
           image:
-            "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
         },
         {
           alt: "Bamboo Mug2",
           image:
-            "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
         },
       ],
       price: 469,
@@ -110,18 +110,18 @@ const intitialState = {
       thumbImage: {
         alt: "Bamboo Mug",
         image:
-          "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
+          "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
       },
       images: [
         {
           alt: "Bamboo Mug1",
           image:
-            "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
         },
         {
           alt: "Bamboo Mug2",
           image:
-            "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
         },
       ],
       price: 469,
@@ -134,18 +134,18 @@ const intitialState = {
       thumbImage: {
         alt: "Bamboo Mug",
         image:
-          "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
+          "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
       },
       images: [
         {
           alt: "Bamboo Mug1",
           image:
-            "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
         },
         {
           alt: "Bamboo Mug2",
           image:
-            "https://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+            "http://localhost:8000/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
         },
       ],
       price: 469,

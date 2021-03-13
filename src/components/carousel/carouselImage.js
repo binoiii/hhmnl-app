@@ -5,7 +5,7 @@ const CarouselImage = ({ img }) => {
   const { alt, image } = img
 
   return (
-    <div className="w-md">
+    <div className="w-sm md:w-md">
       <img alt={alt} src={image} />
     </div>
   )

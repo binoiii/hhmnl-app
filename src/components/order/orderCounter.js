@@ -46,7 +46,7 @@ const OrderCounter = ({
         -
       </button>
       <input
-        className="pl-2 md:pl-4 min-w-0 w-full border-t border-b border-orange-450 bg-white outline-none focus:outline-none text-center"
+        className="pl-2 md:pl-4 min-w-0 w-full text-sm md:text-base border-t border-b border-orange-450 bg-white outline-none focus:outline-none text-center"
         type="number"
         value={quantity}
         disabled

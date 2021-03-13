@@ -41,15 +41,16 @@ module.exports = {
         },
       },
       width: {
+        sm: "22rem",
         md: "30rem",
         lg: "40rem",
         xl: "60rem",
       },
       height: {
-        xxs: "14rem",
+        xxs: "18rem",
         xs: "21.5rem",
         sm: "26rem",
-        md: "32rem",
+        md: "30rem",
         lg: "40rem",
       },
       fontSize: {

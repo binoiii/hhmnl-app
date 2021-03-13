@@ -25,7 +25,7 @@ const Modal = ({ children, onHide }) => {
       tabIndex={0}
     >
       <div
-        className="justify-self-center self-center outline-none focus:outline-none relative"
+        className="m-auto outline-none focus:outline-none relative"
         onClick={e => e.stopPropagation()}
         role="button"
         onKeyDown={null}

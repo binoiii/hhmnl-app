@@ -25,7 +25,7 @@ const OrderFont = ({ orders, engraveID, productName }) => {
       </h5>
       <div className="flex">
         <div className="mr-4 flex flex-col">
-          <label className="font-primary text-xxs" htmlFor="name">
+          <label className="font-primary text-xs" htmlFor="name">
             Name
           </label>
           <input
@@ -38,7 +38,7 @@ const OrderFont = ({ orders, engraveID, productName }) => {
           />
         </div>
         <div className="flex flex-col">
-          <label className="font-primary text-xxs" htmlFor="font">
+          <label className="font-primary text-xs" htmlFor="font">
             Font
           </label>
           <FontsContainer
@@ -51,7 +51,7 @@ const OrderFont = ({ orders, engraveID, productName }) => {
       </div>
       <div className="mt-2">
         <div className="flex flex-col">
-          <label className="font-primary text-xxs" htmlFor="result">
+          <label className="font-primary text-xs" htmlFor="result">
             Result
           </label>
           <div
