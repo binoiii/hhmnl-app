@@ -5,7 +5,7 @@ import OrderFont from "./orderFont"
 const OrderFormFont = ({ productName, engraveDetails }) => {
   return (
     <div className="flex-1">
-      <div className="my-4 mx-8 w-80 h-80 overflow-y-auto overscroll-contain">
+      <div className="md:mx-8 pt-8 h-xs overflow-y-auto overscroll-contain">
         {engraveDetails &&
           engraveDetails.map(({ engraveID }) => (
             <OrderFont

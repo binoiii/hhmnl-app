@@ -18,21 +18,21 @@ const Modal = ({ children, onHide }) => {
   return (
     <div
       ref={modalRef}
-      className="flex justify-center items-center h-full w-full fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 z-50"
+      className="flex justify-center items-center h-full w-full fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 z-50 overflow-y-auto"
       onClick={onHide}
       role="button"
       onKeyDown={null}
       tabIndex={0}
     >
       <div
-        className="outline-none focus:outline-none relative bg-white"
+        className="justify-self-center self-center outline-none focus:outline-none relative"
         onClick={e => e.stopPropagation()}
         role="button"
         onKeyDown={null}
         tabIndex={0}
       >
         <button
-          className="absolute -top-5 -right-5 font-primary text-sm text-gray-300 outline-none focus:outline-none"
+          className="absolute -top-7 right-0 font-primary text-sm text-gray-300 outline-none focus:outline-none"
           onClick={onHide}
         >
           X

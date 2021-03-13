@@ -31,7 +31,7 @@ const OrderDetails = ({ productName, price, quantity, engraveDetails }) => {
   }
 
   return (
-    <div className="h-full flex flex-col">
+    <div className="h-full flex flex-col overflow-hidden">
       <OrderFormFont
         productName={productName}
         engraveDetails={engraveDetails}

@@ -38,15 +38,15 @@ const OrderCounter = ({
   }
 
   return (
-    <div className="flex mb-2">
+    <div className="flex md:mx-0 md:mb-6 min-w-0">
       <button
-        className="px-3 py-1 border border-orange-450 bg-orange-450 outline-none focus:outline-none text-white"
+        className="px-3 md:py-1 border border-orange-450 bg-orange-450 outline-none focus:outline-none text-white"
         onClick={handleSubtract}
       >
         -
       </button>
       <input
-        className="pl-2 md:pl-4 min-w-0 border-t border-b border-orange-450 bg-white outline-none focus:outline-none text-center"
+        className="pl-2 md:pl-4 min-w-0 w-full border-t border-b border-orange-450 bg-white outline-none focus:outline-none text-center"
         type="number"
         value={quantity}
         disabled

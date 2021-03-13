@@ -18,8 +18,8 @@ const OrderModalContainer = ({
   )
 
   return (
-    <div className="w-lg h-sm">
-      <div className="w-full h-full flex overflow-hidden">
+    <div className="w-full md:w-lg h-md md:h-sm bg-white">
+      <div className="w-full h-full">
         <div
           className={`${(isSubmitted && "static") || "hidden"} w-full h-full`}
         >
@@ -32,8 +32,8 @@ const OrderModalContainer = ({
         <div
           className={`${(isSubmitted && "hidden") || "static"} w-full h-full`}
         >
-          <div className="w-full h-full grid grid-cols-5">
-            <div className="col-span-2">
+          <div className="w-full h-full grid grid-rows-7 md:grid-rows-1 grid-cols-1 md:grid-cols-5">
+            <div className="row-span-3 md:row-span-1 md:col-span-2">
               <OrderItem
                 productName={productName}
                 price={price}
@@ -42,7 +42,7 @@ const OrderModalContainer = ({
                 thumbImage={thumbImage}
               />
             </div>
-            <div className="col-span-3">
+            <div className="row-span-4 md:row-span-1 md:col-span-3">
               <OrderDetails
                 productName={productName}
                 price={price}

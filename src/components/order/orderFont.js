@@ -19,8 +19,8 @@ const OrderFont = ({ orders, engraveID, productName }) => {
   const handleChange = e => setName(e.target.value)
 
   return (
-    <div className="mb-2 mx-2 flex flex-col items-center">
-      <h5 className="mb-2 self-start font-primary text-xs text-orange-450">
+    <div className="mb-3 mx-2 flex flex-col items-center">
+      <h5 className="mb-2 md:self-start font-primary text-xs text-orange-450">
         {`${productName} # ${orderNumber}`}
       </h5>
       <div className="flex">
@@ -57,7 +57,7 @@ const OrderFont = ({ orders, engraveID, productName }) => {
           <div
             className={`p-2 w-72 h-12 bg-white ${
               font || "font-primary"
-            } text-center outline-none focus:outline-none`}
+            } flex justify-center items-center border outline-none focus:outline-none `}
           >
             {name}
           </div>
