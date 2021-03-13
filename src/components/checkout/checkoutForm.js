@@ -9,8 +9,8 @@ const CheckoutForm = () => {
             Contact Information
           </h4>
           <div className="ml-0 md:ml-4 mb-4">
-            <div className="flex">
-              <div className="mr-4 mb-4 min-w-0 flex flex-col flex-1">
+            <div className="flex flex-col md:flex-row">
+              <div className="md:mr-4 mb-4 min-w-0 flex flex-col flex-1">
                 <label
                   className="mr-2 font-primary text-sm"
                   htmlFor="firstname"
@@ -24,7 +24,7 @@ const CheckoutForm = () => {
                   required
                 />
               </div>
-              <div className="flex min-w-0 flex-col flex-1">
+              <div className="mb-4 md:mb-0 flex min-w-0 flex-col flex-1">
                 <label className="mr-2 font-primary text-sm" htmlFor="lastname">
                   Last Name
                 </label>

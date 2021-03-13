@@ -37,7 +37,7 @@ const CheckoutPaymentMethods = () => {
         {methods &&
           methods.map(({ method, img }) => (
             <div key={method} className="mx-auto w-16">
-              <img alt={method} src={img} />
+              <img alt={method} src={img} loading="lazy" />
             </div>
           ))}
       </div>

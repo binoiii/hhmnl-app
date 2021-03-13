@@ -43,6 +43,7 @@ const CartContainer = ({ controls, hideCart, cart, inHome }) => {
           <CartSummary
             cart={cart}
             handleHideCart={handleHideCart}
+            inHome={inHome}
             isOrder={isOrder}
           />
           <div className="w-full absolute bottom-0">

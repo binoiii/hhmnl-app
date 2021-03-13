@@ -71,22 +71,26 @@ const OrderSummaryContainer = ({
       </div>
       <OrderSummaryFonts engraveDetails={engraveDetails} />
       <div>
-        <Link to="/checkout">
+        <div className="mb-2 text-center">
+          <Link to="/checkout">
+            <button
+              className="w-20 bg-white-450 font-primary text-xs text-orange-450 uppercase text-center tracking-wider outline-none focus:outline-nonecursor-pointer"
+              onClick={handleDirectCheckout}
+            >
+              checkout
+            </button>
+          </Link>
+          <span className="mx-2 font-primary text-xs">or</span>
+        </div>
+        <div>
+          <OrderModifyButton productName={productName} />
           <button
-            className="w-20 bg-white-450 font-primary text-xs text-orange-450 uppercase text-center tracking-wider outline-none focus:outline-none cursor-pointer"
-            onClick={handleDirectCheckout}
+            className="ml-2 py-2 w-36 bg-white-450 border border-orange-450 font-primary text-xs text-orange-450 uppercase text-center tracking-wider outline-none focus:outline-none cursor-pointer"
+            onClick={hanldeAddToCart}
           >
-            checkout
+            add to cart
           </button>
-        </Link>
-        <span className="mx-2 font-primary text-xs">or</span>
-        <OrderModifyButton productName={productName} />
-        <button
-          className="ml-2 py-2 w-36 bg-white-450 border border-orange-450 font-primary text-xs text-orange-450 uppercase text-center tracking-wider outline-none focus:outline-none cursor-pointer"
-          onClick={hanldeAddToCart}
-        >
-          add to cart
-        </button>
+        </div>
       </div>
     </div>
   )

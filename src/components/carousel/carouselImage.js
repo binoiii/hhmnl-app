@@ -6,7 +6,7 @@ const CarouselImage = ({ img }) => {
 
   return (
     <div className="w-sm md:w-md">
-      <img alt={alt} src={image} />
+      <img alt={alt} src={image} loading="lazy" />
     </div>
   )
 }

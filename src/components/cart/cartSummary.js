@@ -1,12 +1,13 @@
 import React from "react"
-import { Link } from "react-scroll"
+import { Link } from "gatsby"
+import { Link as LinkScroll } from "react-scroll"
 import PropTypes from "prop-types"
 
 import CartTotal from "./cartTotal"
 import CartItemSummary from "./cartItemSummary"
 import { Add } from "../icons"
 
-const CartSummary = ({ cart, isOrder, handleHideCart }) => {
+const CartSummary = ({ cart, isOrder, inHome, handleHideCart }) => {
   const { orders } = cart
 
   return (
@@ -23,14 +24,25 @@ const CartSummary = ({ cart, isOrder, handleHideCart }) => {
         <div className="mt-8 flex flex-col items-center justify-center">
           <p className="mb-4 font-primary">Happy shopping!</p>
           <p className="mb-4 font-primary">Add items to your cart</p>
-          <Link to="products" smooth duration={500}>
-            <button
-              className="outline-none focus:outline-none"
-              onClick={handleHideCart}
-            >
-              <Add className="text-3xl text-orange-450 opacity-60" />
-            </button>
-          </Link>
+          {(inHome && (
+            <LinkScroll to="products" smooth duration={500}>
+              <button
+                className="outline-none focus:outline-none"
+                onClick={handleHideCart}
+              >
+                <Add className="text-3xl text-orange-450 opacity-60" />
+              </button>
+            </LinkScroll>
+          )) || (
+            <Link to="/">
+              <button
+                className="outline-none focus:outline-none"
+                onClick={handleHideCart}
+              >
+                <Add className="text-3xl text-orange-450 opacity-60" />
+              </button>
+            </Link>
+          )}
         </div>
       )}
     </div>

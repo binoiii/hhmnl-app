@@ -10,9 +10,9 @@ const CartItemSummary = ({ orders }) => {
         Items Summary
       </h2>
       {orders &&
-        orders.map((order, index) => (
-          <div key={index}>
-            <CartItem key={index} order={order} />
+        orders.map(order => (
+          <div key={order.product}>
+            <CartItem order={order} />
           </div>
         ))}
     </div>
