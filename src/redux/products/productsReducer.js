@@ -105,7 +105,7 @@ const intitialState = {
       descriptions: ["Stainless Steel Interior", "400ml"],
     },
     {
-      productID: 6,
+      productID: 5,
       productName: "Bamboo Mug",
       thumbImage: {
         alt: "Bamboo Mug",

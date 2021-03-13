@@ -12,7 +12,7 @@ const ProductsContainer = ({ products: { products } }) => {
       <h2 className="mb-4 font-secondary text-orange-450 text-4xl italic">
         Products
       </h2>
-      <div className="m-2 flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center">
         {products &&
           products.map(productDetails => (
             <ProductCard

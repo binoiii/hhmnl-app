@@ -55,7 +55,7 @@ const OrderSummaryContainer = ({
   }
 
   return (
-    <div className="p-6 w-lg h-96 flex flex-col items-center">
+    <div className="p-6 h-full flex flex-col items-center">
       <h3 className="mb-4 font-secondary text-3xl text-orange-450 italic">
         Order Summary
       </h3>

@@ -28,7 +28,7 @@ const CartContainer = ({ controls, hideCart, cart, inHome }) => {
       } transition duration-500 ease-out grid grid-cols-5 w-full h-full fixed top-0 bottom-0 left-0 right-0 z-50`}
     >
       <div
-        className="h-full w-full bg-black bg-opacity-70 outline-none focus:outline-none col-span-3"
+        className="h-full w-full bg-black bg-opacity-70 outline-none focus:outline-none col-span-1 sm:col-span-2 md:col-span-3"
         onClick={handleHideCart}
         onKeyDown={null}
         role="button"
@@ -36,7 +36,10 @@ const CartContainer = ({ controls, hideCart, cart, inHome }) => {
         tabIndex={0}
       ></div>
       {isCartOpen && (
-        <div ref={cartRef} className="bg-white col-span-2 relative">
+        <div
+          ref={cartRef}
+          className="bg-white col-span-4 sm:col-span-3 md:col-span-2 relative"
+        >
           <CartSummary
             cart={cart}
             handleHideCart={handleHideCart}

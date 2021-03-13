@@ -1,57 +1,25 @@
-import React, { useState } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 
-import AddToCartButton from "../utilities/addToCartButton"
+import OrderTotal from "./orderTotal"
+import OrderCounter from "./orderCounter"
 
 const OrderItem = ({
   productName,
   price,
-  engraveDetails,
+  quantity,
   thumbImage: { alt, image },
 }) => {
-  const [promptMessage, setPromptMessage] = useState("")
-
-  const missingDataContainer = engraveDetails.filter(
-    detail => detail.name === "" || detail.font === ""
-  )
-
-  const missingName = missingDataContainer.some(detail => detail.name === "")
-  const missingFont = missingDataContainer.some(detail => detail.font === "")
-
-  const missingData = {
-    missingName,
-    missingFont,
-  }
-
-  const handlePrompt = () => {
-    missingName && missingFont
-      ? setPromptMessage("*Missing name and font in your order")
-      : missingName
-      ? setPromptMessage("*Missing name in your order")
-      : missingFont
-      ? setPromptMessage("*Missing font in your order")
-      : setPromptMessage("")
-  }
-
   return (
-    <div className="h-full border-r relative">
+    <div className="h-full flex flex-col border-r">
       <img alt={alt} src={image} className="w-full" />
-      <div className="flex flex-col">
-        <h5 className="py-4 font-primary text-sm font-medium uppercase text-shadow-xs text-center tracking-wider">
-          {productName}
-        </h5>
-        <p className="pb-4 font-primary text-orange-450 font-medium text-center">
-          {`₱${price}`}
-        </p>
-        <h4 className="mt-1 font-primary text-orange-450 text-xs text-center">
-          {promptMessage}
-        </h4>
-        <div className="absolute bottom-0 w-full">
-          <AddToCartButton
-            productName={productName}
-            handlePrompt={handlePrompt}
-            missingData={missingData}
-          />
+      <div className="flex-1">
+        <div className="px-10 py-6 h-full flex flex-col">
+          <h5 className="font-primary font-medium uppercase text-shadow-xs text-center tracking-wider">
+            {productName}
+          </h5>
+          <OrderTotal price={price} quantity={quantity} />
+          <OrderCounter productName={productName} quantity={quantity} />
         </div>
       </div>
     </div>
@@ -61,18 +29,9 @@ const OrderItem = ({
 OrderItem.propTypes = {
   productName: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
+  quantity: PropTypes.number.isRequired,
   engraveDetails: PropTypes.array.isRequired,
   thumbImage: PropTypes.object.isRequired,
-}
-
-OrderItem.defaultProps = {
-  engraveDetails: [
-    {
-      engraveID: 1,
-      name: "",
-      font: "",
-    },
-  ],
 }
 
 export default OrderItem

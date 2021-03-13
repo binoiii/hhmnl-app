@@ -3,13 +3,9 @@ import PropTypes from "prop-types"
 
 const OrderTotal = ({ price, quantity }) => {
   return (
-    <div className="my-8 px-16 w-full flex justify-between">
-      <p className="font-primary text-xl font-medium uppercase self-end">
-        subtotal
-      </p>
-      <p className="font-primary text-xl text-orange-450">{`₱${
-        price * quantity
-      }`}</p>
+    <div className="w-full flex justify-between items-center flex-1">
+      <p className="font-primary font-medium uppercase">subtotal</p>
+      <p className="font-primary text-orange-450">{`₱${price * quantity}`}</p>
     </div>
   )
 }
