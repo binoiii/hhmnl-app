@@ -3,7 +3,7 @@ import { connect } from "react-redux"
 import PropTypes from "prop-types"
 
 import OrderItem from "./orderItem"
-import OrderDetails from "./OrderDetails"
+import OrderDetails from "./orderDetails"
 import OrderSummaryContainer from "../orderSummary/orderSummaryContainer"
 
 const OrderModalContainer = ({
