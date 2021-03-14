@@ -15,7 +15,7 @@ const SocialLinks = () => {
           size="1.6rem"
         />
       ),
-      link: "https://www.facebook.com/Pet-Find-PH-103012528511317",
+      link: "https://www.facebook.com/happyhandsmnl",
     },
     {
       social: "instagram",
@@ -25,7 +25,7 @@ const SocialLinks = () => {
           size="1.6rem"
         />
       ),
-      link: "https://www.instagram.com",
+      link: "https://www.instagram.com/happyhandsmnl",
     },
   ]
 
