@@ -4,27 +4,27 @@ const CheckoutPaymentMethods = () => {
   const methods = [
     {
       method: "gcash",
-      img: "http://localhost:8000/images/payment/gcash.jpg",
+      img: "https://hhmnl.netlify.app/images/payment/gcash.jpg",
     },
     {
       method: "bpi",
-      img: "http://localhost:8000/images/payment/bpi.jpg",
+      img: "https://hhmnl.netlify.app/images/payment/bpi.jpg",
     },
     {
       method: "bdo",
-      img: "http://localhost:8000/images/payment/bdo.jpg",
+      img: "https://hhmnl.netlify.app/images/payment/bdo.jpg",
     },
     {
       method: "palawan",
-      img: "http://localhost:8000/images/payment/palawan.jpg",
+      img: "https://hhmnl.netlify.app/images/payment/palawan.jpg",
     },
     {
       method: "wu",
-      img: "http://localhost:8000/images/payment/wu.jpg",
+      img: "https://hhmnl.netlify.app/images/payment/wu.jpg",
     },
     {
       method: "cebuana",
-      img: "http://localhost:8000/images/payment/cebuana.jpg",
+      img: "https://hhmnl.netlify.app/images/payment/cebuana.jpg",
     },
   ]
 
