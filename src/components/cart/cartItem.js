@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 
+import HideButton from "../utilities/hideButton"
 import CartEngraveDetails from "./cartEngraveDetails"
-import { Hidden } from "../icons"
 
 const CartItem = ({ order }) => {
   const [isDetailsShown, setIsDetailsShown] = useState(false)
@@ -12,21 +12,15 @@ const CartItem = ({ order }) => {
 
   return (
     isOrder && (
-      <div>
+      <>
         <div className="mb-2 w-full grid grid-cols-3 font-primary text-sm">
           <div className="text-left">
             <h4 className="text-orange-450">Product</h4>
-            <div className="flex">
-              <button
-                className="-ml-4 outline-none focus:outline-none"
-                onClick={handleShowDetails}
-              >
-                <Hidden
-                  className={`text-sm text-orange-450 transition duration-200 ease-out transform ${
-                    (isDetailsShown && "rotate-90") || "rotate-0"
-                  }`}
-                />
-              </button>
+            <div className="-ml-4 flex">
+              <HideButton
+                controls={handleShowDetails}
+                isHidden={isDetailsShown}
+              />
               <p>{order.product}</p>
             </div>
           </div>
@@ -40,7 +34,7 @@ const CartItem = ({ order }) => {
           </div>
         </div>
         <CartEngraveDetails order={order} isDetailsShown={isDetailsShown} />
-      </div>
+      </>
     )
   )
 }

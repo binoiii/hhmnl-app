@@ -6,7 +6,7 @@ import { RiHomeSmileLine } from "react-icons/ri"
 import { HiOutlineShoppingCart } from "react-icons/hi"
 
 import {
-  AiOutlineUser,
+  // AiOutlineUser,
   AiOutlineFacebook,
   AiOutlineInstagram,
 } from "react-icons/ai"
@@ -48,20 +48,20 @@ ShoppingCart.propTypes = {
   className: PropTypes.string,
 }
 
-export const UserIcon = ({ className, size }) => (
-  <IconContext.Provider value={{ className, size }}>
-    <AiOutlineUser />
-  </IconContext.Provider>
-)
+// export const UserIcon = ({ className, size }) => (
+//   <IconContext.Provider value={{ className, size }}>
+//     <AiOutlineUser />
+//   </IconContext.Provider>
+// )
 
-UserIcon.defaultProps = {
-  className: "text-base text-black",
-}
+// UserIcon.defaultProps = {
+//   className: "text-base text-black",
+// }
 
-UserIcon.propTypes = {
-  className: PropTypes.string,
-  size: PropTypes.string,
-}
+// UserIcon.propTypes = {
+//   className: PropTypes.string,
+//   size: PropTypes.string,
+// }
 
 export const Email = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>

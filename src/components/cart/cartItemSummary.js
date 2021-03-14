@@ -5,7 +5,7 @@ import CartItem from "./cartItem"
 
 const CartItemSummary = ({ orders }) => {
   return (
-    <div className="w-full">
+    <div className="w-full flex-1">
       <h2 className="mb-4 font-secondary text-orange-450 text-3xl italic text-center tracking-wide">
         Items Summary
       </h2>

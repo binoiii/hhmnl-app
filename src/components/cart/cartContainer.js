@@ -1,21 +1,15 @@
-import React, { useRef } from "react"
+import React from "react"
 import { connect } from "react-redux"
 import PropTypes from "prop-types"
 
 import { hideCart } from "../../redux/controls/controlsActions"
-import { useConditionalLockScroll } from "../utilities/utilityFunctions"
 
 import CartSummary from "./cartSummary"
-import ContinueButton from "../utilities/continueButton"
-import CheckoutButton from "../utilities/checkoutButton"
 
 const CartContainer = ({ controls, hideCart, cart, inHome }) => {
   const { isCartOpen } = controls
   const { orders } = cart
   const isOrder = orders.some(order => order.engraveDetails.length > 0)
-
-  const cartRef = useRef(null)
-  useConditionalLockScroll(cartRef, isCartOpen)
 
   const handleHideCart = () => {
     hideCart()
@@ -36,20 +30,13 @@ const CartContainer = ({ controls, hideCart, cart, inHome }) => {
         tabIndex={0}
       ></div>
       {isCartOpen && (
-        <div
-          ref={cartRef}
-          className="bg-white col-span-4 sm:col-span-3 md:col-span-2 relative"
-        >
+        <div className="pt-8 h-full bg-white col-span-4 sm:col-span-3 md:col-span-2 overflow-y-auto">
           <CartSummary
             cart={cart}
             handleHideCart={handleHideCart}
             inHome={inHome}
             isOrder={isOrder}
           />
-          <div className="w-full absolute bottom-0">
-            <ContinueButton handleHideCart={handleHideCart} inHome={inHome} />
-            {isOrder && <CheckoutButton handleHideCart={handleHideCart} />}
-          </div>
         </div>
       )}
     </div>

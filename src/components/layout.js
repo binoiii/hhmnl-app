@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import Navigation from "./navigation"
 import CartContainer from "./cart/cartContainer"
 import SocialLinks from "./socialLinks"
+import Footer from "./footer"
 
 import "./styles/global.css"
 
@@ -15,9 +16,7 @@ const Layout = ({ children, inHome }) => {
         <CartContainer inHome={inHome} />
         <SocialLinks />
         <main>{children}</main>
-        <footer className="w-full font-primary text-xs text-gray-300 text-center italic">
-          <a href="https://www.gatsbyjs.com">@hhmnl</a>
-        </footer>
+        <Footer />
       </div>
     </>
   )
