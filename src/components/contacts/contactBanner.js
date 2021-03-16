@@ -28,7 +28,7 @@ const ContactBanner = () => {
         <div className="p-16 h-full flex flex-col justify-center font-secondary text-orange-450 text-center">
           <div className="p-4 w-max-w bg-white">
             <h4 className="m-8 text-3xl sm:text-4xl tracking-wide">
-              Our team is happy to answer your question.
+              Our team is happy to answer your questions.
             </h4>
             <h4 className="my-8 font-primary">
               We'll be in touch as soon as possible.
