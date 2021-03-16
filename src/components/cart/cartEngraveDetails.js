@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { connect } from "react-redux"
 
-import { Minus } from "../icons"
+import { Trash } from "../icons"
 
 import { removeItem } from "../../redux/cart/cartActions"
 
@@ -50,7 +50,7 @@ const CartEngraveDetails = ({
                     })
                   }
                 >
-                  <Minus className="text-xs" />
+                  <Trash className="text-xs" />
                 </button>
               </div>
             ))}

@@ -21,7 +21,7 @@ const CartItem = ({ order }) => {
                 controls={handleShowDetails}
                 isHidden={isDetailsShown}
               />
-              <p>{order.product}</p>
+              <p className="ml-0.5">{order.product}</p>
             </div>
           </div>
           <div className="text-center">

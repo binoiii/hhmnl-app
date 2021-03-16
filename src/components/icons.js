@@ -10,8 +10,8 @@ import {
   AiOutlineFacebook,
   AiOutlineInstagram,
 } from "react-icons/ai"
-import { BiArrowBack, BiShoppingBag } from "react-icons/bi"
-import { FiMail, FiMinusSquare } from "react-icons/fi"
+import { BiArrowBack, BiShoppingBag, BiTrashAlt } from "react-icons/bi"
+import { FiMail } from "react-icons/fi"
 import {
   IoIosArrowBack,
   IoIosArrowUp,
@@ -197,17 +197,17 @@ Hidden.propTypes = {
   size: PropTypes.string,
 }
 
-export const Minus = ({ className, size }) => (
+export const Trash = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
-    <FiMinusSquare />
+    <BiTrashAlt />
   </IconContext.Provider>
 )
 
-Minus.defaultProps = {
+Trash.defaultProps = {
   className: "text-base text-black",
 }
 
-Minus.propTypes = {
+Trash.propTypes = {
   className: PropTypes.string,
   size: PropTypes.string,
 }
