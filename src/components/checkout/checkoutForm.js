@@ -18,7 +18,7 @@ const CheckoutForm = () => {
                   First Name
                 </label>
                 <input
-                  className="p-2 font-primary border border-gray-400 focus:ring focus:ring-orange-450 focus:ring-opacity-70 outline-none focus:outline-none"
+                  className="p-2 font-primary border border-gray-400 focus:ring-2 focus:ring-orange-450 outline-none focus:outline-none"
                   type="text"
                   name="firstname"
                   required
@@ -29,7 +29,7 @@ const CheckoutForm = () => {
                   Last Name
                 </label>
                 <input
-                  className="p-2 font-primary border border-gray-400 focus:ring focus:ring-orange-450 focus:ring-opacity-50 outline-none focus:outline-none"
+                  className="p-2 font-primary border border-gray-400 focus:ring-2 focus:ring-orange-450 outline-none focus:outline-none"
                   type="text"
                   name="lastname"
                   required
@@ -41,7 +41,7 @@ const CheckoutForm = () => {
                 Contact Number
               </label>
               <input
-                className="p-2 font-primary border border-gray-400 focus:ring focus:ring-orange-450 focus:ring-opacity-50 outline-none focus:outline-none"
+                className="p-2 font-primary border border-gray-400 focus:ring-2 focus:ring-orange-450 outline-none focus:outline-none"
                 type="text"
                 name="contact"
                 required
@@ -59,7 +59,7 @@ const CheckoutForm = () => {
                 Full Address
               </label>
               <input
-                className="p-2 font-primary border border-gray-400 focus:ring focus:ring-orange-450 focus:ring-opacity-50 outline-none focus:outline-none"
+                className="p-2 font-primary border border-gray-400 focus:ring-2 focus:ring-orange-450 outline-none focus:outline-none"
                 type="text"
                 name="address"
                 required
@@ -70,7 +70,7 @@ const CheckoutForm = () => {
                 Zip Code
               </label>
               <input
-                className="p-2 font-primary border border-gray-400 focus:ring focus:ring-orange-450 focus:ring-opacity-50 outline-none focus:outline-none"
+                className="p-2 font-primary border border-gray-400 focus:ring-2 focus:ring-orange-450 outline-none focus:outline-none"
                 type="text"
                 name="street"
                 required
@@ -88,7 +88,7 @@ const CheckoutForm = () => {
                 Additional Notes
               </label>
               <input
-                className="p-2 font-primary border border-gray-400 focus:ring focus:ring-orange-450 focus:ring-opacity-50 outline-none focus:outline-none"
+                className="p-2 font-primary border border-gray-400 focus:ring-2 focus:ring-orange-450 outline-none focus:outline-none"
                 type="text"
                 name="address"
                 required
