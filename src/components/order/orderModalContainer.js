@@ -8,6 +8,7 @@ import OrderSummaryContainer from "../orderSummary/orderSummaryContainer"
 
 const OrderModalContainer = ({
   productName,
+  options,
   price,
   orders,
   handleHide,
@@ -25,7 +26,6 @@ const OrderModalContainer = ({
         >
           <OrderSummaryContainer
             productName={productName}
-            price={price}
             handleHide={handleHide}
           />
         </div>
@@ -36,7 +36,7 @@ const OrderModalContainer = ({
             <div className="row-span-3 md:row-span-1 md:col-span-2">
               <OrderItem
                 productName={productName}
-                price={price}
+                options={options}
                 quantity={quantity}
                 engraveDetails={engraveDetails}
                 thumbImage={thumbImage}
@@ -61,6 +61,7 @@ const mapStateToProps = ({ orders }) => ({ orders })
 
 OrderModalContainer.propType = {
   productName: PropTypes.string.isRequired,
+  options: PropTypes.object.isRequired,
   price: PropTypes.number.isRequired,
   orders: PropTypes.object.isRequired,
   handleHide: PropTypes.func.isRequired,

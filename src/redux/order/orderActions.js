@@ -2,6 +2,7 @@ import {
   CREATE_ORDER,
   ADD_QUANTITY,
   SUBTRACT_QUANTITY,
+  UPDATE_SELECTED,
   ADD_ENGRAVE_DETAILS,
   REMOVE_ENGRAVE_DETAILS,
   UPDATE_DETAILS,
@@ -22,6 +23,11 @@ export const addQuantity = quantity => ({
 export const subtractQuantity = quantity => ({
   type: SUBTRACT_QUANTITY,
   payload: quantity,
+})
+
+export const updateSelected = details => ({
+  type: UPDATE_SELECTED,
+  payload: details,
 })
 
 export const addEngraveDetails = details => ({

@@ -10,6 +10,7 @@ import { createOrder } from "../../redux/order/orderActions"
 
 const ProductCardBody = ({
   productName,
+  options,
   price,
   descriptions,
   createOrder,
@@ -17,6 +18,8 @@ const ProductCardBody = ({
   thumbImage,
 }) => {
   const [show, setShow] = useState(false)
+
+  const initialSelected = options.productOptions[0]
 
   const order = orders.orders.find(order => order.productName === productName)
 
@@ -27,6 +30,7 @@ const ProductCardBody = ({
     isOrdered: true,
     productName,
     quantity: 1,
+    selected: initialSelected,
     engraveDetails: [
       {
         engraveID: uuidv4(),
@@ -68,6 +72,7 @@ const ProductCardBody = ({
         <Modal onHide={handleHide}>
           <OrderModalContainer
             productName={productName}
+            options={options}
             handleHide={handleHide}
             price={price}
             thumbImage={thumbImage}

@@ -8,6 +8,7 @@ const ProductCard = ({ productDetails }) => {
   const {
     productName,
     thumbImage,
+    options,
     price,
     descriptions,
     images,
@@ -18,6 +19,7 @@ const ProductCard = ({ productDetails }) => {
       <ProductCardImage thumbImage={thumbImage} images={images} />
       <ProductCardBody
         productName={productName}
+        options={options}
         price={price}
         descriptions={descriptions}
         thumbImage={thumbImage}

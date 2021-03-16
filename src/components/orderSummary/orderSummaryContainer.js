@@ -13,21 +13,27 @@ import { openCart } from "../../redux/controls/controlsActions"
 
 const OrderSummaryContainer = ({
   productName,
-  price,
+  // price,
   orders,
   addToCart,
   clearOrder,
   handleHide,
   openCart,
 }) => {
-  const { productName: product, quantity, engraveDetails } = orders.orders.find(
-    order => order.productName === productName
-  )
+  const {
+    productName: product,
+    selected,
+    quantity,
+    engraveDetails,
+  } = orders.orders.find(order => order.productName === productName)
 
   const submitDetails = {
     productName,
     isSubmitted: false,
   }
+
+  const { price } = selected
+  const { option } = selected.option ? selected : ""
 
   const totalPrice = quantity * price
 
@@ -35,6 +41,7 @@ const OrderSummaryContainer = ({
     orderID: uuidv4(),
     details: {
       product,
+      option,
       totalPrice,
       quantity,
       engraveDetails,
@@ -61,12 +68,19 @@ const OrderSummaryContainer = ({
       </h3>
       <div className="w-80 mb-4 px-2 py-4 flex flex-col justify-center border-b border-t border-orange-450">
         <div className="flex justify-between">
-          <h4 className="font-primary font-medium uppercase">subtotal</h4>
-          <p className="font-primary text-orange-450">{`₱${totalPrice}`}</p>
+          <h4 className="font-primary text-sm font-medium uppercase">
+            subtotal
+          </h4>
+          <p className="font-primary text-sm text-orange-450">{`₱${totalPrice}`}</p>
         </div>
         <div className="flex justify-between">
-          <h4 className="font-primary font-medium uppercase">product</h4>
-          <p className="font-primary text-orange-450">{`${product}`}</p>
+          <h4 className="font-primary text-sm font-medium uppercase">
+            product
+          </h4>
+          <p className="font-primary text-sm text-orange-450">
+            {`${product}`}
+            <span> - {option}</span>
+          </p>
         </div>
       </div>
       <OrderSummaryFonts engraveDetails={engraveDetails} />
@@ -106,7 +120,7 @@ const mapDispatchToProps = dispatch => ({
 
 OrderSummaryContainer.propTypes = {
   productName: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
+  // price: PropTypes.number.isRequired,
   addToCart: PropTypes.func.isRequired,
   handleHide: PropTypes.func.isRequired,
   openCart: PropTypes.func.isRequired,

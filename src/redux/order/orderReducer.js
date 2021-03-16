@@ -2,6 +2,7 @@ import {
   CREATE_ORDER,
   ADD_QUANTITY,
   SUBTRACT_QUANTITY,
+  UPDATE_SELECTED,
   ADD_ENGRAVE_DETAILS,
   REMOVE_ENGRAVE_DETAILS,
   UPDATE_DETAILS,
@@ -54,6 +55,16 @@ const orderReducer = (state = initialState, action) => {
         ),
       }
     }
+
+    case UPDATE_SELECTED: {
+      const { productName, selected } = action.payload
+      return {
+        ...state,
+        orders: state.orders.map(order =>
+          order.productName === productName ? { ...order, selected } : order
+        ),
+      }
+    }
     case ADD_ENGRAVE_DETAILS: {
       const { productName, engraveDetail } = action.payload
       return {
@@ -68,6 +79,7 @@ const orderReducer = (state = initialState, action) => {
         ),
       }
     }
+
     case REMOVE_ENGRAVE_DETAILS: {
       const { productName } = action.payload
       return {

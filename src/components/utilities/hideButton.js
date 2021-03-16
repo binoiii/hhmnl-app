@@ -14,7 +14,7 @@ const HideButton = ({ isHidden, controls }) => (
 )
 
 HideButton.propTypes = {
-  isHidden: PropTypes.string.isRequired,
+  isHidden: PropTypes.bool.isRequired,
   controls: PropTypes.func.isRequired,
 }
 
