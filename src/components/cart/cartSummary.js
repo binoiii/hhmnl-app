@@ -36,7 +36,7 @@ const CartSummary = ({ cart, isOrder, inHome, handleHideCart }) => {
                 className="outline-none focus:outline-none"
                 onClick={handleHideCart}
               >
-                <Add className="text-3xl text-orange-450 opacity-60" />
+                <Add className="text-3xl text-orange-450" />
               </button>
             </LinkScroll>
           )) || (
@@ -45,7 +45,7 @@ const CartSummary = ({ cart, isOrder, inHome, handleHideCart }) => {
                 className="outline-none focus:outline-none"
                 onClick={handleHideCart}
               >
-                <Add className="text-3xl text-orange-450 opacity-60" />
+                <Add className="text-3xl text-orange-450" />
               </button>
             </Link>
           )}

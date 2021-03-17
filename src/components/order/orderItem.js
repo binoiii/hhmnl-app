@@ -35,12 +35,12 @@ const OrderItem = ({
     <div className="h-36 md:h-full flex md:flex-col bg-white md:border-r">
       <img alt={alt} src={image} loading="lazy" className="md:w-full" />
       <div className="flex-1">
-        <div className="px-4 md:px-10 py-4 h-full flex flex-col">
-          <h5 className="mb-2 md:mb-0 md:mt-4 font-primary text-sm md:text-base text-orange-450 font-medium uppercase text-shadow-xs text-center tracking-wider">
+        <div className="md:px-10 py-4 h-full flex flex-col">
+          <h5 className="mb-2 md:mb-0 md:mt-4 font-primary text-sm md:text-base text-orange-450 md:font-medium uppercase text-shadow-xs text-center tracking-wider">
             {productName}
           </h5>
           {type === "size" && (
-            <div className="flex justify-center">
+            <div className="mb-2 flex flex-shrink-0 justify-center">
               {productOptions &&
                 productOptions.map((option, ind) => {
                   const isActive = selected.option === option.option
@@ -56,7 +56,7 @@ const OrderItem = ({
             </div>
           )}
           {type === "color" && (
-            <div className="flex justify-center">
+            <div className="mb-2 flex flex-shrink-0 justify-center">
               {productOptions &&
                 productOptions.map((option, ind) => {
                   const isActive = selected.option === option.option

@@ -63,10 +63,10 @@ const intitialState = {
       options: {
         type: "color",
         productOptions: [
-          { option: "bg-yellow-200", price: 449 },
-          { option: "bg-black", price: 449 },
-          { option: "bg-blue-450", price: 449 },
-          { option: "bg-red-500", price: 449 },
+          { option: "Yellow", price: 449 },
+          { option: "Black", price: 449 },
+          { option: "Blue", price: 449 },
+          { option: "Red", price: 449 },
         ],
       },
       price: 449,
@@ -95,12 +95,7 @@ const intitialState = {
       ],
       options: {
         type: "null",
-        productOptions: [
-          { option: "bg-yellow-200", price: 449 },
-          { option: "bg-black", price: 449 },
-          { option: "bg-blue-450", price: 449 },
-          { option: "bg-red-500", price: 449 },
-        ],
+        productOptions: [{ option: "", price: 269 }],
       },
       price: 269,
       quantity: 100,

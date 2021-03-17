@@ -11,7 +11,7 @@ const CartItemSummary = ({ orders }) => {
       </h2>
       {orders &&
         orders.map(order => (
-          <div key={order.product}>
+          <div key={order.product + order.option}>
             <CartItem order={order} />
           </div>
         ))}

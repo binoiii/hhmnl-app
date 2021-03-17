@@ -38,7 +38,7 @@ const OrderCounter = ({
   }
 
   return (
-    <div className="flex md:mx-0 md:mb-6 min-w-0">
+    <div className="mx-4 sm:mx-8 md:mx-0 md:mb-6 sm:px-8 md:px-0 min-w-0 flex">
       <button
         className="px-3 md:py-1 border border-orange-450 bg-orange-450 outline-none focus:outline-none text-white"
         onClick={handleSubtract}
@@ -46,7 +46,7 @@ const OrderCounter = ({
         -
       </button>
       <input
-        className="pl-2 md:pl-4 min-w-0 w-full text-sm md:text-base border-t border-b border-orange-450 bg-white outline-none focus:outline-none text-center"
+        className="pl-1 md:pl-4 min-w-0 w-full text-sm md:text-base border-t border-b border-orange-450 bg-white outline-none focus:outline-none text-center"
         type="number"
         value={quantity}
         disabled

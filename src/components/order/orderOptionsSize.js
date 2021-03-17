@@ -5,7 +5,7 @@ const OrderOptionsSize = ({ option, handleSelected, isActive }) => {
     <button
       className={`${
         isActive && "ring-1 ring-orange-450"
-      } px-2 py-1 mx-1 border outline-none focus:outline-none text-xs`}
+      } px-1 sm:px-2 sm:py-1 mx-1 border outline-none focus:outline-none text-xs`}
       onClick={() => handleSelected(option)}
     >
       {option.option}

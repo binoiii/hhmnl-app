@@ -4,55 +4,58 @@ import { connect } from "react-redux"
 
 import { Trash } from "../icons"
 
-import { removeItem } from "../../redux/cart/cartActions"
+import { removeItem, clearCart } from "../../redux/cart/cartActions"
 
 const CartEngraveDetails = ({
+  cart,
   order,
-  products,
+  option,
+  price,
   isDetailsShown,
   removeItem,
+  clearCart,
 }) => {
-  const { price } = products.products.find(
-    product => product.productName === order.product
-  )
+  const handleRemoveItem = (id, product) => {
+    cart.totalQuantity === 1
+      ? clearCart()
+      : removeItem({ id, product, option, price })
+  }
 
   return (
     <div>
       <div
         className={`${
           (isDetailsShown && "block") || "hidden"
-        } mr-10 ml-2 mb-8 grid grid-cols-2 font-primary text-sm`}
+        } mb-8 grid grid-cols-2 font-primary text-sm`}
       >
-        <div className="text-center">
+        <div>
           <h4 className="text-orange-450">Name</h4>
           {order &&
             order.engraveDetails &&
             order.engraveDetails.map((details, index) => (
-              <div key={index}>
-                <p>{details.name}</p>
+              <div className="relative" key={index}>
+                <p>
+                  {details.name}
+                  <button
+                    className="mt-1 absolute top-0 -left-3.5 outline-none focus:outline-none"
+                    onClick={() =>
+                      handleRemoveItem(details.engraveID, order.product)
+                    }
+                  >
+                    <Trash className="text-xs" />
+                  </button>
+                </p>
               </div>
             ))}
         </div>
-        <div className="text-center">
+        <div className="h-full text-right">
           <h4 className="text-orange-450">Result</h4>
           {order &&
             order.engraveDetails &&
             order.engraveDetails.map((details, index) => (
-              <div className="relative" key={index}>
-                <p className={`${details.font}`}>{details.name}</p>
-                <button
-                  className="mt-1 absolute top-0 right-0 outline-none focus:outline-none"
-                  onClick={() =>
-                    removeItem({
-                      id: details.engraveID,
-                      product: order.product,
-                      price,
-                    })
-                  }
-                >
-                  <Trash className="text-xs" />
-                </button>
-              </div>
+              <p key={index} className={`${details.font}`}>
+                {details.name}
+              </p>
             ))}
         </div>
       </div>
@@ -60,16 +63,21 @@ const CartEngraveDetails = ({
   )
 }
 
-const mapStateToProps = ({ products }) => ({ products })
+const mapStateToProps = ({ cart }) => ({ cart })
 
 const mapDispatchToProps = dispatch => ({
   removeItem: details => dispatch(removeItem(details)),
+  clearCart: () => dispatch(clearCart()),
 })
 
 CartEngraveDetails.propTypes = {
+  cart: PropTypes.object.isRequired,
   order: PropTypes.object,
-  products: PropTypes.object.isRequired,
+  option: PropTypes.string,
+  price: PropTypes.number.isRequired,
+  isDetailsShown: PropTypes.bool.isRequired,
   removeItem: PropTypes.func.isRequired,
+  clearCart: PropTypes.func.isRequired,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(CartEngraveDetails)

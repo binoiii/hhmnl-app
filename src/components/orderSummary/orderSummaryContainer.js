@@ -44,6 +44,7 @@ const OrderSummaryContainer = ({
       option,
       totalPrice,
       quantity,
+      price,
       engraveDetails,
     },
   }
@@ -79,7 +80,7 @@ const OrderSummaryContainer = ({
           </h4>
           <p className="font-primary text-sm text-orange-450">
             {`${product}`}
-            <span> - {option}</span>
+            {option && <span> - {option}</span>}
           </p>
         </div>
       </div>
