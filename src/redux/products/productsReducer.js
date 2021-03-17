@@ -36,12 +36,12 @@ const intitialState = {
         ],
       },
 
-      price: 499,
+      price: 449,
       quantity: 100,
       descriptions: ["10-12 Hours for Hot or Cold"],
     },
     {
-      productID: 3,
+      productID: 2,
       productName: "Metal Tumbler",
       thumbImage: {
         alt: "Metal Tumbler",
@@ -63,44 +63,77 @@ const intitialState = {
       options: {
         type: "color",
         productOptions: [
-          { option: "gold", price: 449 },
-          { option: "black", price: 449 },
-          { option: "red", price: 449 },
-          { option: "blue", price: 449 },
+          { option: "bg-yellow-200", price: 449 },
+          { option: "bg-black", price: 449 },
+          { option: "bg-blue-450", price: 449 },
+          { option: "bg-red-500", price: 449 },
         ],
       },
-      price: 469,
+      price: 449,
       quantity: 100,
-      descriptions: ["Stainless Steel Interior", "400ml"],
+      descriptions: ["8-10 Hours for Hot / Cold"],
     },
     {
-      productID: 2,
-      productName: "Bamboo Mug",
+      productID: 3,
+      productName: "Chopping Board",
       thumbImage: {
-        alt: "Bamboo Mug",
+        alt: "Chopipping Board",
         image:
-          "https://hhmnl.netlify.app/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
+          "https://hhmnl.netlify.app/images/products/chopping-board/chopping-board-thumb.jpg",
       },
       images: [
         {
-          alt: "Bamboo Mug1",
+          alt: "Metal Tumbler1",
           image:
-            "https://hhmnl.netlify.app/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+            "https://hhmnl.netlify.app/images/products/chopping-board/chopping-board1.jpg",
         },
         {
-          alt: "Bamboo Mug2",
+          alt: "Metal Tumbler1",
           image:
-            "https://hhmnl.netlify.app/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+            "https://hhmnl.netlify.app/images/products/chopping-board/chopping-board1.jpg",
         },
       ],
       options: {
-        type: null,
-        productOptions: [{ option: null, price: 449 }],
+        type: "null",
+        productOptions: [
+          { option: "bg-yellow-200", price: 449 },
+          { option: "bg-black", price: 449 },
+          { option: "bg-blue-450", price: 449 },
+          { option: "bg-red-500", price: 449 },
+        ],
       },
-      price: 469,
+      price: 269,
       quantity: 100,
-      descriptions: ["Stainless Steel Interior", "400ml"],
+      descriptions: [`11" x 7" x 0.5"`],
     },
+    // {
+    //   productID: 3,
+    //   productName: "Bamboo Mug",
+    //   thumbImage: {
+    //     alt: "Bamboo Mug",
+    //     image:
+    //       "https://hhmnl.netlify.app/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
+    //   },
+    //   images: [
+    //     {
+    //       alt: "Bamboo Mug1",
+    //       image:
+    //         "https://hhmnl.netlify.app/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+    //     },
+    //     {
+    //       alt: "Bamboo Mug2",
+    //       image:
+    //         "https://hhmnl.netlify.app/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
+    //     },
+    //   ],
+    //   options: {
+    //     type: null,
+    //     productOptions: [{ option: null, price: 449 }],
+    //   },
+    //   price: 469,
+    //   quantity: 100,
+    //   descriptions: ["Stainless Steel Interior", "400ml"],
+    // },
   ],
 }
 

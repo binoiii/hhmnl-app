@@ -1,6 +1,6 @@
 import React from "react"
 
-const OrderOptions = ({ option, handleSelected, isActive }) => {
+const OrderOptionsSize = ({ option, handleSelected, isActive }) => {
   return (
     <button
       className={`${
@@ -13,6 +13,6 @@ const OrderOptions = ({ option, handleSelected, isActive }) => {
   )
 }
 
-OrderOptions.propTypes = {}
+OrderOptionsSize.propTypes = {}
 
-export default OrderOptions
+export default OrderOptionsSize

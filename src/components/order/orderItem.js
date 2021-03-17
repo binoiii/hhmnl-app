@@ -4,7 +4,9 @@ import PropTypes from "prop-types"
 
 import OrderTotal from "./orderTotal"
 import OrderCounter from "./orderCounter"
-import OrderOptions from "./orderOptions"
+import OrderOptionsSize from "./orderOptionsSize"
+import OrderOptionsColor from "./orderOptionsColor"
+
 import { updateSelected } from "../../redux/order/orderActions"
 
 const OrderItem = ({
@@ -19,7 +21,8 @@ const OrderItem = ({
     order => order.productName === productName
   )
 
-  const { productOptions } = options
+  const { type, productOptions } = options
+
   const [selected, setSelected] = useState(defaultSelected)
   const handleSelected = option => setSelected(option)
 
@@ -36,20 +39,38 @@ const OrderItem = ({
           <h5 className="mb-2 md:mb-0 md:mt-4 font-primary text-sm md:text-base text-orange-450 font-medium uppercase text-shadow-xs text-center tracking-wider">
             {productName}
           </h5>
-          <div className="flex justify-center">
-            {productOptions &&
-              productOptions.map((option, ind) => {
-                const isActive = selected.option === option.option
-                return (
-                  <OrderOptions
-                    isActive={isActive}
-                    key={ind}
-                    option={option}
-                    handleSelected={handleSelected}
-                  />
-                )
-              })}
-          </div>
+          {type === "size" && (
+            <div className="flex justify-center">
+              {productOptions &&
+                productOptions.map((option, ind) => {
+                  const isActive = selected.option === option.option
+                  return (
+                    <OrderOptionsSize
+                      isActive={isActive}
+                      key={ind}
+                      option={option}
+                      handleSelected={handleSelected}
+                    />
+                  )
+                })}
+            </div>
+          )}
+          {type === "color" && (
+            <div className="flex justify-center">
+              {productOptions &&
+                productOptions.map((option, ind) => {
+                  const isActive = selected.option === option.option
+                  return (
+                    <OrderOptionsColor
+                      isActive={isActive}
+                      key={ind}
+                      option={option}
+                      handleSelected={handleSelected}
+                    />
+                  )
+                })}
+            </div>
+          )}
           <OrderTotal price={selected.price} quantity={quantity} />
           <OrderCounter productName={productName} quantity={quantity} />
         </div>
