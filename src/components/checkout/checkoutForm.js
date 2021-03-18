@@ -43,7 +43,7 @@ const CheckoutForm = () => {
       <form
         name="order"
         method="post"
-        action="/"
+        action="/orderty"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
@@ -148,14 +148,18 @@ const CheckoutForm = () => {
                 value={data.notes}
                 onChange={handleChange}
               />
-              <input className="hidden" type="text" name="order" />
+              <input
+                className="hidden"
+                type="text"
+                name="order"
+                value={data.order}
+              />
             </div>
           </div>
         </div>
         <div className="mb-8 md:mb-4 flex justify-center">
           <button
             className="mx-auto py-4 w-48 bg-orange-450 font-primary text-xs text-white uppercase text-center tracking-wider outline-none focus:outline-none cursor-pointer"
-            value={data.order}
             type="submit"
           >
             Submit Order
