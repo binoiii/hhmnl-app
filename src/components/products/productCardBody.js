@@ -49,10 +49,10 @@ const ProductCardBody = ({
   return (
     <div className="flex-1">
       <div className="h-full flex flex-col border-r border-l">
-        <h5 className="mx-2 py-4 font-primary text-sm md:text-base bg-yellow-450 font-medium uppercase text-shadow-xs text-center tracking-wider">
+        <h5 className="mx-2 py-4 font-primary text-sm md:text-base font-medium uppercase text-shadow-xs text-center tracking-wider">
           {productName}
         </h5>
-        <ul className="flex flex-1 bg-blue-450 flex-col justify-center mx-2 font-primary text-xs text-center ">
+        <ul className="flex flex-1 flex-col justify-center mx-2 font-primary text-xs text-center ">
           {descriptions &&
             descriptions.map(description => (
               <li key={description}>{description}</li>
