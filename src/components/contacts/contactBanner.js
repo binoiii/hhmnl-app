@@ -34,6 +34,13 @@ const ContactBanner = () => {
               We'll be in touch as soon as possible
             </h4>
           </div>
+          <div className="hidden">
+            <ul>
+              <li className="bg-yellow-450">test</li>
+              <li className="bg-blue-450">test</li>
+              <li className="bg-red-450">test</li>
+            </ul>
+          </div>
         </div>
       </BackgroundImage>
     </div>
