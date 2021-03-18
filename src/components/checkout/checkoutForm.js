@@ -155,6 +155,7 @@ const CheckoutForm = () => {
         <div className="mb-8 md:mb-4 flex justify-center">
           <button
             className="mx-auto py-4 w-48 bg-orange-450 font-primary text-xs text-white uppercase text-center tracking-wider outline-none focus:outline-none cursor-pointer"
+            value={data.order}
             type="submit"
           >
             Submit Order
