@@ -1,9 +1,50 @@
-import React from "react"
+import React, { useState } from "react"
+import { navigate } from "gatsby-link"
 
 const CheckoutForm = () => {
+  const [data, setData] = useState({
+    firstname: "",
+    lastname: "",
+    contact: "",
+    address: "",
+    zipcode: "",
+    notes: "",
+    order: "",
+  })
+
+  const handleChange = e => {
+    const { name, value } = e.target
+    setData({ ...data, [name]: value })
+  }
+
+  const encode = data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    const form = e.target
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": form.getAttribute("name"), ...data }),
+    })
+      .then(() => navigate(form.getAttribute("action")))
+      .catch(error => alert(error))
+  }
+
   return (
     <div className="mb-16">
-      <form>
+      <form
+        name="order"
+        method="post"
+        action="/"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit={handleSubmit}
+      >
         <div>
           <h4 className="mb-4 font-primary text-lg text-orange-450 font-medium tracking-wide">
             Contact Information
@@ -21,6 +62,8 @@ const CheckoutForm = () => {
                   className="p-2 font-primary border border-gray-400 focus:ring-2 focus:ring-orange-450 outline-none focus:outline-none"
                   type="text"
                   name="firstname"
+                  value={data.firstname}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -32,6 +75,8 @@ const CheckoutForm = () => {
                   className="p-2 font-primary border border-gray-400 focus:ring-2 focus:ring-orange-450 outline-none focus:outline-none"
                   type="text"
                   name="lastname"
+                  value={data.lastname}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -44,6 +89,8 @@ const CheckoutForm = () => {
                 className="p-2 font-primary border border-gray-400 focus:ring-2 focus:ring-orange-450 outline-none focus:outline-none"
                 type="text"
                 name="contact"
+                value={data.contact}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -62,17 +109,21 @@ const CheckoutForm = () => {
                 className="p-2 font-primary border border-gray-400 focus:ring-2 focus:ring-orange-450 outline-none focus:outline-none"
                 type="text"
                 name="address"
+                value={data.address}
+                onChange={handleChange}
                 required
               />
             </div>
             <div className="flex flex-col">
-              <label className="mr-2 font-primary text-sm" htmlFor="street">
+              <label className="mr-2 font-primary text-sm" htmlFor="zipcode">
                 Zip Code
               </label>
               <input
                 className="p-2 font-primary border border-gray-400 focus:ring-2 focus:ring-orange-450 outline-none focus:outline-none"
                 type="text"
-                name="street"
+                name="zipcode"
+                value={data.zipcode}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -84,15 +135,17 @@ const CheckoutForm = () => {
           </h4>
           <div className="ml-0 md:ml-4 mb-4">
             <div className="mb-8 flex flex-col">
-              <label className="mr-2 font-primary text-sm" htmlFor="address">
+              <label className="mr-2 font-primary text-sm" htmlFor="notes">
                 Additional Notes
               </label>
               <input
                 className="p-2 font-primary border border-gray-400 focus:ring-2 focus:ring-orange-450 outline-none focus:outline-none"
                 type="text"
-                name="address"
-                required
+                name="notes"
+                value={data.notes}
+                onChange={handleChange}
               />
+              <input className="hidden" type="text" name="order" />
             </div>
           </div>
         </div>
