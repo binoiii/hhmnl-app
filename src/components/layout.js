@@ -10,15 +10,15 @@ import "./styles/global.css"
 
 const Layout = ({ children, inHome }) => {
   return (
-    <>
-      <div>
-        <Navigation />
-        <CartContainer inHome={inHome} />
-        <SocialLinks />
+    <div className="min-h-screen flex flex-col ">
+      <Navigation />
+      <CartContainer inHome={inHome} />
+      <SocialLinks />
+      <div className="flex-grow">
         <main>{children}</main>
-        <Footer />
       </div>
-    </>
+      <Footer />
+    </div>
   )
 }
 

@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div>
       <HeroBg>
-        <div className="pt-28 sm:pt-32 md:pt-16 flex flex-col justify-center items-center">
+        <div className="mt-16 md:mt-0 pt-12 md:pt-16 flex flex-col justify-center items-center">
           <h2 className="mx-4 md:mx-0 font-primary text-white text-4xl sm:text-5xl md:text-6xl text-shadow-lg uppercase text-center tracking-wider">
             make the switch
           </h2>
