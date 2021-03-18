@@ -1,7 +1,10 @@
 import React, { useState } from "react"
+import { useSelector } from "react-redux"
 import { navigate } from "gatsby-link"
 
 const CheckoutForm = () => {
+  const cart = JSON.stringify(useSelector(state => state.cart))
+
   const [data, setData] = useState({
     firstname: "",
     lastname: "",
@@ -9,7 +12,7 @@ const CheckoutForm = () => {
     address: "",
     zipcode: "",
     notes: "",
-    order: "",
+    order: cart,
   })
 
   const handleChange = e => {
