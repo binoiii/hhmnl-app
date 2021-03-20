@@ -10,8 +10,7 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 module.exports = {
   siteMetadata: {
     title: `HappyHandsMnl`,
-    description: `HappyHandsMnl provides a wide variety of sustainable products, which are all heart and happy hands crafted. We offer high quality products yet affordable for all. Engraved. Personalized. Eco-friendly.  Mini Brush. Comb for Gents. Comb with Handle. Wooden Mirror. Stainless Straw Set. Sandalwood Fan. Paddle Brush. Bamboo Tumbler. Metal Vaccum Tumbler. Bamboo Mug. Bambaunan Bento Lunch Box. Bambootensils. Bamboo Toothbrush. Bamboo Notebook. Bamboo Sunglasses. Bamboo Chopping Board. Wooden Items. Wooden Pen. Wooden Bottle Opener
-    Wooden Phone Stand Keychain. Wooden Speaker and Phone Holder. Leather Goods. Leather Chord Organizer. Cord Organizer. Leather Keyholder. Leather Passport Holder. Coin Purse. Handy Wallet. Long Wallet. Flask Set. Glass Cup w/ Bamboo Lid. Gift. Souvenir. Present. Afforadable.`,
+    description: `HappyHandsMnl provides a wide variety of sustainable products, which are all heart and happy hands crafted. We offer high quality products yet affordable for all. Engraved. Personalized. Eco-friendly. Souvenir. Present. Afforadable.`,
     author: `@binoiii`,
     siteUrl,
   },
