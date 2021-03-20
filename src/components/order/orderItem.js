@@ -33,7 +33,12 @@ const OrderItem = ({
 
   return (
     <div className="h-36 md:h-full flex md:flex-col bg-white md:border-r">
-      <img alt={alt} src={image} loading="lazy" className="md:w-full flex-1" />
+      <img
+        alt={alt}
+        src={image}
+        loading="lazy"
+        className="h-36 w-50 md:h-auto md:w-full"
+      />
       <div className="flex-1">
         <div className="md:px-10 py-4 h-full flex flex-col">
           <h5 className="mb-2 md:mb-0 md:mt-4 font-primary text-sm md:text-base text-orange-450 md:font-medium uppercase text-shadow-xs text-center tracking-wider">

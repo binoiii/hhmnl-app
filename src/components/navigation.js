@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 import { Home, Email } from "./icons"
-import CartIcon from "./utilities/cartIcon"
+// import CartIcon from "./utilities/cartIcon"
 
 const Nav = ({ inHome }) => {
   return (
