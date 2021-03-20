@@ -11,7 +11,7 @@ import "./styles/global.css"
 const Layout = ({ children, inHome }) => {
   return (
     <div className="min-h-screen flex flex-col ">
-      <Navigation />
+      <Navigation inHome={inHome} />
       <CartContainer inHome={inHome} />
       <SocialLinks />
       <div className="flex-grow">
