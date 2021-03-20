@@ -14,7 +14,7 @@ module.exports = {
     author: `@binoiii`,
     siteUrl,
     url: `https://hhmnl.netlify.app/`,
-    image: `/images/happyhandsmnl-meta.jpg`,
+    image: `images/happyhandsmnl-meta.jpg`,
   },
   flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
