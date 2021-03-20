@@ -6,7 +6,7 @@ import CartIcon from "./utilities/cartIcon"
 
 const Nav = () => {
   return (
-    <div className="flex items-center fixed bottom-0 left-0 right-0 md:static h-16 border-t border-gray-400 bg-white md:border-t-0 md:border-b z-10">
+    <div className="flex items-center fixed bottom-0 left-0 right-0 md:static h-16 border-t border-gray-400 bg-transparent md:border-t-0 md:border-b z-10">
       <header className="mx-4 sm:mx-8 md:mx-12 w-full flex justify-between items-center">
         <div className="hidden md:block">
           <Link to="/">
