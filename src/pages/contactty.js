@@ -2,7 +2,7 @@ import React from "react"
 import ThankyouContact from "../components/thankyouContact.js"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../components/seo/seo"
 
 const ContactTy = () => (
   <Layout>

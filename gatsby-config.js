@@ -1,6 +1,6 @@
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = "hhttps://hhmnl.netlify.app/",
+  URL: NETLIFY_SITE_URL = "https://hhmnl.netlify.app/",
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env
@@ -13,6 +13,8 @@ module.exports = {
     description: `HappyHandsMnl provides a wide variety of sustainable products, which are all heart and happy hands crafted. We offer high quality products yet affordable for all. Engraved. Personalized. Eco-friendly. Souvenir. Present. Afforadable.`,
     author: `@binoiii`,
     siteUrl,
+    url: `https://hhmnl.netlify.app/`,
+    image: `/images/happyhandsmnl-meta.jpg`,
   },
   flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
