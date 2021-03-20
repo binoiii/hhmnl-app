@@ -36,7 +36,7 @@ const ContactForm = () => {
       className="flex flex-col"
       name="contact"
       method="post"
-      action="/"
+      action="/contactty"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}

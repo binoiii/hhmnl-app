@@ -4,11 +4,11 @@ import ThankyouOrder from "../components/thankyouOrder.js"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const NotFound = () => (
+const OrderTy = () => (
   <Layout>
-    <SEO title="Thank you!" />
+    <SEO title="Thank for your purchase!" />
     <ThankyouOrder />
   </Layout>
 )
 
-export default NotFound
+export default OrderTy

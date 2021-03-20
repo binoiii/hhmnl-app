@@ -1,7 +1,7 @@
 import { ADD_TO_CART, REMOVE_ITEM, CLEAR_CART } from "./cartTypes"
 
 const getInitialCart = () => ({
-  orderID: "",
+  orderID: null,
   totalQuantity: 0,
   totalPrice: 0,
   orders: [],

@@ -27,9 +27,11 @@ const store = createStore(
   composeWithDevTools(applyMiddleware(logger))
 )
 
-store.subscribe = throttle(() => {
-  saveState(store.getState())
-}, 1000)
+store.subscribe(
+  throttle(() => {
+    saveState(store.getState())
+  }, 1000)
+)
 
 export default ({ element }) => {
   return <Provider store={store}>{element}</Provider>

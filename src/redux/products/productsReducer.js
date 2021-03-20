@@ -135,7 +135,6 @@ const intitialState = {
 const productsReducer = (state = intitialState, action) => {
   switch (action.type) {
     case DECREMENT_QUANTITY: {
-      console.log("DECREMENT_QUANTITY")
       break
     }
     default: {

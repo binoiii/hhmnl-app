@@ -20,10 +20,7 @@ const Hero = () => {
           </div>
           <div className="mt-8">
             <Link to="products" smooth duration={500}>
-              <button
-                onClick={() => console.log("test")}
-                className="px-10 sm:px-16 md:px-20 py-2 text-orange-450 text-sm sm:text-base uppercase tracking-widest border-2 border-orange-450 rounded-md outline-none focus:outline-none"
-              >
+              <button className="px-10 sm:px-16 md:px-20 py-2 text-orange-450 text-sm sm:text-base uppercase tracking-widest border-2 border-orange-450 rounded-md outline-none focus:outline-none">
                 shop now
               </button>
             </Link>
