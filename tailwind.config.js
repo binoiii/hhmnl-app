@@ -1,5 +1,10 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
+  purge: {
+    content: ["./src/**/*.{js,jsx,ts,tsx}"],
+    options: {
+      safelist: ["text-yellow-450", "text-blue-450", "text-red-450"],
+    },
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     letterSpacing: {

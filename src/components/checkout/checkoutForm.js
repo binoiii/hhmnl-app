@@ -3,7 +3,8 @@ import { useSelector } from "react-redux"
 import { navigate } from "gatsby-link"
 
 const CheckoutForm = () => {
-  const cart = JSON.stringify(useSelector(state => state.cart))
+  const cart = useSelector(state => state.cart)
+  const cartString = JSON.stringify(cart)
 
   const [data, setData] = useState({
     firstname: "",
@@ -12,7 +13,7 @@ const CheckoutForm = () => {
     address: "",
     zipcode: "",
     notes: "",
-    order: cart,
+    order: cartString,
   })
 
   const handleChange = e => {
@@ -153,6 +154,7 @@ const CheckoutForm = () => {
                 type="text"
                 name="order"
                 value={data.order}
+                readOnly
               />
             </div>
           </div>
