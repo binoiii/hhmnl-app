@@ -12,8 +12,6 @@ const Fb = ({ url, title, description, image, alt }) => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
-      <meta property="og:image:width" content="1077" />
-      <meta property="og:image:height" content="564" />
       <meta property="og:image:alt" content={alt} />
     </Helmet>
   )
