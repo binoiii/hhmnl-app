@@ -3,7 +3,9 @@ import { connect } from "react-redux"
 
 import ProductCard from "./productCard"
 
-const ProductsContainer = ({ products: { products } }) => {
+const ProductsContainer = ({ products }) => {
+  console.log(products)
+
   return (
     <div
       id="products"
