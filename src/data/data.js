@@ -115,6 +115,6 @@ export const reviews = [
     client: "Maricar Nogra",
     image: "https://hhmnl.netlify.app/images/clients/maricar-nograles.jpg",
     review:
-      "Their products will exceed your expectations. 😊 Super dali pa nilang kausap. Lahat ng request ko nasunod without additional charges. Mabilis lang din madeliver yung item. It only took 5 days for me to get what I ordered. Super thank you Happyhands 😊😊😊 I'll surely buy again from your shop. 😘😘",
+      "Their products will exceed your expectations. 😊  Super dali pa nilang kausap. Lahat ng request ko nasunod without additional charges. Mabilis lang din madeliver yung item. It only took 5 days for me to get what I ordered. Super thank you Happyhands 😊😊😊 I'll surely buy again from your shop. 😘😘",
   },
 ]
