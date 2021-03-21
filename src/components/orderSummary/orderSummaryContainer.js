@@ -67,7 +67,7 @@ const OrderSummaryContainer = ({
       <h3 className="mb-4 font-secondary text-3xl text-orange-450 italic">
         Order Summary
       </h3>
-      <div className="w-80 mb-4 px-2 py-4 flex flex-col justify-center border-b border-t border-orange-450">
+      <div className="mb-4 px-2 py-4 w-80 flex flex-col justify-center border-b border-t border-orange-450">
         <div className="flex justify-between">
           <h4 className="font-primary text-sm font-medium uppercase">
             subtotal
