@@ -55,9 +55,14 @@ const intitialState = {
             "https://hhmnl.netlify.app/images/products/metal-tumbler/metal-tumbler1.jpg",
         },
         {
-          alt: "Metal Tumbler1",
+          alt: "Metal Tumbler2",
           image:
-            "https://hhmnl.netlify.app/images/products/metal-tumbler/metal-tumbler1.jpg",
+            "https://hhmnl.netlify.app/images/products/metal-tumbler/metal-tumbler2.jpg",
+        },
+        {
+          alt: "Metal Tumbler3",
+          image:
+            "https://hhmnl.netlify.app/images/products/metal-tumbler/metal-tumbler3.jpg",
         },
       ],
       options: {
@@ -77,20 +82,25 @@ const intitialState = {
       productID: 3,
       productName: "Chopping Board",
       thumbImage: {
-        alt: "Chopipping Board",
+        alt: "Chopping Board",
         image:
           "https://hhmnl.netlify.app/images/products/chopping-board/chopping-board-thumb.jpg",
       },
       images: [
         {
-          alt: "Metal Tumbler1",
+          alt: "Chopping Board1",
           image:
             "https://hhmnl.netlify.app/images/products/chopping-board/chopping-board1.jpg",
         },
         {
-          alt: "Metal Tumbler1",
+          alt: "Chopping Board2",
           image:
-            "https://hhmnl.netlify.app/images/products/chopping-board/chopping-board1.jpg",
+            "https://hhmnl.netlify.app/images/products/chopping-board/chopping-board2.jpg",
+        },
+        {
+          alt: "Chopping Board3",
+          image:
+            "https://hhmnl.netlify.app/images/products/chopping-board/chopping-board3.jpg",
         },
       ],
       options: {
@@ -101,34 +111,39 @@ const intitialState = {
       quantity: 100,
       descriptions: [`11" x 7" x 0.5"`],
     },
-    // {
-    //   productID: 3,
-    //   productName: "Bamboo Mug",
-    //   thumbImage: {
-    //     alt: "Bamboo Mug",
-    //     image:
-    //       "https://hhmnl.netlify.app/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
-    //   },
-    //   images: [
-    //     {
-    //       alt: "Bamboo Mug1",
-    //       image:
-    //         "https://hhmnl.netlify.app/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
-    //     },
-    //     {
-    //       alt: "Bamboo Mug2",
-    //       image:
-    //         "https://hhmnl.netlify.app/images/products/bamboo-tumbler/bamboo-tumbler1.jpg",
-    //     },
-    //   ],
-    //   options: {
-    //     type: null,
-    //     productOptions: [{ option: null, price: 449 }],
-    //   },
-    //   price: 469,
-    //   quantity: 100,
-    //   descriptions: ["Stainless Steel Interior", "400ml"],
-    // },
+    {
+      productID: 3,
+      productName: "Bamboo Mug",
+      thumbImage: {
+        alt: "Bamboo Mug",
+        image:
+          "https://hhmnl.netlify.app/images/products/bamboo-tumbler/bamboo-tumbler-thumb.jpg",
+      },
+      images: [
+        {
+          alt: "Bamboo Mug1",
+          image:
+            "https://hhmnl.netlify.app/images/products/bamboo-tumbler/bamboo-mug1.jpg",
+        },
+        {
+          alt: "Bamboo Mug2",
+          image:
+            "https://hhmnl.netlify.app/images/products/bamboo-tumbler/bamboo-mug2.jpg",
+        },
+        {
+          alt: "Bamboo Mug2",
+          image:
+            "https://hhmnl.netlify.app/images/products/bamboo-tumbler/bamboo-mug3.jpg",
+        },
+      ],
+      options: {
+        type: null,
+        productOptions: [{ option: null, price: 469 }],
+      },
+      price: 469,
+      quantity: 100,
+      descriptions: ["Stainless Steel Interior", "400ml"],
+    },
   ],
 }
 
