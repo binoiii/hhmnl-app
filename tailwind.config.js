@@ -48,6 +48,7 @@ module.exports = {
           450: "#FEF08A",
         },
         blue: {
+          350: "#0284C7",
           450: "#0C4A6E",
         },
         red: {

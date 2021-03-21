@@ -2,14 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { IconContext } from "react-icons"
 
-import { RiHomeSmileLine } from "react-icons/ri"
+import { RiHomeSmileLine, RiFacebookCircleLine } from "react-icons/ri"
 import { HiOutlineShoppingCart } from "react-icons/hi"
 
-import {
-  // AiOutlineUser,
-  AiOutlineFacebook,
-  AiOutlineInstagram,
-} from "react-icons/ai"
+import { AiOutlineInstagram, AiFillStar } from "react-icons/ai"
 import { BiArrowBack, BiShoppingBag, BiTrashAlt } from "react-icons/bi"
 import { FiMail } from "react-icons/fi"
 import {
@@ -48,21 +44,6 @@ ShoppingCart.propTypes = {
   className: PropTypes.string,
 }
 
-// export const UserIcon = ({ className, size }) => (
-//   <IconContext.Provider value={{ className, size }}>
-//     <AiOutlineUser />
-//   </IconContext.Provider>
-// )
-
-// UserIcon.defaultProps = {
-//   className: "text-base text-black",
-// }
-
-// UserIcon.propTypes = {
-//   className: PropTypes.string,
-//   size: PropTypes.string,
-// }
-
 export const Email = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
     <FiMail />
@@ -80,7 +61,7 @@ Email.propTypes = {
 
 export const Fb = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
-    <AiOutlineFacebook />
+    <RiFacebookCircleLine />
   </IconContext.Provider>
 )
 Fb.defaultProps = {
@@ -238,6 +219,27 @@ Next.defaultProps = {
 }
 
 Next.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const Stars = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <div className="flex justify-center">
+      <AiFillStar />
+      <AiFillStar />
+      <AiFillStar />
+      <AiFillStar />
+      <AiFillStar />
+    </div>
+  </IconContext.Provider>
+)
+
+Stars.defaultProps = {
+  className: "text-base text-white",
+}
+
+Stars.propTypes = {
   className: PropTypes.string,
   size: PropTypes.string,
 }

@@ -12,7 +12,7 @@ const SocialLinks = () => {
       icon: (
         <Fb
           className="text-orange-450 transform hover:scale-125 transition duration-300 ease-out "
-          size="1.6rem"
+          size="1.7rem"
         />
       ),
       link: "https://www.facebook.com/happyhandsmnl",
