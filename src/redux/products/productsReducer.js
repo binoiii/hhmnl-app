@@ -156,29 +156,29 @@ const intitialState = {
         {
           alt: "Bamboo Mug1",
           image:
-            "https://hhmnl.netlify.app/images/products/glass-cup/bamboo-mug1.jpg",
+            "https://hhmnl.netlify.app/images/products/glass-cup/glass-cup1.jpg",
         },
         {
           alt: "Bamboo Mug2",
           image:
-            "https://hhmnl.netlify.app/images/products/glass-cup/bamboo-mug2.jpg",
+            "https://hhmnl.netlify.app/images/products/glass-cup/glass-cup2.jpg",
         },
         {
           alt: "Bamboo Mug2",
           image:
-            "https://hhmnl.netlify.app/images/products/glass-cup/bamboo-mug3.jpg",
+            "https://hhmnl.netlify.app/images/products/glass-cup/glass-cup3.jpg",
         },
       ],
       options: {
-        type: "size",
-        productOptions: [
-          { option: "250ml", price: 399 },
-          { option: "350ml", price: 429 },
-        ],
+        type: "null",
+        productOptions: [{ option: "", price: 389 }],
       },
       price: 469,
       quantity: 100,
-      descriptions: ["Insulated Double Layer Wall ", "Handles hot or cold"],
+      descriptions: [
+        "Insulated Double Layer Wall (Hot or Cold)",
+        "Free Abaca Round Coaster",
+      ],
     },
   ],
 }
