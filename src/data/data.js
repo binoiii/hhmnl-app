@@ -91,3 +91,30 @@ export const partnerImages = [
     name: "cathing",
   },
 ]
+
+export const reviews = [
+  {
+    client: "Micah Ubaldo",
+    image: "https://hhmnl.netlify.app/images/clients/micah-ubaldo.jpg",
+    review:
+      "Super affordable and the products are high quality!! I highly recommend this shop!",
+  },
+  {
+    client: "Micah Ubaldo",
+    image: "https://hhmnl.netlify.app/images/clients/micah-ubaldo.jpg",
+    review:
+      "Super affordable and the products are high quality!! I highly recommend this shop!",
+  },
+  {
+    client: "Micah Ubaldo",
+    image: "https://hhmnl.netlify.app/images/clients/micah-ubaldo.jpg",
+    review:
+      "Super affordable and the products are high quality!! I highly recommend this shop!",
+  },
+  {
+    client: "Micah Ubaldo",
+    image: "https://hhmnl.netlify.app/images/clients/micah-ubaldo.jpg",
+    review:
+      "Super affordable and the products are high quality!! I highly recommend this shop!",
+  },
+]

@@ -6,6 +6,7 @@ import SEO from "../components/seo/seo"
 import ProductsContainer from "../components/products/productsContainer"
 import Hero from "../components/hero/hero"
 import CraftedContainer from "../components/sections/craftedContainer"
+import ReviewsContainer from "../components/sections/reviewsContainer"
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <SEO title="Home" />
       <Hero />
       <CraftedContainer />
+      <ReviewsContainer />
       <ProductsContainer />
     </Layout>
   )

@@ -3,8 +3,8 @@ import { partnerImages } from "../../data/data"
 
 const CraftedContainer = () => {
   return (
-    <div>
-      <h2 className="my-16 text-center text-4xl font-secondary text-orange-450 ">
+    <div className="my-32">
+      <h2 className="mb-16 text-center text-4xl font-secondary text-orange-450 ">
         Crafted with
       </h2>
       <div className="mx-14 sm:mx-24 md:mx-32 grid grid-cols-3 sm:grid-cols-6 gap-8">
