@@ -154,17 +154,17 @@ const intitialState = {
       },
       images: [
         {
-          alt: "Bamboo Mug1",
+          alt: "Glass Cup1",
           image:
             "https://hhmnl.netlify.app/images/products/glass-cup/glass-cup1.jpg",
         },
         {
-          alt: "Bamboo Mug2",
+          alt: "Glass Cup2",
           image:
             "https://hhmnl.netlify.app/images/products/glass-cup/glass-cup2.jpg",
         },
         {
-          alt: "Bamboo Mug2",
+          alt: "Glass Cup3",
           image:
             "https://hhmnl.netlify.app/images/products/glass-cup/glass-cup3.jpg",
         },
@@ -175,10 +175,7 @@ const intitialState = {
       },
       price: 469,
       quantity: 100,
-      descriptions: [
-        "Insulated Double Layer Wall (Hot or Cold)",
-        "Free Abaca Round Coaster",
-      ],
+      descriptions: ["350ml (Hot or Cold)", "Free Abaca Round Coaster"],
     },
     {
       productID: 3,
@@ -186,23 +183,23 @@ const intitialState = {
       thumbImage: {
         alt: "Bamboo Cup",
         image:
-          "https://hhmnl.netlify.app/images/products/bamboo-tumbler/glass-cup-thumb.jpg",
+          "https://hhmnl.netlify.app/images/products/bamboo-cup/bamboo-cup-thumb.jpg",
       },
       images: [
         {
-          alt: "Bamboo Mug1",
+          alt: "Bamboo Cup1",
           image:
-            "https://hhmnl.netlify.app/images/products/glass-cup/glass-cup1.jpg",
+            "https://hhmnl.netlify.app/images/products/bamboo-cup/bamboo-cup1.jpg",
         },
         {
-          alt: "Bamboo Mug2",
+          alt: "Bamboo Cup2",
           image:
-            "https://hhmnl.netlify.app/images/products/glass-cup/glass-cup2.jpg",
+            "https://hhmnl.netlify.app/images/products/bamboo-cup/bamboo-cup2.jpg",
         },
         {
-          alt: "Bamboo Mug2",
+          alt: "Bamboo Cup3",
           image:
-            "https://hhmnl.netlify.app/images/products/glass-cup/glass-cup3.jpg",
+            "https://hhmnl.netlify.app/images/products/bamboo-cup/bamboo-cup3.jpg",
         },
       ],
       options: {
@@ -211,10 +208,7 @@ const intitialState = {
       },
       price: 469,
       quantity: 100,
-      descriptions: [
-        "Insulated Double Layer Wall (Hot or Cold)",
-        "Free Abaca Round Coaster",
-      ],
+      descriptions: ["450ml", "8-10 Hours for Hot / Cold"],
     },
   ],
 }
