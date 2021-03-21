@@ -150,6 +150,42 @@ const intitialState = {
       thumbImage: {
         alt: "Glass Cup",
         image:
+          "https://hhmnl.netlify.app/images/products/glass-cup/glass-cup-thumb.jpg",
+      },
+      images: [
+        {
+          alt: "Bamboo Mug1",
+          image:
+            "https://hhmnl.netlify.app/images/products/glass-cup/glass-cup1.jpg",
+        },
+        {
+          alt: "Bamboo Mug2",
+          image:
+            "https://hhmnl.netlify.app/images/products/glass-cup/glass-cup2.jpg",
+        },
+        {
+          alt: "Bamboo Mug2",
+          image:
+            "https://hhmnl.netlify.app/images/products/glass-cup/glass-cup3.jpg",
+        },
+      ],
+      options: {
+        type: "null",
+        productOptions: [{ option: "", price: 389 }],
+      },
+      price: 469,
+      quantity: 100,
+      descriptions: [
+        "Insulated Double Layer Wall (Hot or Cold)",
+        "Free Abaca Round Coaster",
+      ],
+    },
+    {
+      productID: 3,
+      productName: "Bamboo Cup",
+      thumbImage: {
+        alt: "Bamboo Cup",
+        image:
           "https://hhmnl.netlify.app/images/products/bamboo-tumbler/glass-cup-thumb.jpg",
       },
       images: [
