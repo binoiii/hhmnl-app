@@ -2,12 +2,16 @@ import React from "react"
 import PropTypes from "prop-types"
 import { IconContext } from "react-icons"
 
-import { RiHomeSmileLine, RiFacebookCircleLine } from "react-icons/ri"
+import {
+  RiHomeSmileLine,
+  RiFacebookCircleLine,
+  RiInstagramFill,
+} from "react-icons/ri"
 import { HiOutlineShoppingCart } from "react-icons/hi"
 
-import { AiOutlineInstagram, AiFillStar } from "react-icons/ai"
+import { AiOutlineInstagram, AiFillStar, AiOutlineUser } from "react-icons/ai"
 import { BiArrowBack, BiShoppingBag, BiTrashAlt } from "react-icons/bi"
-import { FiMail } from "react-icons/fi"
+import { FiMail, FiThumbsUp } from "react-icons/fi"
 import {
   IoIosArrowBack,
   IoIosArrowUp,
@@ -15,6 +19,7 @@ import {
   IoIosArrowForward,
 } from "react-icons/io"
 import { BsPlusSquare } from "react-icons/bs"
+import { FaFacebookF } from "react-icons/fa"
 
 export const Home = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
@@ -73,6 +78,20 @@ Fb.propTypes = {
   size: PropTypes.string,
 }
 
+export const Fb2 = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <FaFacebookF />
+  </IconContext.Provider>
+)
+Fb2.defaultProps = {
+  className: "text-base text-black",
+}
+
+Fb2.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
 export const Ig = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
     <AiOutlineInstagram />
@@ -84,6 +103,21 @@ Ig.defaultProps = {
 }
 
 Ig.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const Ig2 = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <RiInstagramFill />
+  </IconContext.Provider>
+)
+
+Ig2.defaultProps = {
+  className: "text-base text-black",
+}
+
+Ig2.propTypes = {
   className: PropTypes.string,
   size: PropTypes.string,
 }
@@ -240,6 +274,36 @@ Stars.defaultProps = {
 }
 
 Stars.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const Like = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <FiThumbsUp />
+  </IconContext.Provider>
+)
+
+Like.defaultProps = {
+  className: "text-base text-white",
+}
+
+Like.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const User = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <AiOutlineUser />
+  </IconContext.Provider>
+)
+
+Like.defaultProps = {
+  className: "text-base text-white",
+}
+
+Like.propTypes = {
   className: PropTypes.string,
   size: PropTypes.string,
 }

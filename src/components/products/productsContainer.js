@@ -7,7 +7,7 @@ const ProductsContainer = ({ products: { products } }) => {
   return (
     <div
       id="products"
-      className="mb-16 flex flex-col justify-center items-center"
+      className="mt-32 flex flex-col justify-center items-center"
     >
       <h2 className="mb-8 font-secondary text-orange-450 text-4xl">Products</h2>
       <div className="flex flex-wrap justify-center">

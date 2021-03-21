@@ -106,15 +106,15 @@ export const reviews = [
       "Transaction was very fast and efficient. The seller was also very nice and accommodated my rush order. Items were very beautiful as well. Will definitely order again 😊",
   },
   {
-    client: "Maricar Nogra",
-    image: "https://hhmnl.netlify.app/images/clients/maricar-nograles.jpg",
-    review:
-      "Their products will exceed your expectations. 😊 Super dali pa nilang kausap. Lahat ng request ko nasunod without additional charges. Mabilis lang din madeliver yung item. It only took 5 days for me to get what I ordered. 🥰 Super thank you Happyhands 😊😊😊 I'll surely buy again from your shop. 😘😘",
-  },
-  {
     client: "Alexandra Mae Pasion",
     image: "https://hhmnl.netlify.app/images/clients/alexandra-pasion.jpg",
     review:
       "The quality of the tumbler is superb. Grabe, it's really worthy of my hard earned money. I definitely commend the seller for being so accomodating and patient with my queries. Hehe. Thank you! 10/10 for me. 🤗😊",
+  },
+  {
+    client: "Maricar Nogra",
+    image: "https://hhmnl.netlify.app/images/clients/maricar-nograles.jpg",
+    review:
+      "Their products will exceed your expectations. 😊 Super dali pa nilang kausap. Lahat ng request ko nasunod without additional charges. Mabilis lang din madeliver yung item. It only took 5 days for me to get what I ordered. Super thank you Happyhands 😊😊😊 I'll surely buy again from your shop. 😘😘",
   },
 ]

@@ -5,15 +5,16 @@ import { Stars, Fb } from "../../components/icons"
 
 const ReviewsContainer = () => {
   return (
-    <div className="mx-24 my-32">
-      <h2 className="mb-16 text-center text-4xl font-secondary text-orange-450 ">
+    <div className="mt-32">
+      <h2 className="mb-8 text-center text-4xl font-secondary text-orange-450">
         Client Reviews
       </h2>
-      <div className="flex flex-wrap">
+      <div className="px-8 flex flex-wrap">
         {reviews &&
           reviews.map(({ client, review, image }) => (
             <a
-              className="m-2 p-4 w-52 flex-grow flex flex-col block items-center"
+              className="m-2 px-4 py-8 w-52 flex-grow flex flex-col block items-center border border-gray-300 bg-orange-450 bg-opacity-10"
+              key={client}
               href="https://www.facebook.com/happyhandsmnl/reviews"
               rel="noopener noreferrer"
               target="_blank"
@@ -28,7 +29,9 @@ const ReviewsContainer = () => {
                 <h3 className="text-center font-primary font-bold">{client}</h3>
                 <Stars className="text-yellow-300" />
               </div>
-              <p className="mb-4 text-center font-primary text-sm">{review}</p>
+              <p className="mb-4 text-center font-primary text-sm tracking-wide">
+                {review}
+              </p>
               <Fb className="text-2xl text-blue-350" />
             </a>
           ))}
