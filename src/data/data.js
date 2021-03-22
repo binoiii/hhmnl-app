@@ -158,7 +158,7 @@ export const products = [
     descriptions: ["10-12 Hours for Hot or Cold"],
   },
   {
-    productID: 3,
+    productID: 2,
     productName: "Glass Cup",
     thumbImage: {
       alt: "Glass Cup",
@@ -224,7 +224,7 @@ export const products = [
     descriptions: ["Stainless Steel Interior", "400ml"],
   },
   {
-    productID: 3,
+    productID: 4,
     productName: "Flask Set",
     thumbImage: {
       alt: "Flask Set",
@@ -257,7 +257,7 @@ export const products = [
     descriptions: ["9oz", "with Free Box Engrave"],
   },
   {
-    productID: 3,
+    productID: 5,
     productName: "Bamboo Cup",
     thumbImage: {
       alt: "Bamboo Cup",
@@ -290,7 +290,7 @@ export const products = [
     descriptions: ["450ml", "8-10 Hours for Hot / Cold"],
   },
   {
-    productID: 3,
+    productID: 6,
     productName: "Chopping Board",
     thumbImage: {
       alt: "Chopping Board",
@@ -323,7 +323,7 @@ export const products = [
     descriptions: [`11" x 7" x 0.5"`],
   },
   {
-    productID: 2,
+    productID: 7,
     productName: "Bamboo Notebook",
     thumbImage: {
       alt: "Bamboo Notebook",
@@ -356,7 +356,7 @@ export const products = [
     descriptions: ["70 Leaves", "Crumple-free Cover"],
   },
   {
-    productID: 2,
+    productID: 8,
     productName: "Bamboo Pen",
     thumbImage: {
       alt: "Bamboo Pen",
@@ -392,7 +392,7 @@ export const products = [
     descriptions: ["Black Ink"],
   },
   {
-    productID: 2,
+    productID: 9,
     productName: "Bamboo Sun Glasses",
     thumbImage: {
       alt: "Bamboo Sun Glass",
@@ -425,7 +425,7 @@ export const products = [
     descriptions: ["with free Black Pouch"],
   },
   {
-    productID: 2,
+    productID: 10,
     productName: "Metal Tumbler",
     thumbImage: {
       alt: "Metal Tumbler",

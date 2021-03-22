@@ -86,7 +86,7 @@ const Carousel = ({ images }) => {
         handleSetImage={handleSetImage}
         images={images}
       />
-      <div className="w-sm md:w-md flex">
+      <div className="w-sm md:w-md flex overflow-hidden">
         {images &&
           images.map((img, ind) => (
             <div
