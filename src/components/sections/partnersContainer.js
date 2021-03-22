@@ -1,7 +1,25 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { partnerImages } from "../../data/data"
 
-const CraftedContainer = () => {
+const PartnerContainer = () => {
+  const [partnerImg, setPartnerImg] = useState([])
+
+  const getData = () => {
+    fetch("https://hhmnl.netlify.app/data/partners/partnerClients.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then(res => {
+        console.log(res)
+        res.json()
+      })
+      .then(res => setPartnerImg(res))
+  }
+
+  useEffect(() => getData(), [])
+
   return (
     <div className="mt-16">
       <h2 className="mb-8 text-center text-4xl font-secondary text-orange-450 ">
@@ -19,4 +37,4 @@ const CraftedContainer = () => {
   )
 }
 
-export default CraftedContainer
+export default PartnerContainer

@@ -6,7 +6,7 @@ import SEO from "../components/seo/seo"
 import ProductsContainer from "../components/products/productsContainer"
 import Hero from "../components/hero/hero"
 import FollowersContainer from "../components/sections/followersContainer"
-import CraftedContainer from "../components/sections/craftedContainer"
+import PartnersContainer from "../components/sections/partnersContainer"
 import ReviewsContainer from "../components/sections/reviewsContainer"
 
 const Index = () => {
@@ -15,7 +15,7 @@ const Index = () => {
       <SEO title="Home" />
       <Hero />
       <FollowersContainer />
-      <CraftedContainer />
+      <PartnersContainer />
       <ReviewsContainer />
       <ProductsContainer />
     </Layout>

@@ -746,10 +746,10 @@ export const products = [
     options: {
       type: "color",
       productOptions: [
-        { option: "Gold", price: 449 },
-        { option: "Black", price: 449 },
-        { option: "Blue", price: 449 },
         { option: "Red", price: 449 },
+        { option: "Blue", price: 449 },
+        { option: "Black", price: 449 },
+        { option: "Gold", price: 449 },
       ],
     },
     price: 449,
