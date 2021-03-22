@@ -491,7 +491,7 @@ export const products = [
     descriptions: [`6" x 2"`, "with Soft Bristle"],
   },
   {
-    productID: 12,
+    productID: 13,
     productName: "Mirror",
     thumbImage: {
       alt: "Mirror",
@@ -518,10 +518,142 @@ export const products = [
     },
     price: 95,
     quantity: 100,
-    descriptions: [`6" x 2"`, "with Soft Bristle"],
+    descriptions: [`6" x 3"`, "Handy and Portable Mirror"],
+  },
+  {
+    productID: 14,
+    productName: "Paddle Brush",
+    thumbImage: {
+      alt: "Paddle Brush",
+      image:
+        "https://hhmnl.netlify.app/images/products/paddle-brush/paddle-brush-thumb.jpg",
+    },
+    images: [
+      {
+        alt: "Paddle Brush1",
+        image:
+          "https://hhmnl.netlify.app/images/products/paddle-brush/paddle-brush1.jpg",
+      },
+      {
+        alt: "Paddle Brush2",
+        image:
+          "https://hhmnl.netlify.app/images/products/paddle-brush/paddle-brush2.jpg",
+      },
+      {
+        alt: "Paddle Brush3",
+        image:
+          "https://hhmnl.netlify.app/images/products/paddle-brush/paddle-brush3.jpg",
+      },
+    ],
+    options: {
+      type: "null",
+      productOptions: [{ option: "", price: 95 }],
+    },
+    price: 95,
+    quantity: 100,
+    descriptions: [`10"x 3"`, "Gentle to the scalp"],
+  },
+  {
+    productID: 15,
+    productName: "Sandal Wood Fan",
+    thumbImage: {
+      alt: "Sandal Wood Fan",
+      image:
+        "https://hhmnl.netlify.app/images/products/sandal-fan/sandal-fan-thumb.jpg",
+    },
+    images: [
+      {
+        alt: "Sandal Wood Fan1",
+        image:
+          "https://hhmnl.netlify.app/images/products/sandal-fan/sandal-fan1.jpg",
+      },
+      {
+        alt: "Sandal Wood Fan2",
+        image:
+          "https://hhmnl.netlify.app/images/products/sandal-fan/sandal-fan2.jpg",
+      },
+      {
+        alt: "Sandal Wood Fan3",
+        image:
+          "https://hhmnl.netlify.app/images/products/sandal-fan/sandal-fan3.jpg",
+      },
+    ],
+    options: {
+      type: "null",
+      productOptions: [{ option: "", price: 95 }],
+    },
+    price: 95,
+    quantity: 100,
+    descriptions: [`8"`, "Ninang's Favorite"],
+  },
+  {
+    productID: 16,
+    productName: "Gent's Comb",
+    thumbImage: {
+      alt: "Gent's Comb",
+      image:
+        "https://hhmnl.netlify.app/images/products/gent-comb/gent-comb-thumb.jpg",
+    },
+    images: [
+      {
+        alt: "Gent's Comb1",
+        image:
+          "https://hhmnl.netlify.app/images/products/gent-comb/gent-comb1.jpg",
+      },
+      {
+        alt: "Gent's Comb2",
+        image:
+          "https://hhmnl.netlify.app/images/products/gent-comb/gent-comb2.jpg",
+      },
+      {
+        alt: "Gent's Comb3",
+        image:
+          "https://hhmnl.netlify.app/images/products/gent-comb/gent-comb3.jpg",
+      },
+    ],
+    options: {
+      type: "null",
+      productOptions: [{ option: "", price: 95 }],
+    },
+    price: 95,
+    quantity: 100,
+    descriptions: [`7" x 2"`, "Groomsmen Favorite"],
   },
   {
     productID: 17,
+    productName: "Handled Comb",
+    thumbImage: {
+      alt: "Handled Comb",
+      image:
+        "https://hhmnl.netlify.app/images/products/handled-comb/handled-comb-thumb.jpg",
+    },
+    images: [
+      {
+        alt: "Handled Comb1",
+        image:
+          "https://hhmnl.netlify.app/images/products/handled-comb/handled-comb1.jpg",
+      },
+      {
+        alt: "Handled Comb2",
+        image:
+          "https://hhmnl.netlify.app/images/products/handled-comb/handled-comb2.jpg",
+      },
+      {
+        alt: "Handled Comb3",
+        image:
+          "https://hhmnl.netlify.app/images/products/handled-comb/handled-comb3.jpg",
+      },
+    ],
+    options: {
+      type: "null",
+      productOptions: [{ option: "", price: 95 }],
+    },
+    price: 95,
+    quantity: 100,
+    descriptions: [`6"`, "Bridesmaid Favorite"],
+  },
+  {
+    productID: 21,
     productName: "Metal Tumbler",
     thumbImage: {
       alt: "Metal Tumbler",
