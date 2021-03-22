@@ -653,6 +653,39 @@ export const products = [
     descriptions: [`6"`, "Bridesmaid Favorite"],
   },
   {
+    productID: 17,
+    productName: "Bamboo Lunch Box",
+    thumbImage: {
+      alt: "Bamboo Lunch Box",
+      image:
+        "https://hhmnl.netlify.app/images/products/lunch-box/lunch-box-thumb.jpg",
+    },
+    images: [
+      {
+        alt: "Bamboo Lunch Box1",
+        image:
+          "https://hhmnl.netlify.app/images/products/lunch-box/lunch-box1.jpg",
+      },
+      {
+        alt: "Bamboo Lunch Box2",
+        image:
+          "https://hhmnl.netlify.app/images/products/lunch-box/lunch-box2.jpg",
+      },
+      {
+        alt: "Bamboo Lunch Box3",
+        image:
+          "https://hhmnl.netlify.app/images/products/lunch-box/lunch-box3.jpg",
+      },
+    ],
+    options: {
+      type: "null",
+      productOptions: [{ option: "", price: 95 }],
+    },
+    price: 95,
+    quantity: 100,
+    descriptions: [`4.5" x 6.5" x 2.5"`, "Stainless Steel"],
+  },
+  {
     productID: 21,
     productName: "Metal Tumbler",
     thumbImage: {
