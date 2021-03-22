@@ -430,7 +430,7 @@ export const products = [
     thumbImage: {
       alt: "Bottle Opener",
       image:
-        "https://hhmnl.netlify.app/images/products/bottle-opener/mini-brush-thumb.jpg",
+        "https://hhmnl.netlify.app/images/products/bottle-opener/bottle-opener-thumb.jpg",
     },
     images: [
       {
@@ -491,7 +491,37 @@ export const products = [
     descriptions: [`6" x 2"`, "with Soft Bristle"],
   },
   {
-    productID: 13,
+    productID: 12,
+    productName: "Mirror",
+    thumbImage: {
+      alt: "Mirror",
+      image:
+        "https://hhmnl.netlify.app/images/products/mirror/mirror-thumb.jpg",
+    },
+    images: [
+      {
+        alt: "Mirror1",
+        image: "https://hhmnl.netlify.app/images/products/mirror/mirror1.jpg",
+      },
+      {
+        alt: "Mirror2",
+        image: "https://hhmnl.netlify.app/images/products/mirror/mirror2.jpg",
+      },
+      {
+        alt: "Mirror3",
+        image: "https://hhmnl.netlify.app/images/products/mirror/mirror3.jpg",
+      },
+    ],
+    options: {
+      type: "null",
+      productOptions: [{ option: "", price: 95 }],
+    },
+    price: 95,
+    quantity: 100,
+    descriptions: [`6" x 2"`, "with Soft Bristle"],
+  },
+  {
+    productID: 17,
     productName: "Metal Tumbler",
     thumbImage: {
       alt: "Metal Tumbler",
