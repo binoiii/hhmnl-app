@@ -12,13 +12,14 @@ const PartnerContainer = () => {
       },
     })
       .then(res => {
-        console.log(res)
         return res.json()
       })
       .then(res => setPartnerImg(res))
   }
 
   useEffect(() => getData(), [])
+
+  console.log(partnerImg)
 
   return (
     <div className="mt-16">
