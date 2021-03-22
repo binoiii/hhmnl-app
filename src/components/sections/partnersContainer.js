@@ -27,8 +27,9 @@ const PartnerContainer = () => {
         Crafted with
       </h2>
       <div className="mx-auto sm:mx-24 md:mx-32 grid grid-cols-3 sm:grid-cols-6 gap-8">
-        {partnerImages &&
-          partnerImages.map(({ id, image, name }) => (
+        {partnerImg &&
+          partnerImg.length > 0 &&
+          partnerImg.map(({ id, image, name }) => (
             <div className="mx-auto w-16 h-16" key={id}>
               <img alt={name} src={image} loading="lazy" />
             </div>
