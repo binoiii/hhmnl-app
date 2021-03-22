@@ -153,7 +153,6 @@ export const products = [
         { option: "450ml", price: 499 },
       ],
     },
-
     price: 449,
     quantity: 100,
     descriptions: ["10-12 Hours for Hot or Cold"],
@@ -382,12 +381,48 @@ export const products = [
       },
     ],
     options: {
-      type: "null",
-      productOptions: [{ option: "", price: 129 }],
+      type: "size",
+      productOptions: [
+        { option: "pen only", price: 95 },
+        { option: "with case", price: 129 },
+      ],
     },
-    price: 129,
+    price: 95,
     quantity: 100,
-    descriptions: ["70 Leaves", "Crumple-free Cover"],
+    descriptions: ["Black Ink"],
+  },
+  {
+    productID: 2,
+    productName: "Bamboo Sun Glass",
+    thumbImage: {
+      alt: "Bamboo Sun Glass",
+      image:
+        "https://hhmnl.netlify.app/images/products/bamboo-pen/bamboo-sunglass-thumb.jpg",
+    },
+    images: [
+      {
+        alt: "Bamboo Sun Glass1",
+        image:
+          "https://hhmnl.netlify.app/images/products/bamboo-sunglass/bamboo-sunglass1.jpg",
+      },
+      {
+        alt: "Bamboo Sun Glass2",
+        image:
+          "https://hhmnl.netlify.app/images/products/bamboo-sunglass/bamboo-sunglass2.jpg",
+      },
+      {
+        alt: "Bamboo Sun Glass3",
+        image:
+          "https://hhmnl.netlify.app/images/products/bamboo-sunglass/bamboo-sunglass3.jpg",
+      },
+    ],
+    options: {
+      type: "null",
+      productOptions: [{ option: "", price: 279 }],
+    },
+    price: 279,
+    quantity: 100,
+    descriptions: ["with free Black Pouch"],
   },
   {
     productID: 2,
