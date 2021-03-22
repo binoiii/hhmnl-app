@@ -188,7 +188,7 @@ export const products = [
     },
     price: 389,
     quantity: 100,
-    descriptions: ["350ml (Hot or Cold)", "Free Abaca Round Coaster"],
+    descriptions: ["350ml (hot or cold)", "Free abaca round coaster"],
   },
   {
     productID: 3,
@@ -221,7 +221,7 @@ export const products = [
     },
     price: 469,
     quantity: 100,
-    descriptions: ["Stainless Steel Interior", "400ml"],
+    descriptions: ["400ml", "Stainless steel interior"],
   },
   {
     productID: 4,
@@ -254,7 +254,7 @@ export const products = [
     },
     price: 499,
     quantity: 100,
-    descriptions: ["9oz", "with Free Box Engrave"],
+    descriptions: ["9oz", "with FREE box engrave"],
   },
   {
     productID: 5,
@@ -287,7 +287,7 @@ export const products = [
     },
     price: 469,
     quantity: 100,
-    descriptions: ["450ml", "8-10 Hours for Hot / Cold"],
+    descriptions: ["450ml", "8-10 hours for hot / cold"],
   },
   {
     productID: 6,
@@ -353,7 +353,7 @@ export const products = [
     },
     price: 129,
     quantity: 100,
-    descriptions: ["70 Leaves", "Crumple-free Cover"],
+    descriptions: ["70 leaves", "Crumple-free cover"],
   },
   {
     productID: 8,
@@ -389,7 +389,7 @@ export const products = [
     },
     price: 95,
     quantity: 100,
-    descriptions: ["Black Ink"],
+    descriptions: ["Black ink"],
   },
   {
     productID: 9,
@@ -422,7 +422,7 @@ export const products = [
     },
     price: 279,
     quantity: 100,
-    descriptions: ["with free Black Pouch"],
+    descriptions: ["With free black pouch"],
   },
   {
     productID: 11,
@@ -488,7 +488,7 @@ export const products = [
     },
     price: 95,
     quantity: 100,
-    descriptions: [`6" x 2"`, "with Soft Bristle"],
+    descriptions: [`6" x 2"`, "With soft bristle"],
   },
   {
     productID: 13,
@@ -518,7 +518,7 @@ export const products = [
     },
     price: 95,
     quantity: 100,
-    descriptions: [`6" x 3"`, "Handy and Portable Mirror"],
+    descriptions: [`6" x 3"`, "Handy and portable mirror"],
   },
   {
     productID: 14,
@@ -547,9 +547,9 @@ export const products = [
     ],
     options: {
       type: "null",
-      productOptions: [{ option: "", price: 95 }],
+      productOptions: [{ option: "", price: 179 }],
     },
-    price: 95,
+    price: 179,
     quantity: 100,
     descriptions: [`10"x 3"`, "Gentle to the scalp"],
   },
@@ -580,11 +580,11 @@ export const products = [
     ],
     options: {
       type: "null",
-      productOptions: [{ option: "", price: 95 }],
+      productOptions: [{ option: "", price: 89 }],
     },
-    price: 95,
+    price: 89,
     quantity: 100,
-    descriptions: [`8"`, "Ninang's Favorite"],
+    descriptions: [`8"`, "Ninang's favorite"],
   },
   {
     productID: 16,
@@ -617,7 +617,7 @@ export const products = [
     },
     price: 95,
     quantity: 100,
-    descriptions: [`7" x 2"`, "Groomsmen Favorite"],
+    descriptions: [`7" x 2"`, "Groomsmen's favorite"],
   },
   {
     productID: 17,
@@ -650,7 +650,7 @@ export const products = [
     },
     price: 95,
     quantity: 100,
-    descriptions: [`6"`, "Bridesmaid Favorite"],
+    descriptions: [`6"`, "Bridesmaid's favorite"],
   },
   {
     productID: 17,
@@ -679,11 +679,11 @@ export const products = [
     ],
     options: {
       type: "null",
-      productOptions: [{ option: "", price: 95 }],
+      productOptions: [{ option: "", price: 549 }],
     },
-    price: 95,
+    price: 549,
     quantity: 100,
-    descriptions: [`4.5" x 6.5" x 2.5"`, "Stainless Steel"],
+    descriptions: [`4.5" x 6.5" x 2.5"`, "Stainless steel"],
   },
   {
     productID: 18,
@@ -712,11 +712,11 @@ export const products = [
     ],
     options: {
       type: "null",
-      productOptions: [{ option: "", price: 95 }],
+      productOptions: [{ option: "", price: 129 }],
     },
-    price: 95,
+    price: 129,
     quantity: 100,
-    descriptions: [`4.5" x 6.5" x 2.5"`, "Stainless Steel"],
+    descriptions: ["With FREE white pouch"],
   },
   {
     productID: 19,
@@ -754,7 +754,7 @@ export const products = [
     },
     price: 449,
     quantity: 100,
-    descriptions: ["8-10 Hours for Hot / Cold"],
+    descriptions: ["8-10 hours for hot / cold"],
   },
   {
     productID: 20,
@@ -791,6 +791,6 @@ export const products = [
     },
     price: 95,
     quantity: 169,
-    descriptions: [`5.9" x 4"`, "with cash and cards provisions"],
+    descriptions: [`5.9" x 4"`, "With cash and cards provisions"],
   },
 ]
