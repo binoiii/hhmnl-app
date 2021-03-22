@@ -425,7 +425,40 @@ export const products = [
     descriptions: ["with free Black Pouch"],
   },
   {
-    productID: 10,
+    productID: 11,
+    productName: "Bottle Opener",
+    thumbImage: {
+      alt: "Bottle Opener",
+      image:
+        "https://hhmnl.netlify.app/images/products/bottle-opener/bottle-opener-thumb.jpg",
+    },
+    images: [
+      {
+        alt: "Bottle Opener1",
+        image:
+          "https://hhmnl.netlify.app/images/products/bottle-opener/bottle-opener1.jpg",
+      },
+      {
+        alt: "Bottle Opener2",
+        image:
+          "https://hhmnl.netlify.app/images/products/bottle-opener/bottle-opener2.jpg",
+      },
+      {
+        alt: "Bottle Opener3",
+        image:
+          "https://hhmnl.netlify.app/images/products/bottle-opener/bottle-opener3.jpg",
+      },
+    ],
+    options: {
+      type: "null",
+      productOptions: [{ option: "", price: 169 }],
+    },
+    price: 169,
+    quantity: 100,
+    descriptions: [`5.5" x 1"`, "Solid wood and metal"],
+  },
+  {
+    productID: 13,
     productName: "Metal Tumbler",
     thumbImage: {
       alt: "Metal Tumbler",
