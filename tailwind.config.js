@@ -6,6 +6,9 @@ module.exports = {
         "bg-yellow-450",
         "bg-blue-450",
         "bg-red-450",
+        "bg-brown-450",
+        "bg-silver-450",
+        "bg-gold-450",
         "translate-x-full1",
         "translate-x-full2",
         "translate-x-full3",
@@ -48,6 +51,15 @@ module.exports = {
         Nourdilla: ["Nourdilla"],
       },
       colors: {
+        brown: {
+          450: "#a0522d",
+        },
+        silver: {
+          450: "#DCDCDC",
+        },
+        gold: {
+          450: "#d4af37",
+        },
         orange: {
           450: "#ca7919",
         },
