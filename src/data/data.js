@@ -358,6 +358,39 @@ export const products = [
   },
   {
     productID: 2,
+    productName: "Bamboo Pen",
+    thumbImage: {
+      alt: "Bamboo Pen",
+      image:
+        "https://hhmnl.netlify.app/images/products/bamboo-pen/bamboo-pen-thumb.jpg",
+    },
+    images: [
+      {
+        alt: "Bamboo Pen1",
+        image:
+          "https://hhmnl.netlify.app/images/products/bamboo-pen/bamboo-pen1.jpg",
+      },
+      {
+        alt: "Bamboo Pen2",
+        image:
+          "https://hhmnl.netlify.app/images/products/bamboo-pen/bamboo-pen2.jpg",
+      },
+      {
+        alt: "Bamboo Pen3",
+        image:
+          "https://hhmnl.netlify.app/images/products/bamboo-pen/bamboo-pen3.jpg",
+      },
+    ],
+    options: {
+      type: "null",
+      productOptions: [{ option: "", price: 129 }],
+    },
+    price: 129,
+    quantity: 100,
+    descriptions: ["70 Leaves", "Crumple-free Cover"],
+  },
+  {
+    productID: 2,
     productName: "Metal Tumbler",
     thumbImage: {
       alt: "Metal Tumbler",
