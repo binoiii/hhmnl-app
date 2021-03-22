@@ -686,7 +686,40 @@ export const products = [
     descriptions: [`4.5" x 6.5" x 2.5"`, "Stainless Steel"],
   },
   {
-    productID: 21,
+    productID: 18,
+    productName: "Bambutensils",
+    thumbImage: {
+      alt: "Bambutensils",
+      image:
+        "https://hhmnl.netlify.app/images/products/bambutensils/bambutensils-thumb.jpg",
+    },
+    images: [
+      {
+        alt: "Bambutensils1",
+        image:
+          "https://hhmnl.netlify.app/images/products/bambutensils/bambutensils1.jpg",
+      },
+      {
+        alt: "Bambutensils2",
+        image:
+          "https://hhmnl.netlify.app/images/products/bambutensils/bambutensils2.jpg",
+      },
+      {
+        alt: "Bambutensils3",
+        image:
+          "https://hhmnl.netlify.app/images/products/bambutensils/bambutensils3.jpg",
+      },
+    ],
+    options: {
+      type: "null",
+      productOptions: [{ option: "", price: 95 }],
+    },
+    price: 95,
+    quantity: 100,
+    descriptions: [`4.5" x 6.5" x 2.5"`, "Stainless Steel"],
+  },
+  {
+    productID: 19,
     productName: "Metal Tumbler",
     thumbImage: {
       alt: "Metal Tumbler",
@@ -722,5 +755,42 @@ export const products = [
     price: 449,
     quantity: 100,
     descriptions: ["8-10 Hours for Hot / Cold"],
+  },
+  {
+    productID: 20,
+    productName: "Passport Holder",
+    thumbImage: {
+      alt: "Passport Holder",
+      image:
+        "https://hhmnl.netlify.app/images/products/passport-holder/passport-holder-thumb.jpg",
+    },
+    images: [
+      {
+        alt: "Passport Holder1",
+        image:
+          "https://hhmnl.netlify.app/images/products/passport-holder/passport-holder1.jpg",
+      },
+      {
+        alt: "Passport Holder2",
+        image:
+          "https://hhmnl.netlify.app/images/products/passport-holder/passport-holder2.jpg",
+      },
+      {
+        alt: "Passport Holder3",
+        image:
+          "https://hhmnl.netlify.app/images/products/passport-holder/passport-holder3.jpg",
+      },
+    ],
+    options: {
+      type: "color",
+      productOptions: [
+        { option: "Brown", price: 169 },
+        { option: "Silver", price: 169 },
+        { option: "Gold", price: 169 },
+      ],
+    },
+    price: 95,
+    quantity: 169,
+    descriptions: [`5.9" x 4"`, "with cash and cards provisions"],
   },
 ]
