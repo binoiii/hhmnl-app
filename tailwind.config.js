@@ -2,7 +2,14 @@ module.exports = {
   purge: {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     options: {
-      safelist: ["bg-yellow-450", "bg-blue-450", "bg-red-450"],
+      safelist: [
+        "bg-yellow-450",
+        "bg-blue-450",
+        "bg-red-450",
+        "translate-x-full1",
+        "translate-x-full2",
+        "translate-x-full3",
+      ],
     },
   },
   darkMode: false, // or 'media' or 'class'

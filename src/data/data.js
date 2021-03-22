@@ -155,7 +155,7 @@ export const products = [
     },
     price: 449,
     quantity: 100,
-    descriptions: ["10-12 Hours for Hot or Cold"],
+    descriptions: ["10-12 hours for hot or cold"],
   },
   {
     productID: 2,
