@@ -325,6 +325,39 @@ export const products = [
   },
   {
     productID: 2,
+    productName: "Bamboo Notebook",
+    thumbImage: {
+      alt: "Bamboo Notebook",
+      image:
+        "https://hhmnl.netlify.app/images/products/bamboo-notebook/bamboo-notebook-thumb.jpg",
+    },
+    images: [
+      {
+        alt: "Bamboo Notebook1",
+        image:
+          "https://hhmnl.netlify.app/images/products/bamboo-notebook/bamboo-notebook1.jpg",
+      },
+      {
+        alt: "Bamboo Notebook2",
+        image:
+          "https://hhmnl.netlify.app/images/products/bamboo-notebook/bamboo-notebook2.jpg",
+      },
+      {
+        alt: "Bamboo Notebook3",
+        image:
+          "https://hhmnl.netlify.app/images/products/bamboo-notebook/bamboo-notebook3.jpg",
+      },
+    ],
+    options: {
+      type: "null",
+      productOptions: [{ option: "", price: 129 }],
+    },
+    price: 129,
+    quantity: 100,
+    descriptions: ["70 Leaves", "Crumple-free Cover"],
+  },
+  {
+    productID: 2,
     productName: "Metal Tumbler",
     thumbImage: {
       alt: "Metal Tumbler",
