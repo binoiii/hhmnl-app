@@ -425,7 +425,7 @@ export const products = [
     descriptions: ["With free black pouch"],
   },
   {
-    productID: 11,
+    productID: 10,
     productName: "Bottle Opener",
     thumbImage: {
       alt: "Bottle Opener",
@@ -458,7 +458,7 @@ export const products = [
     descriptions: [`5.5" x 1"`, "Solid wood and metal"],
   },
   {
-    productID: 12,
+    productID: 11,
     productName: "Mini Brush",
     thumbImage: {
       alt: "Mini Brush",
@@ -491,7 +491,7 @@ export const products = [
     descriptions: [`6" x 2"`, "With soft bristle"],
   },
   {
-    productID: 13,
+    productID: 12,
     productName: "Mirror",
     thumbImage: {
       alt: "Mirror",
@@ -521,7 +521,7 @@ export const products = [
     descriptions: [`6" x 3"`, "Handy and portable mirror"],
   },
   {
-    productID: 14,
+    productID: 13,
     productName: "Paddle Brush",
     thumbImage: {
       alt: "Paddle Brush",
@@ -554,7 +554,7 @@ export const products = [
     descriptions: [`10"x 3"`, "Gentle to the scalp"],
   },
   {
-    productID: 15,
+    productID: 14,
     productName: "Sandal Wood Fan",
     thumbImage: {
       alt: "Sandal Wood Fan",
@@ -587,7 +587,7 @@ export const products = [
     descriptions: [`8"`, "Ninang's favorite"],
   },
   {
-    productID: 16,
+    productID: 15,
     productName: "Gent's Comb",
     thumbImage: {
       alt: "Gent's Comb",
@@ -620,7 +620,7 @@ export const products = [
     descriptions: [`7" x 2"`, "Groomsmen's favorite"],
   },
   {
-    productID: 17,
+    productID: 16,
     productName: "Handled Comb",
     thumbImage: {
       alt: "Handled Comb",

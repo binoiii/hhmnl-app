@@ -5,7 +5,7 @@ const PartnerContainer = () => {
   const [partnerImg, setPartnerImg] = useState([])
 
   const getData = () => {
-    fetch("https://hhmnl.netlify.app/data/partners/partnerClients.json", {
+    fetch("https://hhmnl.netlify.app/data/partnerClients.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
