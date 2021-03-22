@@ -13,7 +13,7 @@ const PartnerContainer = () => {
     })
       .then(res => {
         console.log(res)
-        res.json()
+        return res.json()
       })
       .then(res => setPartnerImg(res))
   }
