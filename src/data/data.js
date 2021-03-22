@@ -430,7 +430,7 @@ export const products = [
     thumbImage: {
       alt: "Bottle Opener",
       image:
-        "https://hhmnl.netlify.app/images/products/bottle-opener/bottle-opener-thumb.jpg",
+        "https://hhmnl.netlify.app/images/products/bottle-opener/mini-brush-thumb.jpg",
     },
     images: [
       {
@@ -456,6 +456,39 @@ export const products = [
     price: 169,
     quantity: 100,
     descriptions: [`5.5" x 1"`, "Solid wood and metal"],
+  },
+  {
+    productID: 12,
+    productName: "Mini Brush",
+    thumbImage: {
+      alt: "Mini Brush",
+      image:
+        "https://hhmnl.netlify.app/images/products/mini-brush/mini-brush-thumb.jpg",
+    },
+    images: [
+      {
+        alt: "Mini Brush1",
+        image:
+          "https://hhmnl.netlify.app/images/products/mini-brush/mini-brush1.jpg",
+      },
+      {
+        alt: "Mini Brush2",
+        image:
+          "https://hhmnl.netlify.app/images/products/mini-brush/mini-brush2.jpg",
+      },
+      {
+        alt: "Mini Brush3",
+        image:
+          "https://hhmnl.netlify.app/images/products/mini-brush/mini-brush3.jpg",
+      },
+    ],
+    options: {
+      type: "null",
+      productOptions: [{ option: "", price: 95 }],
+    },
+    price: 95,
+    quantity: 100,
+    descriptions: [`6" x 2"`, "with Soft Bristle"],
   },
   {
     productID: 13,
