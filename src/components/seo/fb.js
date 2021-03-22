@@ -3,8 +3,6 @@ import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 
 const Fb = ({ url, title, description, image, alt }) => {
-  console.log(url, image)
-
   return (
     <Helmet>
       <meta property="og:type" content="website" />

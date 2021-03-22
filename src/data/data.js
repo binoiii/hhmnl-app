@@ -393,11 +393,11 @@ export const products = [
   },
   {
     productID: 2,
-    productName: "Bamboo Sun Glass",
+    productName: "Bamboo Sun Glasses",
     thumbImage: {
       alt: "Bamboo Sun Glass",
       image:
-        "https://hhmnl.netlify.app/images/products/bamboo-pen/bamboo-sunglass-thumb.jpg",
+        "https://hhmnl.netlify.app/images/products/bamboo-sunglass/bamboo-sunglass-thumb.jpg",
     },
     images: [
       {
