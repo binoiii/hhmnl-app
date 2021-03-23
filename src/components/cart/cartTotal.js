@@ -7,12 +7,12 @@ const CartTotal = ({ cart }) => {
   return (
     <div className="mb-8 w-full">
       <div className="flex justify-between">
-        <h3 className="font-primary">Subtotal</h3>
-        <p className="font-primary text-orange-450">{`₱${totalPrice}`}</p>
+        <h3 className="font-primary text-orange-450">Subtotal</h3>
+        <p className="font-primary">{`₱${totalPrice}`}</p>
       </div>
       <div className="flex justify-between">
-        <h3 className="font-primary">Total Quantity</h3>
-        <p className="font-primary text-orange-450">{totalQuantity}</p>
+        <h3 className="font-primary text-orange-450">Total Quantity</h3>
+        <p className="font-primary">{totalQuantity}</p>
       </div>
     </div>
   )

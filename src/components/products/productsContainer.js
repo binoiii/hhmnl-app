@@ -69,9 +69,9 @@ const mapDispatchToProps = dispatch => ({
 })
 
 ProductsContainer.propTypes = {
-  loading: PropTypes.bool.isRequired,
-  products: PropTypes.array,
-  error: PropTypes.bool.isRequired,
+  loading: PropTypes.bool,
+  products: PropTypes.object,
+  error: PropTypes.bool,
   fetchProducts: PropTypes.func,
 }
 

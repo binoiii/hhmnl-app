@@ -69,16 +69,16 @@ const OrderSummaryContainer = ({
       </h3>
       <div className="mb-4 px-2 py-4 w-80 flex flex-col justify-center border-b border-t border-orange-450">
         <div className="flex justify-between">
-          <h4 className="font-primary text-sm font-medium uppercase">
+          <h4 className="font-primary text-sm font-medium text-orange-450 uppercase">
             subtotal
           </h4>
-          <p className="font-primary text-sm text-orange-450">{`₱${totalPrice}`}</p>
+          <p className="font-primary text-sm">{`₱${totalPrice}`}</p>
         </div>
         <div className="flex justify-between">
-          <h4 className="font-primary text-sm font-medium uppercase">
+          <h4 className="font-primary text-sm font-medium text-orange-450 uppercase">
             product
           </h4>
-          <p className="font-primary text-sm text-orange-450">
+          <p className="font-primary text-sm">
             {`${product}`}
             {option && <span> - {option}</span>}
           </p>

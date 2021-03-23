@@ -32,7 +32,7 @@ const OrderItem = ({
   }, [productName, selected, updateSelected])
 
   return (
-    <div className="h-36 md:h-full flex md:flex-col bg-white md:border-r flex-none">
+    <div className="h-36 md:h-full flex md:flex-col bg-white md:border-r">
       <img
         alt={alt}
         src={image}
