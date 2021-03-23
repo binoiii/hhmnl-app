@@ -1,6 +1,7 @@
 import React from "react"
 import { Provider } from "react-redux"
 import { createStore, combineReducers, applyMiddleware } from "redux"
+import ReduxThunk from "redux-thunk"
 import { composeWithDevTools } from "redux-devtools-extension"
 import logger from "redux-logger"
 import { throttle } from "lodash"
@@ -24,7 +25,7 @@ const rootReducer = combineReducers({
 const store = createStore(
   rootReducer,
   persistedState,
-  composeWithDevTools(applyMiddleware(logger))
+  composeWithDevTools(applyMiddleware(ReduxThunk, logger))
 )
 
 store.subscribe(

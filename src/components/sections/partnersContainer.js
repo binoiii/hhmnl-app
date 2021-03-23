@@ -1,25 +1,18 @@
 import React, { useState, useEffect } from "react"
-import { partnerImages } from "../../data/data"
 
 const PartnerContainer = () => {
   const [partnerImg, setPartnerImg] = useState([])
 
   const getData = () => {
-    fetch("https://hhmnl.netlify.app/data/partnerClients.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
+    fetch("./data/partnerClients.json")
       .then(res => {
         return res.json()
       })
       .then(res => setPartnerImg(res))
+      .catch(err => console.log(err))
   }
 
   useEffect(() => getData(), [])
-
-  console.log(partnerImg)
 
   return (
     <div className="mt-16">

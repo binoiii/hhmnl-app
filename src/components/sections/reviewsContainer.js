@@ -1,9 +1,19 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 
-import { reviews } from "../../data/data"
 import { Stars, Fb } from "../../components/icons"
 
 const ReviewsContainer = () => {
+  const [reviews, setReviews] = useState([])
+
+  const getData = () => {
+    fetch("./data/reviews.json")
+      .then(res => res.json())
+      .then(res => setReviews(res))
+      .catch(err => console.log("Request failed", err))
+  }
+
+  useEffect(() => getData(), [])
+
   return (
     <div className="mt-32">
       <h2 className="mb-8 text-center text-4xl font-secondary text-orange-450">
@@ -11,6 +21,7 @@ const ReviewsContainer = () => {
       </h2>
       <div className="px-8 flex flex-wrap">
         {reviews &&
+          reviews.length > 0 &&
           reviews.map(({ client, review, image }) => (
             <a
               className="m-2 px-4 py-8 w-52 flex-grow flex flex-col block items-center border border-gray-300 bg-orange-450 bg-opacity-10"
