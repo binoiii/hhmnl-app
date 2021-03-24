@@ -4,27 +4,27 @@ const CheckoutPaymentMethods = () => {
   const methods = [
     {
       method: "gcash",
-      img: "https://hhmnl.netlify.app/images/payment/gcash.jpg",
+      img: "https://thehappyhandsmnl.netlify.app/images/payment/gcash.jpg",
     },
     {
       method: "bpi",
-      img: "https://hhmnl.netlify.app/images/payment/bpi.jpg",
+      img: "https://thehappyhandsmnl.netlify.app/images/payment/bpi.jpg",
     },
     {
       method: "bdo",
-      img: "https://hhmnl.netlify.app/images/payment/bdo.jpg",
+      img: "https://thehappyhandsmnl.netlify.app/images/payment/bdo.jpg",
     },
     {
       method: "palawan",
-      img: "https://hhmnl.netlify.app/images/payment/palawan.jpg",
+      img: "https://thehappyhandsmnl.netlify.app/images/payment/palawan.jpg",
     },
     {
       method: "wu",
-      img: "https://hhmnl.netlify.app/images/payment/wu.jpg",
+      img: "https://thehappyhandsmnl.netlify.app/images/payment/wu.jpg",
     },
     {
       method: "cebuana",
-      img: "https://hhmnl.netlify.app/images/payment/cebuana.jpg",
+      img: "https://thehappyhandsmnl.netlify.app/images/payment/cebuana.jpg",
     },
   ]
 
