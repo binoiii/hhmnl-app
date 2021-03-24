@@ -13,7 +13,7 @@ const CheckoutShipping = () => {
         <p className="mb-1 font-primary">
           ₱50 - Small &nbsp;|&nbsp; ₱55 - Medium &nbsp;|&nbsp; ₱70 - Large
         </p>
-        <p className="font-primary">2 - 3 days (MCFA Express)</p>
+        <p className="font-primary">1 - 2 days (MCFA Express)</p>
       </div>
       <div className="mb-8 text-sm text-center tracking-wide">
         <h5 className="mb-2 font-primary text-orange-450 font-medium">

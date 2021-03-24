@@ -57,7 +57,7 @@ const OrderFont = ({ orders, engraveID, productName }) => {
           <div
             className={`p-2 w-72 h-12 bg-white ${
               font || "font-primary"
-            } flex justify-center items-center border outline-none focus:outline-none `}
+            } flex justify-center items-center border outline-none focus:outline-none cursor-default`}
           >
             {name}
           </div>
