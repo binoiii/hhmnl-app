@@ -8,7 +8,7 @@ import { Home, Email } from "./icons"
 const Nav = ({ inHome }) => {
   return (
     <div
-      className={`flex items-center fixed bottom-0 left-0 right-0 md:absolute md:top-0 h-16 bg-white md:bg-transparent border-gray-300 border-t ${
+      className={`flex items-center max-w-screen-xl fixed bottom-0 left-0 right-0 md:absolute md:top-0 h-16 bg-white md:bg-transparent border-gray-300 border-t ${
         !inHome && "border-b"
       } md:border-t-0 z-10`}
     >

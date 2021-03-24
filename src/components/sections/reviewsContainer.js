@@ -24,10 +24,9 @@ const ReviewsContainer = () => {
         {reviews &&
           reviews.length > 0 &&
           reviews.map(({ client, review, image }, i) => (
-            <Fade top delay={i * 200} distance="30px">
+            <Fade key={client} top delay={i * 200} distance="30px">
               <a
                 className="m-2 px-4 py-8 w-52 flex-grow flex flex-col block items-center border border-gray-300 bg-orange-450 bg-opacity-10"
-                key={client}
                 href="https://www.fb.com/happyhandsmnl/reviews"
                 rel="noopener noreferrer"
                 target="_blank"

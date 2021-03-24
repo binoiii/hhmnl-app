@@ -10,7 +10,7 @@ import "./styles/global.css"
 
 const Layout = ({ children, inHome }) => {
   return (
-    <div className="min-h-screen max-w-screen-xl flex flex-col ">
+    <div className="mx-auto min-h-screen max-w-screen-xl flex flex-col relative">
       <Navigation inHome={inHome} />
       <CartContainer inHome={inHome} />
       <SocialLinks />
