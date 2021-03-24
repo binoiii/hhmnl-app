@@ -1,7 +1,6 @@
+import React from "react"
 import reduxWrapper from "./src/redux/reduxWrapper"
-
-const React = require("react")
-const FBMessenger = require("./src/components/fbMessenger").default
+import FBMessenger from "./src/components/fbMessenger"
 
 export const wrapRootElement = reduxWrapper
 
