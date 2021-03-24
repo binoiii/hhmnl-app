@@ -28,7 +28,7 @@ const ReviewsContainer = () => {
               <a
                 className="m-2 px-4 py-8 w-52 flex-grow flex flex-col block items-center border border-gray-300 bg-orange-450 bg-opacity-10"
                 key={client}
-                href="https://www.facebook.com/happyhandsmnl/reviews"
+                href="https://www.fb.com/happyhandsmnl/reviews"
                 rel="noopener noreferrer"
                 target="_blank"
               >
