@@ -11,7 +11,7 @@ const ProductsContainer = ({
 }) => {
   useEffect(() => fetchProducts(), [fetchProducts])
 
-  const [visibleProducts, setVisibleProducts] = useState(6)
+  const [visibleProducts, setVisibleProducts] = useState(3)
   const handleSeeMore = () => setVisibleProducts(visibleProducts + 3)
 
   return (

@@ -41,7 +41,7 @@ const OrderItem = ({
       />
       <div className="flex-1">
         <div className="md:px-10 py-4 h-full flex flex-col">
-          <h5 className="mb-2 md:mb-0 md:mt-4 font-primary text-sm md:text-base text-orange-450 md:font-medium uppercase text-shadow-xs text-center tracking-wider">
+          <h5 className="mx-2 md:mx-0 mb-2 md:mb-0 md:mt-4 font-primary text-sm md:text-base text-orange-450 md:font-medium uppercase text-shadow-xs text-center tracking-wider">
             {productName}
           </h5>
           {type === "size" && (

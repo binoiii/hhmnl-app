@@ -47,12 +47,12 @@ const ProductCardBody = ({
   }
 
   return (
-    <div className="flex-1">
-      <div className="h-full flex flex-col border-r border-l">
+    <>
+      <div className="flex flex-col border-r border-l">
         <h5 className="mx-2 py-4 font-primary text-sm md:text-base font-medium uppercase text-shadow-xs text-center tracking-wider">
           {productName}
         </h5>
-        <ul className="flex-1 flex flex-col justify-center mx-2 font-primary text-xs text-center ">
+        <ul className="h-8 flex flex-col justify-center mx-2 font-primary text-xs text-center ">
           {descriptions &&
             descriptions.map(description => (
               <li key={description}>{description}</li>
@@ -79,7 +79,7 @@ const ProductCardBody = ({
           />
         </Modal>
       )}
-    </div>
+    </>
   )
 }
 

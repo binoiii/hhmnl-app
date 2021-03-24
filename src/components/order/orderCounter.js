@@ -45,12 +45,9 @@ const OrderCounter = ({
       >
         -
       </button>
-      <input
-        className="pl-1 md:pl-4 min-w-0 w-full text-sm md:text-base border-t border-b border-orange-450 bg-white outline-none focus:outline-none text-center"
-        type="number"
-        value={quantity}
-        disabled
-      />
+      <div className="min-w-0 w-full flex justify-center items-center text-sm md:text-base border-t border-b border-orange-450 bg-white outline-none focus:outline-none">
+        {quantity}
+      </div>
       <button
         className="px-3 border border-orange-450 bg-orange-450 outline-none focus:outline-none text-white"
         onClick={handleAdd}

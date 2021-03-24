@@ -18,12 +18,7 @@ const ProductCardImage = ({ thumbImage: { alt, image }, images }) => {
         className="outline-none focus:outline-none cursor-pointer"
         onClick={handleShow}
       >
-        <img
-          alt={alt}
-          src={image}
-          loading="lazy"
-          className="w-36 sm:w-60 md:w-72"
-        />
+        <img alt={alt} src={image} loading="lazy" className="w-60 md:w-72" />
       </button>
       {show && (
         <Modal onHide={handleHide}>
