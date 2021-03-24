@@ -52,7 +52,7 @@ const ProductCardBody = ({
         <h5 className="mx-2 py-4 font-primary text-sm md:text-base font-medium uppercase text-shadow-xs text-center tracking-wider">
           {productName}
         </h5>
-        <ul className="flex flex-1 flex-col justify-center mx-2 font-primary text-xs text-center ">
+        <ul className="flex-1 flex flex-col justify-center mx-2 font-primary text-xs text-center ">
           {descriptions &&
             descriptions.map(description => (
               <li key={description}>{description}</li>

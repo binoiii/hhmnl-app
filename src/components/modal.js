@@ -13,7 +13,7 @@ const Modal = ({ children, onHide }) => {
   }
 
   useWindowEvent("keydown", hideOnEscapeKeyDown)
-  useLockScroll(modalRef)
+  // useLockScroll(modalRef)
 
   return (
     <div
