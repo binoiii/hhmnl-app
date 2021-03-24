@@ -24,8 +24,7 @@ const FBMessenger = () => {
       <div
         className="fb-customerchat"
         attribution="install_email"
-        page_id="303146620547418"
-        // page_id="2469960713229077"
+        page_id="2469960713229077"
         logged_in_greeting="Happy day to you! Drop your questions and we will get back to you the soonest."
         logged_out_greeting="Thank you for visiting HappyHandsMnl!"
         theme_color="#ca7919"
