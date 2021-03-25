@@ -16,22 +16,22 @@ export const useWindowEvent = (event, callback) => {
 //Lock Scroll
 export const useLockScroll = componentLock => {
   useEffect(() => {
-    componentLock && disableBodyScroll(componentLock)
+    componentLock &&
+      disableBodyScroll(componentLock, {
+        allowTouchMove: el => {
+          while (el && el !== document.body) {
+            if (el.getAttribute("body-scroll-lock-ignore") !== null) {
+              return true
+            }
+
+            el = el.parentElement
+          }
+        },
+      })
     return () => {
       clearAllBodyScrollLocks(componentLock)
     }
   }, [componentLock])
-}
-
-//Enable Scroll
-export const useEnableScroll = componentScroll => {
-  useEffect(() => {
-    componentScroll && enableBodyScroll(componentScroll)
-    console.log("Test")
-    return () => {
-      clearAllBodyScrollLocks(componentScroll)
-    }
-  }, [componentScroll])
 }
 
 //Current Year

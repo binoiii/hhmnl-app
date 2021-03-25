@@ -1,16 +1,9 @@
-import React, { useRef } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 
-import { useEnableScroll } from "../utilities/utilityFunctions"
-
 const Fonts = ({ children, handleOpen }) => {
-  const fontsRef = useRef(null)
-
-  useEnableScroll(fontsRef)
-
   return (
     <div
-      ref={fontsRef}
       className="p-2 flex flex-col justify-center items-center h-20 w-36 bg-white border outline-none focus:outline-none absolute top-9 overflow-y-scroll overscroll-contain"
       onClick={handleOpen}
       role="button"
