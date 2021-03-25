@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import { connect } from "react-redux"
 import PropTypes from "prop-types"
 
@@ -7,6 +7,8 @@ import { updateDetails } from "../../redux/order/orderActions"
 import { DropDown } from "../icons"
 import Fonts from "./fonts"
 import Font from "./font"
+
+import { useEnableScroll } from "../utilities/utilityFunctions"
 
 const FontsContainer = ({
   productName,
@@ -59,8 +61,13 @@ const FontsContainer = ({
     setFontSelected(font)
   }
 
+  const fontsRef = useRef(null)
+
+  useEnableScroll(fontsRef)
+
   return (
     <button
+      ref={fontsRef}
       className="p-2 flex justify-center items-cemter h-8 w-36 font-primary border outline-none focus:outline-none relative"
       onClick={handleOpen}
     >
