@@ -60,8 +60,7 @@ const cartReducer = (state = getInitialCart(), action) => {
         orders: lastItem
           ? state.orders.filter(order =>
               order.option
-                ? order.option !== lastItem.option &&
-                  order.product !== lastItem.product
+                ? order.option !== lastItem.option
                 : order.product !== lastItem.product
             )
           : state.orders.map(order =>

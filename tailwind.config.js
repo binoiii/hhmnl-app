@@ -3,6 +3,8 @@ module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     options: {
       safelist: [
+        "bg-sky-blue-450",
+        "bg-pink-450",
         "bg-yellow-450",
         "bg-blue-450",
         "bg-red-450",
@@ -51,6 +53,12 @@ module.exports = {
         Nourdilla: ["Nourdilla"],
       },
       colors: {
+        "sky-blue": {
+          450: "#add8e6",
+        },
+        pink: {
+          450: "#ffcfd6",
+        },
         brown: {
           450: "#a0522d",
         },
