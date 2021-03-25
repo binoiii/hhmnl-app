@@ -27,6 +27,7 @@ export const useLockScroll = componentLock => {
 export const useEnableScroll = componentScroll => {
   useEffect(() => {
     componentScroll && enableBodyScroll(componentScroll)
+    console.log("Test")
     return () => {
       clearAllBodyScrollLocks(componentScroll)
     }
