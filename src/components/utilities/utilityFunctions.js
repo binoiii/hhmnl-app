@@ -14,19 +14,15 @@ export const useWindowEvent = (event, callback) => {
 }
 
 //Lock Scroll on Modal
-const body = document.body
-
 export const useLockScroll = (componentLock, componentScroll) => {
   useEffect(() => {
-    disableBodyScroll(body)
-    // disableBodyScroll(componentLock)
+    disableBodyScroll(componentLock)
     enableBodyScroll(componentScroll)
     return () => {
       clearAllBodyScrollLocks(componentLock)
       clearAllBodyScrollLocks(componentScroll)
-      clearAllBodyScrollLocks(body)
     }
-  }, [componentLock, componentScroll])
+  })
 }
 
 //Current Year

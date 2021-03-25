@@ -4,8 +4,8 @@ import PropTypes from "prop-types"
 import { useWindowEvent, useLockScroll } from "./utilities/utilityFunctions"
 
 const Modal = ({ children, onHide }) => {
-  const modalRef = useRef(null)
-  const modalParentRef = useRef(null)
+  const modalRefLock = useRef(null)
+  const modalRefScroll = useRef(null)
 
   const hideOnEscapeKeyDown = e => {
     const key = e.key || e.keyCode
@@ -14,11 +14,11 @@ const Modal = ({ children, onHide }) => {
   }
 
   useWindowEvent("keydown", hideOnEscapeKeyDown)
-  useLockScroll(modalParentRef, modalRef)
+  useLockScroll(modalRefLock, modalRefScroll)
 
   return (
     <div
-      ref={modalParentRef}
+      ref={modalRefLock}
       className="flex justify-center items-center h-full w-full fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 z-50 overflow-y-auto"
       onClick={onHide}
       role="button"
@@ -38,7 +38,7 @@ const Modal = ({ children, onHide }) => {
         >
           X
         </button>
-        <div ref={modalRef}>{children}</div>
+        <div ref={modalRefScroll}>{children}</div>
       </div>
     </div>
   )
