@@ -30,6 +30,7 @@
     "react-redux": "^7.2.2",
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.8.1",
+    "react-scrolllock": "^5.0.1",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",

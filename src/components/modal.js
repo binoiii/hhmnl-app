@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react"
 import PropTypes from "prop-types"
-import { disablePageScroll, clearQueueScrollLocks } from "scroll-lock"
+import ScrollLock, { TouchScrollable } from "react-scrolllock"
 
-import { useWindowEvent, useLockScroll } from "./utilities/utilityFunctions"
+import { useWindowEvent } from "./utilities/utilityFunctions"
 
 const Modal = ({ children, onHide }) => {
   const modalRef = useRef(null)
@@ -14,38 +14,36 @@ const Modal = ({ children, onHide }) => {
   }
 
   useWindowEvent("keydown", hideOnEscapeKeyDown)
-  // useLockScroll(modalRef)
-
-  useEffect(() => {
-    disablePageScroll(modalRef)
-    return () => clearQueueScrollLocks()
-  }, [modalRef])
 
   return (
-    <div
-      ref={modalRef}
-      className="flex justify-center items-center h-full w-full fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 z-50 overflow-y-auto"
-      onClick={onHide}
-      role="button"
-      onKeyDown={null}
-      tabIndex={0}
-    >
+    <ScrollLock>
       <div
-        className="m-auto outline-none focus:outline-none relative"
-        onClick={e => e.stopPropagation()}
+        ref={modalRef}
+        className="flex justify-center items-center h-full w-full fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 z-50 outline-none focus:outline-none overflow-y-auto"
+        onClick={onHide}
         role="button"
         onKeyDown={null}
         tabIndex={0}
       >
-        <button
-          className="absolute -top-7 right-0 font-primary text-sm text-gray-300 outline-none focus:outline-none"
-          onClick={onHide}
+        <div
+          className="m-auto outline-none focus:outline-none relative"
+          onClick={e => e.stopPropagation()}
+          role="button"
+          onKeyDown={null}
+          tabIndex={0}
         >
-          X
-        </button>
-        <div>{children}</div>
+          <button
+            className="absolute -top-7 right-0 font-primary text-sm text-gray-300 outline-none focus:outline-none"
+            onClick={onHide}
+          >
+            X
+          </button>
+          <TouchScrollable>
+            <div>{children}</div>
+          </TouchScrollable>
+        </div>
       </div>
-    </div>
+    </ScrollLock>
   )
 }
 
