@@ -5,6 +5,7 @@ import { useWindowEvent, useLockScroll } from "./utilities/utilityFunctions"
 
 const Modal = ({ children, onHide }) => {
   const modalRef = useRef(null)
+  const modalParentRef = useRef(null)
 
   const hideOnEscapeKeyDown = e => {
     const key = e.key || e.keyCode
@@ -13,11 +14,11 @@ const Modal = ({ children, onHide }) => {
   }
 
   useWindowEvent("keydown", hideOnEscapeKeyDown)
-  // useLockScroll(modalRef)
+  useLockScroll(modalParentRef, modalRef)
 
   return (
     <div
-      ref={modalRef}
+      ref={modalParentRef}
       className="flex justify-center items-center h-full w-full fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 z-50 overflow-y-auto"
       onClick={onHide}
       role="button"
@@ -37,7 +38,7 @@ const Modal = ({ children, onHide }) => {
         >
           X
         </button>
-        <div>{children}</div>
+        <div ref={modalRef}>{children}</div>
       </div>
     </div>
   )

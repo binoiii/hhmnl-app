@@ -1,5 +1,9 @@
 import { useEffect } from "react"
-import { disableBodyScroll, clearAllBodyScrollLocks } from "body-scroll-lock"
+import {
+  disableBodyScroll,
+  clearAllBodyScrollLocks,
+  enableBodyScroll,
+} from "body-scroll-lock"
 
 //Universal Event Listener
 export const useWindowEvent = (event, callback) => {
@@ -10,11 +14,19 @@ export const useWindowEvent = (event, callback) => {
 }
 
 //Lock Scroll on Modal
-export const useLockScroll = component => {
+const body = document.body
+
+export const useLockScroll = (componentLock, componentScroll) => {
   useEffect(() => {
-    component && disableBodyScroll(component)
-    return () => clearAllBodyScrollLocks(component)
-  }, [component])
+    disableBodyScroll(body)
+    // disableBodyScroll(componentLock)
+    enableBodyScroll(componentScroll)
+    return () => {
+      clearAllBodyScrollLocks(componentLock)
+      clearAllBodyScrollLocks(componentScroll)
+      clearAllBodyScrollLocks(body)
+    }
+  }, [componentLock, componentScroll])
 }
 
 //Current Year
