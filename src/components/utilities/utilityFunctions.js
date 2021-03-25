@@ -20,10 +20,11 @@ export const useLockScroll = componentLock => {
       disableBodyScroll(componentLock, {
         allowTouchMove: el => {
           while (el && el !== document.body) {
-            if (el.getAttribute("body-scroll-lock-ignore") !== null) {
+            if (el.getAttribute("body-scroll-lock-ignore") !== "found") {
+              console.log("found")
               return true
             }
-
+            console.log("not found")
             el = el.parentElement
           }
         },
