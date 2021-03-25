@@ -59,7 +59,7 @@
       }
     ],
     "options": {
-      "type": "null",
+      "type": null,
       "productOptions": [
         {
           "option": "",
@@ -127,7 +127,7 @@
       }
     ],
     "options": {
-      "type": "null",
+      "type": null,
       "productOptions": [
         {
           "option": "",
@@ -161,7 +161,7 @@
       }
     ],
     "options": {
-      "type": "null",
+      "type": null,
       "productOptions": [
         {
           "option": "",
@@ -195,7 +195,7 @@
       }
     ],
     "options": {
-      "type": "null",
+      "type": null,
       "productOptions": [
         {
           "option": "",
@@ -229,7 +229,7 @@
       }
     ],
     "options": {
-      "type": "null",
+      "type": null,
       "productOptions": [
         {
           "option": "",
@@ -301,7 +301,7 @@
       }
     ],
     "options": {
-      "type": "null",
+      "type": null,
       "productOptions": [
         {
           "option": "",
@@ -335,7 +335,7 @@
       }
     ],
     "options": {
-      "type": "null",
+      "type": null,
       "productOptions": [
         {
           "option": "",
@@ -369,7 +369,7 @@
       }
     ],
     "options": {
-      "type": "null",
+      "type": null,
       "productOptions": [
         {
           "option": "",
@@ -403,7 +403,7 @@
       }
     ],
     "options": {
-      "type": "null",
+      "type": null,
       "productOptions": [
         {
           "option": "",
@@ -437,7 +437,7 @@
       }
     ],
     "options": {
-      "type": "null",
+      "type": null,
       "productOptions": [
         {
           "option": "",
@@ -471,7 +471,7 @@
       }
     ],
     "options": {
-      "type": "null",
+      "type": null,
       "productOptions": [
         {
           "option": "",
@@ -505,7 +505,7 @@
       }
     ],
     "options": {
-      "type": "null",
+      "type": null,
       "productOptions": [
         {
           "option": "",
@@ -539,7 +539,7 @@
       }
     ],
     "options": {
-      "type": "null",
+      "type": null,
       "productOptions": [
         {
           "option": "",
@@ -573,7 +573,7 @@
       }
     ],
     "options": {
-      "type": "null",
+      "type": null,
       "productOptions": [
         {
           "option": "",
@@ -607,7 +607,7 @@
       }
     ],
     "options": {
-      "type": "null",
+      "type": null,
       "productOptions": [
         {
           "option": "",
@@ -703,8 +703,84 @@
         }
       ]
     },
-    "price": 95,
-    "quantity": 169,
+    "price": 169,
+    "quantity": 100,
     "descriptions": ["5.9\" x 4\"", "With cash and cards provisions"]
+  },
+  {
+    "productID": 21,
+    "productName": "Wristlet Pouch",
+    "thumbImage": {
+      "alt": "Wristlet Pouch",
+      "image": "https://thehappyhandsmnl.netlify.app/images/products/wristlet-pouch/wristlet-pouch-thumb.jpg"
+    },
+    "images": [
+      {
+        "alt": "Wristlet Pouch1",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/wristlet-pouch/wristlet-pouch1.jpg"
+      },
+      {
+        "alt": "Wristlet Pouch2",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/wristlet-pouch/wristlet-pouch2.jpg"
+      },
+      {
+        "alt": "Wristlet Pouch3",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/wristlet-pouch/wristlet-pouch3.jpg"
+      }
+    ],
+    "options": {
+      "type": "color",
+      "productOptions": [
+        {
+          "option": "Sky Blue",
+          "price": 159
+        },
+        {
+          "option": "Red",
+          "price": 159
+        },
+        {
+          "option": "Pink",
+          "price": 159
+        }
+      ]
+    },
+    "price": 159,
+    "quantity": 169,
+    "descriptions": ["2 compartments", "Can fit phone inside"]
+  },
+  {
+    "productID": 21,
+    "productName": "Straw Set",
+    "thumbImage": {
+      "alt": "Straw Set",
+      "image": "https://thehappyhandsmnl.netlify.app/images/products/straw-set/straw-set-thumb.jpg"
+    },
+    "images": [
+      {
+        "alt": "Straw Set1",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/straw-set/straw-set1.jpg"
+      },
+      {
+        "alt": "Straw Set2",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/straw-set/straw-set2.jpg"
+      },
+      {
+        "alt": "Straw Set3",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/straw-set/straw-set3.jpg"
+      }
+    ],
+    "options": {
+      "type": null,
+      "productOptions": [
+        {
+          "option": "",
+          "price": 159
+        }
+      ]
+    },
+    "price": 89,
+    "quantity": 100,
+    "descriptions": ["Stainless steel", "With FREE white pouch"]
   }
 ]

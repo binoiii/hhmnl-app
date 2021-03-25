@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import { Link as LinkScroll } from "react-scroll"
 import PropTypes from "prop-types"
@@ -8,16 +8,11 @@ import CartTotal from "./cartTotal"
 import CartItemSummary from "./cartItemSummary"
 import ContinueButton from "../utilities/continueButton"
 import CheckoutButton from "../utilities/checkoutButton"
-import { useLockScroll } from "../utilities/utilityFunctions"
 
 const CartSummary = ({ cart, isOrder, inHome, handleHideCart }) => {
   const { orders } = cart
 
-  // const cartRef = useRef(null)
-  // useLockScroll(cartRef)
-
   return (
-    // <div className="h-full flex flex-col" ref={cartRef}>
     <div className="min-h-full flex flex-col">
       <h2 className="mb-4 font-secondary text-orange-450 text-3xl italic text-center tracking-wide">
         Cart Summary

@@ -1,12 +1,10 @@
-import React, { useEffect, useRef } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import ScrollLock, { TouchScrollable } from "react-scrolllock"
 
 import { useWindowEvent } from "./utilities/utilityFunctions"
 
 const Modal = ({ children, onHide }) => {
-  const modalRef = useRef(null)
-
   const hideOnEscapeKeyDown = e => {
     const key = e.key || e.keyCode
 
@@ -18,7 +16,6 @@ const Modal = ({ children, onHide }) => {
   return (
     <ScrollLock>
       <div
-        ref={modalRef}
         className="flex justify-center items-center h-full w-full fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 z-50 outline-none focus:outline-none overflow-y-auto"
         onClick={onHide}
         role="button"

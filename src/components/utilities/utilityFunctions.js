@@ -1,9 +1,4 @@
 import { useEffect } from "react"
-// import {
-//   disableBodyScroll,
-//   clearAllBodyScrollLocks,
-//   enableBodyScroll,
-// } from "body-scroll-lock"
 
 //Universal Event Listener
 export const useWindowEvent = (event, callback) => {
@@ -12,28 +7,6 @@ export const useWindowEvent = (event, callback) => {
     return () => window.removeEventListener(event, callback)
   }, [event, callback])
 }
-
-// //Lock Scroll
-// export const useLockScroll = componentLock => {
-//   useEffect(() => {
-//     componentLock &&
-//       disableBodyScroll(componentLock, {
-//         allowTouchMove: el => {
-//           while (el && el !== document.body) {
-//             if (el.getAttribute("body-scroll-lock-ignore") !== "found") {
-//               console.log("found")
-//               return true
-//             }
-//             console.log("not found")
-//             el = el.parentElement
-//           }
-//         },
-//       })
-//     return () => {
-//       clearAllBodyScrollLocks(componentLock)
-//     }
-//   }, [componentLock])
-// }
 
 //Current Year
 const currentDate = new Date()

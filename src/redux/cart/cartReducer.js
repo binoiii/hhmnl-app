@@ -58,7 +58,12 @@ const cartReducer = (state = getInitialCart(), action) => {
         totalPrice: state.totalPrice - price,
         totalQuantity: state.totalQuantity - 1,
         orders: lastItem
-          ? state.orders.filter(order => order.option !== lastItem.option)
+          ? state.orders.filter(order =>
+              order.option
+                ? order.option !== lastItem.option &&
+                  order.product !== lastItem.product
+                : order.product !== lastItem.product
+            )
           : state.orders.map(order =>
               order.product === product && order.option === option
                 ? {

@@ -22,11 +22,11 @@ const ProductsContainer = ({
       <h2 className="mb-8 font-secondary text-orange-450 text-4xl">Products</h2>
       <div>
         {loading ? (
-          <h2 className="mx-4 my-16 text-center font-primary text-gray-700 text-2xl font-bold tracking-wide">
+          <h2 className="mx-4 my-16 text-center font-primary text-gray-500 text-xl font-bold tracking-wide">
             Loading...
           </h2>
         ) : error ? (
-          <h2 className="mx-4 my-8 text-center font-primary text-gray-700 text-2xl font-bold tracking-wide">
+          <h2 className="mx-4 my-8 text-center font-primary text-gray-500 text-xl font-bold tracking-wide">
             Error in loading :( <br />
             Hit refresh
           </h2>
