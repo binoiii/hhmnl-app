@@ -45,7 +45,7 @@ const OrderCounter = ({
       >
         -
       </button>
-      <div className="min-w-0 w-full flex justify-center items-center text-sm md:text-base border-t border-b border-orange-450 bg-white outline-none focus:outline-none">
+      <div className="min-w-2 w-full flex justify-center items-center text-sm md:text-base border-t border-b border-orange-450 bg-white outline-none focus:outline-none">
         {quantity}
       </div>
       <button

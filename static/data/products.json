@@ -59,17 +59,21 @@
       }
     ],
     "options": {
-      "type": null,
+      "type": "size",
       "productOptions": [
         {
-          "option": "",
+          "option": "cup only",
           "price": 389
+        },
+        {
+          "option": "with coaster",
+          "price": 429
         }
       ]
     },
     "price": 389,
     "quantity": 100,
-    "descriptions": ["350ml (hot or cold)", "Free abaca round coaster"]
+    "descriptions": ["350ml (hot or cold)", "Can be with abaca coaster"]
   },
   {
     "productID": 3,
@@ -270,7 +274,7 @@
           "price": 95
         },
         {
-          "option": "with case",
+          "option": "+ case",
           "price": 129
         }
       ]
@@ -775,7 +779,7 @@
       "productOptions": [
         {
           "option": "",
-          "price": 159
+          "price": 89
         }
       ]
     },
