@@ -1,5 +1,6 @@
-import React, { useRef } from "react"
+import React, { useEffect, useRef } from "react"
 import PropTypes from "prop-types"
+import { disablePageScroll, clearQueueScrollLocks } from "scroll-lock"
 
 import { useWindowEvent, useLockScroll } from "./utilities/utilityFunctions"
 
@@ -13,7 +14,12 @@ const Modal = ({ children, onHide }) => {
   }
 
   useWindowEvent("keydown", hideOnEscapeKeyDown)
-  useLockScroll(modalRef)
+  // useLockScroll(modalRef)
+
+  useEffect(() => {
+    disablePageScroll(modalRef)
+    return () => clearQueueScrollLocks()
+  }, [modalRef])
 
   return (
     <div

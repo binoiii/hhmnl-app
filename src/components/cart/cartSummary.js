@@ -13,16 +13,17 @@ import { useLockScroll } from "../utilities/utilityFunctions"
 const CartSummary = ({ cart, isOrder, inHome, handleHideCart }) => {
   const { orders } = cart
 
-  const cartRef = useRef(null)
-  useLockScroll(cartRef)
+  // const cartRef = useRef(null)
+  // useLockScroll(cartRef)
 
   return (
-    <div className="h-full flex flex-col" ref={cartRef}>
+    // <div className="h-full flex flex-col" ref={cartRef}>
+    <div className="min-h-full flex flex-col">
       <h2 className="mb-4 font-secondary text-orange-450 text-3xl italic text-center tracking-wide">
         Cart Summary
       </h2>
       {isOrder ? (
-        <div className="mx-8 h-full">
+        <div className="mx-8 h-full flex-1">
           <CartTotal cart={cart} />
           <CartItemSummary orders={orders} />
         </div>

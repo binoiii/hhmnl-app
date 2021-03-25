@@ -9,7 +9,7 @@ const Fonts = ({ children, handleOpen }) => {
       role="button"
       onKeyDown={null}
       tabIndex={0}
-      body-scroll-lock-ignore="found"
+      // body-scroll-lock-ignore="found"
     >
       <div className="h-full">{children}</div>
     </div>
