@@ -1,7 +1,7 @@
 import React from "react"
 import { connect } from "react-redux"
 import PropTypes from "prop-types"
-import ScrollLock from "react-scrolllock"
+// import ScrollLock from "react-scrolllock"
 
 import { hideCart } from "../../redux/controls/controlsActions"
 
@@ -22,16 +22,16 @@ const CartContainer = ({ controls, hideCart, cart, inHome }) => {
         (isCartOpen && "translate-x-0") || "transform translate-x-full"
       } transition duration-500 ease-out grid grid-cols-5 w-full h-full fixed top-0 bottom-0 left-0 right-0 z-50`}
     >
-      <ScrollLock>
-        <div
-          className="h-full w-full bg-black bg-opacity-70 outline-none focus:outline-none col-span-1 sm:col-span-2 md:col-span-3"
-          onClick={handleHideCart}
-          onKeyDown={null}
-          role="button"
-          aria-label="close cart"
-          tabIndex={0}
-        ></div>
-      </ScrollLock>
+      {/* <ScrollLock> */}
+      <div
+        className="h-full w-full bg-black bg-opacity-70 outline-none focus:outline-none col-span-1 sm:col-span-2 md:col-span-3"
+        onClick={handleHideCart}
+        onKeyDown={null}
+        role="button"
+        aria-label="close cart"
+        tabIndex={0}
+      ></div>
+      {/* </ScrollLock> */}
       {isCartOpen && (
         <div className="pt-8 h-full bg-white col-span-4 sm:col-span-3 md:col-span-2 overflow-y-auto">
           <CartSummary
