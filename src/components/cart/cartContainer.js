@@ -1,7 +1,7 @@
 import React from "react"
 import { connect } from "react-redux"
 import PropTypes from "prop-types"
-import ScrollLock from "react-scrolllock"
+import ScrollLock, { TouchScrollable } from "react-scrolllock"
 
 import { hideCart } from "../../redux/controls/controlsActions"
 
@@ -34,14 +34,16 @@ const CartContainer = ({ controls, hideCart, cart, inHome }) => {
               tabIndex={0}
             ></div>
           </ScrollLock>
-          <div className="pt-8 h-full bg-white col-span-4 sm:col-span-3 md:col-span-2 overflow-y-auto">
-            <CartSummary
-              cart={cart}
-              handleHideCart={handleHideCart}
-              inHome={inHome}
-              isOrder={isOrder}
-            />
-          </div>
+          <TouchScrollable>
+            <div className="pt-8 h-full bg-white col-span-4 sm:col-span-3 md:col-span-2 overflow-y-auto">
+              <CartSummary
+                cart={cart}
+                handleHideCart={handleHideCart}
+                inHome={inHome}
+                isOrder={isOrder}
+              />
+            </div>
+          </TouchScrollable>
         </>
       )}
     </div>
