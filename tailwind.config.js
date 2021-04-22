@@ -24,6 +24,12 @@ module.exports = {
       wider: ".05em",
       widest: ".3em",
     },
+    textShadow: {
+      sm: "1px 1px 3px #bfbfbf",
+      md: "0px 1px 2px #bfbfbf, 1px 2px 4px #bfbfbf",
+      lg: "3px 3px 6px #bfbfbf, 0 0 5px #bfbfbf",
+      xl: "1px 1px 3px #bfbfbf, 2px 4px 7px #bfbfbf",
+    },
     extend: {
       fontFamily: {
         primary: ["Montserrat"],

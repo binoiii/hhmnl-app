@@ -49,7 +49,7 @@ const ProductCardBody = ({
   return (
     <>
       <div className="flex flex-col border-r border-l">
-        <h5 className="mx-2 py-4 font-primary text-sm md:text-base font-medium uppercase text-shadow-xs text-center tracking-wider">
+        <h5 className="mx-2 py-4 font-primary text-sm md:text-base font-medium uppercase text-center tracking-wider">
           {productName}
         </h5>
         <ul className="h-8 flex flex-col justify-center mx-2 font-primary text-xs text-center ">

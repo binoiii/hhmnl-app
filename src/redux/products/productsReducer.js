@@ -1,8 +1,4 @@
-import {
-  FETCH_PRODUCTS_FAILED,
-  FETCH_PRODUCTS_LOADING,
-  FETCH_PRODUCTS_SUCCESS,
-} from "./productsTypes"
+import { FETCH_PRODUCTS_LOADING, FETCH_PRODUCTS_SUCCESS } from "./productsTypes"
 
 const intialState = {
   loading: false,
@@ -23,13 +19,6 @@ const productsReducer = (state = intialState, action) => {
         ...state,
         loading: false,
         products: action.payload,
-      }
-    }
-    case FETCH_PRODUCTS_FAILED: {
-      return {
-        ...state,
-        loading: false,
-        error: true,
       }
     }
     default: {

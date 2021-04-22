@@ -1,8 +1,4 @@
-import {
-  FETCH_PRODUCTS_LOADING,
-  FETCH_PRODUCTS_SUCCESS,
-  FETCH_PRODUCTS_FAILED,
-} from "./productsTypes"
+import { FETCH_PRODUCTS_LOADING, FETCH_PRODUCTS_SUCCESS } from "./productsTypes"
 
 export const featchProductsRequest = () => ({
   type: FETCH_PRODUCTS_LOADING,
@@ -13,10 +9,6 @@ export const fetchProductsSuccess = products => ({
   payload: products,
 })
 
-export const fetchError = () => ({
-  type: FETCH_PRODUCTS_FAILED,
-})
-
 export const fetchProducts = () => {
   return dispatch => {
     dispatch(featchProductsRequest())
@@ -25,7 +17,6 @@ export const fetchProducts = () => {
       .then(res => dispatch(fetchProductsSuccess(res)))
       .catch(err => {
         console.log(err.message)
-        dispatch(fetchError())
       })
   }
 }

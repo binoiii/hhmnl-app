@@ -6,7 +6,7 @@ import ProductCard from "./productCard"
 import { fetchProducts } from "../../redux/products/productsActions"
 
 const ProductsContainer = ({
-  products: { loading, products, error },
+  products: { loading, products },
   fetchProducts,
 }) => {
   useEffect(() => fetchProducts(), [fetchProducts])
@@ -24,11 +24,6 @@ const ProductsContainer = ({
         {loading ? (
           <h2 className="mx-4 my-16 text-center font-primary text-gray-500 text-xl font-bold tracking-wide">
             Loading...
-          </h2>
-        ) : error ? (
-          <h2 className="mx-4 my-8 text-center font-primary text-gray-500 text-xl font-bold tracking-wide">
-            Error in loading :( <br />
-            Hit refresh
           </h2>
         ) : (
           products &&
