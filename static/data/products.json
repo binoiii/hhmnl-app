@@ -275,7 +275,7 @@
         },
         {
           "option": "+ case",
-          "price": 129
+          "price": 119
         }
       ]
     },
@@ -624,6 +624,40 @@
     "descriptions": ["With FREE white pouch"]
   },
   {
+    "productID": 23,
+    "productName": "Bamboo Toothbrush",
+    "thumbImage": {
+      "alt": "Bamboo Toothbrush",
+      "image": "https://thehappyhandsmnl.netlify.app/images/products/bamboo-toothbrush/bamboo-toothbrush-thumb.jpg"
+    },
+    "images": [
+      {
+        "alt": "Bamboo Toothbrush1",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/bamboo-toothbrush/bamboo-toothbrush1.jpg"
+      },
+      {
+        "alt": "Bamboo Toothbrush2",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/bamboo-toothbrush/bamboo-toothbrush2.jpg"
+      },
+      {
+        "alt": "Bamboo Toothbrush3",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/bamboo-toothbrush/bamboo-toothbrush3.jpg"
+      }
+    ],
+    "options": {
+      "type": null,
+      "productOptions": [
+        {
+          "option": "",
+          "price": 89
+        }
+      ]
+    },
+    "price": 89,
+    "quantity": 100,
+    "descriptions": ["Soft bristle", "Charcoal infused"]
+  },
+  {
     "productID": 19,
     "productName": "Metal Tumbler",
     "thumbImage": {
@@ -752,6 +786,140 @@
     "price": 159,
     "quantity": 169,
     "descriptions": ["2 compartments", "Can fit phone inside"]
+  },
+  {
+    "productID": 22,
+    "productName": "Handy Wallet",
+    "thumbImage": {
+      "alt": "Handy Wallet",
+      "image": "https://thehappyhandsmnl.netlify.app/images/products/handy-wallet/handy-wallet-thumb.jpg"
+    },
+    "images": [
+      {
+        "alt": "Handy Wallet1",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/handy-wallet/handy-wallet1.jpg"
+      },
+      {
+        "alt": "Handy Wallet2",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/handy-wallet/handy-wallet2.jpg"
+      },
+      {
+        "alt": "Handy Wallet3",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/handy-wallet/handy-wallet3.jpg"
+      }
+    ],
+    "options": {
+      "type": "color",
+      "productOptions": [
+        {
+          "option": "Light-Pink",
+          "price": 159
+        },
+        {
+          "option": "Light-Purple",
+          "price": 159
+        },
+        {
+          "option": "Dark-Pink",
+          "price": 159
+        }
+      ]
+    },
+    "price": 100,
+    "quantity": 100,
+    "descriptions": ["3.5\" x 4.5\"", "With pockets for cash / cards"]
+  },
+  {
+    "productID": 24,
+    "productName": "Key Holder",
+    "thumbImage": {
+      "alt": "Key Holder",
+      "image": "https://thehappyhandsmnl.netlify.app/images/products/key-holder/key-holder-thumb.jpg"
+    },
+    "images": [
+      {
+        "alt": "Key Holder1",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/key-holder/key-holder1.jpg"
+      },
+      {
+        "alt": "Key Holder2",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/key-holder/key-holder2.jpg"
+      },
+      {
+        "alt": "Key Holder3",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/key-holder/key-holder3.jpg"
+      }
+    ],
+    "options": {
+      "type": "color",
+      "productOptions": [
+        {
+          "option": "Silver",
+          "price": 95
+        },
+        {
+          "option": "Rose-Gold",
+          "price": 95
+        },
+        {
+          "option": "Gold",
+          "price": 95
+        }
+      ]
+    },
+    "price": 95,
+    "quantity": 100,
+    "descriptions": ["4.5\"", "Stylish leather"]
+  },
+  {
+    "productID": 25,
+    "productName": "Cord Organizer",
+    "thumbImage": {
+      "alt": "Cord Organizer",
+      "image": "https://thehappyhandsmnl.netlify.app/images/products/chord-organizer/chord-organizer-thumb.jpg"
+    },
+    "images": [
+      {
+        "alt": "Cord Organizer1",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/chord-organizer/chord-organizer1.jpg"
+      },
+      {
+        "alt": "Cord Organizer2",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/chord-organizer/chord-organizer2.jpg"
+      },
+      {
+        "alt": "Cord Organizer3",
+        "image": "https://thehappyhandsmnl.netlify.app/images/products/chord-organizer/chord-organizer3.jpg"
+      }
+    ],
+    "options": {
+      "type": "color",
+      "productOptions": [
+        {
+          "option": "Blush",
+          "price": 85
+        },
+        {
+          "option": "Gold",
+          "price": 85
+        },
+        {
+          "option": "Pearl",
+          "price": 85
+        },
+        {
+          "option": "Bubble-Blue",
+          "price": 85
+        },
+        {
+          "option": "Tan",
+          "price": 85
+        }
+      ]
+    },
+    "price": 85,
+    "quantity": 100,
+    "descriptions": ["2.4\" x 1.8\"", "Reduces cable clutter"]
   },
   {
     "productID": 21,

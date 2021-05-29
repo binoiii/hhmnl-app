@@ -87,6 +87,30 @@ module.exports = {
         red: {
           450: "#EF4444",
         },
+        "light-purple": {
+          450: "#ddd3ee",
+        },
+        "light-pink": {
+          450: "#ffcfd6",
+        },
+        "dark-pink": {
+          450: "#d16b89",
+        },
+        "rose-gold": {
+          450: "#E7B2A5",
+        },
+        blush: {
+          450: "#ffcfd6",
+        },
+        pearl: {
+          450: "#DCDCDC",
+        },
+        "bubble-blue": {
+          450: "#6eefe5",
+        },
+        tan: {
+          450: "#a0522d",
+        },
       },
       width: {
         sm: "22rem",
